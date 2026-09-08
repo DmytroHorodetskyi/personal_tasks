@@ -31,20 +31,30 @@ served, no навчальні збори or specialised training, no війсь�
    confirm the blank is in the register and not just in the app (`RESEARCH.md` §5).
 4. Then the мотивована заява to the **district / city** ТЦК та СП.
 
-## Style-check on a заява — expected findings, do not "fix"
+## How the заява is produced — edit Dmytro's file, do not rebuild it
 
-`Zaiava_zvannia_TEMPLATE.md` exits 1 and that is correct. A заява is not academic prose, and the
-findings that fire are the document's required form:
+`Zaiava_zvannia.docx` is **`../registry_application/source/Заява.docx` with the wording replaced**,
+produced by `rewrite_zaiava.py` (paragraph index → new text; each paragraph keeps its own `w:pPr`
+and the `w:rPr` of its first run). Layout, fonts, indents and spacing are Dmytro's.
 
-- `COLON_AFTER_PREP` on «Від:» — a form header, not a sentence.
-- `LIST_IN_PROSE` ×7 and `TINY_SECTION` ×2 — the numbered ПРОШУ and ДОДАТКИ are mandatory in this
-  genre; a numbered request is what makes a partial answer visibly partial.
-- `LT:PRYSVOYUVATY_ZVANNIA` («присвоєння» → «надання») and `LT:UK_SIMPLE_REPLACE`
-  («недостовірних») — both words are quoted verbatim from п. 79 Порядку № 1487 and ст. 9 Закону
-  № 1951-VIII. Paraphrasing a statute you are quoting is a defect, not a fix.
+**Do not regenerate this document through `code/build/build_docx.py`.** That was tried first and
+was wrong: the builder imposes its own layout and destroyed the right-aligned addressee block, the
+centred title and the spacing. The markdown template it was built from has been deleted. `/style-check`
+therefore does not apply here either — the prose lives in the `.docx`, and its register was read by
+eye against `knowledge/WRITING_STYLE.md` §2, §2b.
 
-What the scan is still worth running for on this file: the LT spelling and register findings on the
-prose paragraphs, once the placeholders are filled.
+Two things the scan flagged on the earlier markdown version that must **not** be "corrected" if it
+is ever run on this text: «присвоєння» (LT wants «надання») and «недостовірних» — both are quoted
+verbatim from п. 79 Порядку № 1487 and ст. 9 Закону № 1951-VIII. Paraphrasing a statute you are
+quoting is a defect, not a fix.
+
+## ДОДАТКИ — deliberately left empty
+
+The heading stays, the list does not, as in Dmytro's original. Nothing in ст. 5 Закону № 393/96-ВР
+or п. 43 Порядку № 981 requires attachments or a list of them, and п. 79 obliges the ТЦК to act
+«без їх виклику» — on data it already holds, with nothing supplied by the applicant. An earlier
+draft carried a four-item ДОДАТКИ list; it was invented from a secondary article and general
+practice, not from any rule, and Dmytro removed it. Hand documents over at the counter if asked.
 
 ## Open questions for Dmytro
 

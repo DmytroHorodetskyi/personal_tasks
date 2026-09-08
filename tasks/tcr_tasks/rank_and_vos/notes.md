@@ -37,6 +37,10 @@ So: **file it if the blank звання is blocking something concrete**, or if 
 before escalating. Otherwise the cheap steps are the whole answer. Either way, **by post, never in
 person.**
 
+The deferment is live and registered — confirmed by Dmytro 2026-09-08 — so a ВЛК referral, the main
+risk of engaging the ТЦК, is much less dangerous while it holds. That is also the reason he was
+advised to sort the rank out now rather than later.
+
 ## Next steps
 
 1. Log out of Резерв+ and re-verify through BankID — data sometimes fails to refresh and needs

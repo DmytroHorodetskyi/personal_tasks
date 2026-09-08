@@ -99,9 +99,16 @@ Note the Порядок № 1487 has been amended repeatedly since (постан
 № 812 від 10.06.2026 among them). Re-copy п. 79 from `zakon.rada.gov.ua` on the day of filing
 rather than from these notes.
 
-**The category of reserve.** The norm's own term is **друга категорія запасу**, not «розряд», and it
-is part of the same composite act. Worth checking what Резерв+ shows for that field too; if the
-rank is missing, that likely is as well. The заява asks for both.
+**The category of reserve.** The norm's own term is **друга категорія запасу**, not «розряд» — two
+different classifications that practitioners mix up. Категорія (ст. 27 Закону «Про військовий
+обов'язок і військову службу») goes by service: first = served and acquired a ВОС, second = did not
+serve, or served without acquiring one. Розряд (ст. 28) goes by age. Second category is therefore
+the correct classification for this profile, and it says the same thing as ВОС 999.
+
+**The заява does not ask for it.** Dmytro was never told the category was missing or wrong, so
+requesting it is unfounded — decided 2026-09-08. The quotation of п. 79 keeps the phrase, because it
+is the statute's own wording and a quotation is not edited; the ПРОШУ asks for the звання alone.
+If the category later turns out to be blank too, add it then.
 
 ---
 
@@ -111,7 +118,7 @@ rank is missing, that likely is as well. The заява asks for both.
 |---|---|---|
 | Status | військовозобов'язаний | п. 79 Порядку № 1487, automatic at 25 |
 | Військове звання | **солдат (матрос) запасу** | п. 79, «з одночасним присвоєнням» |
-| Категорія запасу | **друга** | п. 79, «та зазначенням другої категорії запасу» |
+| Категорія запасу | **друга** (not requested — see §2) | ст. 27 Закону про військовий обов'язок; п. 79 |
 | ВОС | **999** | Перелік, наказ МОУ № 317, розд. 10.14 |
 | Військовий квиток | not required | п. 79 acts «без виклику»; the ВОД is now the electronic one |
 
@@ -130,8 +137,8 @@ So the only defect to pursue is the empty **звання**. ВОС 999 stays as 
    № 1487 as the substantive obligation that was left half-performed**.
    Nothing has to be attached (§4b), though a copy of the passport is what one practitioner
    recommends to avoid being asked to come in. **Send it by post, not in person** — see §4b on why.
-   Ask for: entry of the звання «солдат (матрос) запасу» and the друга категорія запасу, the eВОД
-   showing them, and a written reply.
+   Ask for: entry of the звання «солдат (матрос) запасу», the eВОД showing it, and a written reply.
+   Not the категорія запасу — nothing indicates it is missing (§2).
 3. Support chat at Резерв+ **cannot** change Реєстр data — only an орган ведення Реєстру can. Use
    it for evidence of having asked, not as a route.
 

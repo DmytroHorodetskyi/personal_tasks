@@ -26,3 +26,10 @@ Thumbs.db
 
 # Claude Code: machine-local permission grants (the skills themselves ARE versioned)
 .claude/settings.local.json
+
+# Filled-in personal documents and the drafts they came from — these carry РНОКПП,
+# addresses and dates of birth. Never versioned, never pushed.
+tasks/tcr_tasks/rank_and_vos/Zaiava_zvannia_conf.docx
+tasks/tcr_tasks/rank_and_vos/Zaiava_zvannia.docx
+*_conf.docx
+*_conf.pdf

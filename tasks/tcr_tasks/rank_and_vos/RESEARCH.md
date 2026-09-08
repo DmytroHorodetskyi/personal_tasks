@@ -69,17 +69,23 @@ follows mobilisation, not the code.
 
 This is the part worth acting on, and the earlier read of it was right.
 
-**Абзац 19 пункту 79 Порядку організації та ведення військового обліку призовників,
-військовозобов'язаних та резервістів, затвердженого постановою КМУ від 30.12.2022 № 1487** — the
-automatic transfer was added there by постановою КМУ від 30.07.2025 № 916; the wording below is the
-редакція of 16.12.2025, as quoted identically by four practitioners (see §4a):
+**Абзац дев'ятнадцятий пункту 79 Порядку організації та ведення військового обліку призовників,
+військовозобов'язаних та резервістів, затвердженого постановою КМУ від 30.12.2022 № 1487.** Read
+from `zakon.rada.gov.ua` on 2026-09-08 in the text as amended through постанову № 812 від
+10.06.2026, i.e. the current one. П. 79 opens «Районні (міські) територіальні центри комплектування
+та соціальної підтримки:» and this абзац reads:
 
 > «організовують внесення інформації до Єдиного державного реєстру призовників,
 > військовозобов'язаних та резервістів у тридцятиденний строк після досягнення призовниками
 > 25-річного віку **без їх виклику** до районних (міських) територіальних центрів комплектування та
 > соціальної підтримки про зняття їх з військового обліку призовників та взяття на облік
-> військовозобов'язаних **з одночасним присвоєнням військового звання «солдат (матрос) запасу» та
-> зазначенням другої категорії запасу**»
+> військовозобов'язаних **з одночасним присвоєнням військового звання “солдат (матрос) запасу” та
+> зазначенням другої категорії запасу**;»
+
+Added by **постановою КМУ № 916 від 30.07.2025** — rada's own note sits directly under it — and
+untouched by every amendment since. The абзац number is rada's arithmetic, not a guess: the
+preceding абзац is annotated «Абзац вісімнадцятий пункту 79 із змінами … № 892 від 16.07.2025», and
+the one after ours «Абзац двадцятий пункту 79 виключено … № 1644 від 10.12.2025».
 
 Three things follow, and they are the whole argument:
 
@@ -95,9 +101,9 @@ Three things follow, and they are the whole argument:
    that no statutory term could be found was wrong — it is in п. 79 itself. Date the birthday, and
    the term is either long expired or still running; either way it is the number to cite.
 
-Note the Порядок № 1487 has been amended repeatedly since (постанови № 1203 від 02.10.2025,
-№ 812 від 10.06.2026 among them). Re-copy п. 79 from `zakon.rada.gov.ua` on the day of filing
-rather than from these notes.
+Full amendment history on rada as of 2026-09-08: № 563, 675, 747, 801, 1217, 1338, 1558 (2024),
+№ 892 від 16.07.2025, № 916 від 30.07.2025, № 1111, № 1203 від 25.09.2025, № 1644 від 10.12.2025,
+№ 41 від 07.01.2026, № 812 від 10.06.2026. Re-check п. 79 on the day of filing.
 
 **The category of reserve.** The norm's own term is **друга категорія запасу**, not «розряд» — two
 different classifications that practitioners mix up. Категорія (ст. 27 Закону «Про військовий
@@ -218,19 +224,47 @@ post, not in person** — that much every source agrees on.
 
 ## 5. What is still not established
 
-- **The current text of п. 79 has not been read from the primary source.** `zakon.rada.gov.ua`
-  serves the Порядок truncated at п. 73 through every fetch tried, so the wording rests on four
-  practitioners quoting it identically in December 2025 and March 2026, one of them naming the
-  редакція (16.12.2025) and the абзац (19). Порядок № 1487 was amended again by постановою № 812
-  від 10.06.2026 (in force 27.06.2026); that amendment is directed at employers, verification and
-  Дія, with nothing found touching п. 79 — but this is an absence of evidence, not a check. Read
-  п. 79 in the current редакція before filing, from the downloadable copy on rada or in Word.
+- Nothing on the legal side. All three acts were read from `zakon.rada.gov.ua` in their current
+  editions on 2026-09-08 — see §6.
 - **Whether the empty звання is a register defect or a display gap in Резерв+.** These notes assume
   the register itself is empty because the app mirrors it, which is the usual case; it has not been
   confirmed against the register. The cleanest way to settle it is an inquiry about one's own data
   under ст. 9 ч. 1 п. 1 Закону № 1951-VIII — the right to receive «відомості про себе, внесені до
   Реєстру». Worth doing before or with the заява: it converts an assumption into an answer on
   letterhead.
+
+---
+
+## 6. Source check of every act cited in the заява — 2026-09-08
+
+All three read from `zakon.rada.gov.ua` on this date, in the editions below. Each was checked for
+the wording quoted, for the provision number, and for whether the заява uses it for what it
+actually says.
+
+| Act | Edition read | Provision | Wording | Used correctly |
+|---|---|---|---|---|
+| Порядок, затв. постановою КМУ від 30.12.2022 № 1487 | as amended through № 812 від 10.06.2026 (latest) | абз. 19 п. 79 | matches verbatim | yes — the obligation, and it is addressed to «районні (міські) ТЦК та СП», which is who the заява is addressed to |
+| Закон України «Про Єдиний державний реєстр призовників, військовозобов'язаних та резервістів» № 1951-VIII | редакція від 07.01.2026 | ч. 8 ст. 5 | matches verbatim, including Міноборони and центри рекрутингу | yes — establishes that this ТЦК is an орган ведення Реєстру |
+| — same — | — same — | ст. 9 (ч. 1 п. 1, п. 2, ч. 2) | matches verbatim, incl. «звертатися в порядку, встановленому адміністратором Реєстру» | yes — the right to apply. Quoted from Dmytro's own template and still current |
+| Порядок, затв. постановою КМУ від 29.07.2026 № 981 | редакція від 29.07.2026 (original, unamended) | п. 43 | reported, not quoted, and accurate for the part relied on | yes — the mechanism |
+
+**Two notes on the last two rows.**
+
+П. 43 in full also covers «включення до Реєстру чи виключення з нього, зокрема, осіб, звільнених з
+військової служби». The заява states only the part it relies on («виправлення недостовірних
+відомостей Реєстру та зміна облікових даних …») in indirect speech, without quotation marks, so
+this is selection rather than misquotation.
+
+Ст. 9 ч. 1 п. 2 conditions the application on the order «встановленому **адміністратором** Реєстру»,
+while what the заява actually cites as the order is п. 43 of a **Cabinet-approved** Порядок. No
+separately published administrator's procedure was found. That gap cuts in Dmytro's favour rather
+than against: with no prescribed procedure to follow, a free-form мотивована заява to the орган
+ведення Реєстру is what remains, and п. 43 confirms such an application is the mechanism.
+
+**Not cited in the заява, though it governs the reply:** ст. 20 Закону України «Про звернення
+громадян» № 393/96-ВР — a month, «невідкладно, але не пізніше п'ятнадцяти днів» where no additional
+study is needed, and a hard cap of forty-five days on an extended review. The заява asks for a
+written reply without naming the term.
 
 ---
 

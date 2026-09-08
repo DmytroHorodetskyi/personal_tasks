@@ -81,7 +81,8 @@ practice, not from any rule, and Dmytro removed it. Hand documents over at the c
 
 1. Date of the 25th birthday — it sets the thirty-day term.
 2. Which district/city ТЦК та СП he is on accounting at, and its address.
-3. What Резерв+ shows in the **розряд запасу** field, if it shows one at all.
+3. What Резерв+ shows in the **категорія запасу** field, if it shows one at all — not requested in
+   the заява, but worth knowing.
 4. The rest of the header block: ПІБ, date of birth, РНОКПП, addresses, e-mail, telephone.
 
 The `Заява.docx` in `source/` was originally written for a бронювання missing from the Реєстр.

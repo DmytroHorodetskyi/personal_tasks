@@ -88,3 +88,9 @@ The `Заява.docx` in `source/` was originally written for a бронюван
 That matter is not live — the rank is the only problem — so the template was repurposed and the
 бронювання research deleted (2026-09-08). The instrument and the formal requirements are the same
 either way; only the facts, the legal grounds and the ПРОШУ differ.
+
+## «солдат запасу» vs «солдат (матрос) запасу»
+
+The bracket in п. 79 is the naval variant — «матрос» is the Navy equivalent of «солдат» — and the
+norm carries both because it covers every service. The **quotation** of п. 79 keeps it verbatim;
+the argument and the ПРОШУ say **«солдат запасу»**, which is the rank actually at issue.

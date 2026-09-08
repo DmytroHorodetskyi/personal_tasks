@@ -19,17 +19,34 @@ served, no навчальні збори or specialised training, no війсь�
 
 ## State
 
-- `RESEARCH.md` — the legal position as of 2026-09-08, both open items from the earlier session
-  closed.
-- Nothing filed yet.
+- `RESEARCH.md` — the legal position as of 2026-09-08, verified against practitioner sources
+  (§4a) with the two things that verification turned up (§4b).
+- `Zaiava_zvannia.docx` — drafted, placeholders unfilled, **not filed**.
+- Резерв+ «Виправити дані онлайн» was tried and refused.
+
+## Decide before filing: is anything actually blocked?
+
+The verification pass (`RESEARCH.md` §4b) changed the picture. A blank звання appears to have no
+consequence — the Генштаб says ВОС 999 and «солдат резерву» obstruct neither бронювання nor a
+відстрочка, п. 3 Порядку № 76 makes бронювання independent of звання, ВОС and age, and what blocks
+бронювання is the status «призовник», which has already moved here. Meanwhile two lawyers warn that
+a заява «приверне до Вас зайву увагу», and that appearing in person risks a ВЛК referral and
+mobilisation.
+
+So: **file it if the blank звання is blocking something concrete**, or if a paper trail is wanted
+before escalating. Otherwise the cheap steps are the whole answer. Either way, **by post, never in
+person.**
 
 ## Next steps
 
-1. Try Резерв+ → «…» → «Виправити дані онлайн»; screenshot whatever it returns.
-2. Screenshot the eВОД screen showing status = військовозобов'язаний with звання blank, **dated**.
-3. Consider an inquiry under ст. 9 ч. 1 п. 1 Закону № 1951-VIII for one's own register data, to
-   confirm the blank is in the register and not just in the app (`RESEARCH.md` §5).
-4. Then the мотивована заява to the **district / city** ТЦК та СП.
+1. Log out of Резерв+ and re-verify through BankID — data sometimes fails to refresh and needs
+   re-identification (Турчин).
+2. Pull the full register extract («повні дані з реєстру Оберіг») — this is also the ст. 9 ч. 1 п. 1
+   route, and it settles whether the blank is in the register or only in the app.
+3. Screenshot the eВОД screen showing status = військовозобов'язаний with звання blank, **dated**.
+4. Read абз. 19 п. 79 in the current редакція of Порядок № 1487 (`RESEARCH.md` §5 — it could not be
+   read from rada, only from practitioners quoting it).
+5. Only then, if warranted: the заява, рекомендованим листом з описом вкладення.
 
 ## How the заява is produced — edit Dmytro's file, do not rebuild it
 

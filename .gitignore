@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment (local, not versioned)
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary / scratch build outputs
+*.tmp
+~$*.docx
+~$*.xlsx
+
+# Local secrets and per-machine config
+.env
+.env.local
+
+# Claude Code: machine-local permission grants (the skills themselves ARE versioned)
+.claude/settings.local.json

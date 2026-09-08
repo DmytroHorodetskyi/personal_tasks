@@ -1,0 +1,334 @@
+{
+  "_comment": "Machine-readable half of knowledge/WRITING_STYLE.md. Every substitution added to §6 there must be added here. Patterns are Python regexes, matched case-insensitively against prose only (formulas, tables, HTML comments are removed first). severity: error = must fix before delivery; warn = review; info = look once.",
+  "banned": [
+    {
+      "id": "CALQUE_TOY_FAKT",
+      "pattern": "той факт,? що",
+      "fix": "а саме те, що",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_EKONOMIYA_LD",
+      "pattern": "економі\\w+ ліжко-?дн",
+      "fix": "різниця / скорочення тривалості госпіталізації",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_STELYA",
+      "pattern": "\\bстел[яіює]\\b",
+      "fix": "верхня межа",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_INFLYATSIYA",
+      "pattern": "інфляці\\w+ дисперсі",
+      "fix": "збільшення дисперсії",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_OKUPYTYSYA",
+      "pattern": "\\bокуп(?!ован|аці|ант)\\w+",
+      "fix": "бути економічно виправданим",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_ZVAZHYTY_PROTY",
+      "pattern": "зваж\\w+ [^.;]{0,30}\\bпроти\\b",
+      "fix": "зіставити X із Y",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_PEREBIR",
+      "pattern": "\\bперебір\\w*",
+      "fix": "максимізація … за",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_REALIZUYE",
+      "pattern": "реалізу\\w+ цінніст",
+      "fix": "забезпечує",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_MIZERNYI",
+      "pattern": "\\bмізерн\\w+",
+      "fix": "незначний",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_SITKA",
+      "pattern": "\\bсітк\\w+ значень",
+      "fix": "низка / ряд значень",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_MARGINALNYI",
+      "pattern": "\\bмаргінальн\\w+",
+      "fix": "граничний ефект / середня різниця прогнозованих значень",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_V_ODYNYTSYAKH_SD",
+      "pattern": "в одиницях стандартного відхилення",
+      "fix": "на скільки стандартних відхилень … віддалена",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_TOCHKOVE_CHYSLO",
+      "pattern": "точков\\w+ числ\\w*",
+      "fix": "точкова величина / точкова оцінка",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_INKREMENTALNYI",
+      "pattern": "\\bінкрементальн\\w+",
+      "fix": "додаткова / приріст грошової вигоди (керівник, 2026-08-29)",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_KONFAUNDING",
+      "pattern": "\\bконфаундинг\\w*",
+      "fix": "систематичне спотворення (конфаундинг лише як пояснення в дужках один раз)",
+      "severity": "warn"
+    },
+    {
+      "id": "CALQUE_ZAMKNUTA_FORMA",
+      "pattern": "замкнут\\w+ форм\\w*|закрит\\w+ форм\\w*",
+      "fix": "замкнений аналітичний вираз",
+      "severity": "error"
+    },
+    {
+      "id": "CALQUE_VVAZHATY_ZA",
+      "pattern": "\\bприймати участь|\\bприйма\\w+ участь",
+      "fix": "брати участь",
+      "severity": "error"
+    },
+    {
+      "id": "AI_VARTO_ZAZNACHYTY",
+      "pattern": "варто (зазначити|відзначити|наголосити|підкреслити)",
+      "fix": "cut; state the point directly",
+      "severity": "error"
+    },
+    {
+      "id": "AI_SLID_ZAUVAZHYTY",
+      "pattern": "слід (зазначити|зауважити|відзначити|наголосити)",
+      "fix": "cut",
+      "severity": "error"
+    },
+    {
+      "id": "AI_BILSHE_TOGO",
+      "pattern": "\\bбільше того\\b",
+      "fix": "cut or «щобільше»",
+      "severity": "error"
+    },
+    {
+      "id": "AI_VAZHLYVO_ZAZNACHYTY",
+      "pattern": "важливо (зазначити|розуміти|відзначити)",
+      "fix": "cut",
+      "severity": "error"
+    },
+    {
+      "id": "AI_TAKYM_CHYNOM",
+      "pattern": "^таким чином,",
+      "fix": "paragraph-opening summariser; rephrase",
+      "severity": "warn"
+    },
+    {
+      "id": "AI_OTZHE_OPEN",
+      "pattern": "^отже,",
+      "fix": "paragraph-opening summariser; use inside the sentence",
+      "severity": "warn"
+    },
+    {
+      "id": "AI_V_TSILOMU",
+      "pattern": "\\bв цілому\\b|\\bзагалом кажучи\\b",
+      "fix": "cut",
+      "severity": "warn"
+    },
+    {
+      "id": "AI_NE_LYSHE_ALE_I",
+      "pattern": "не лише [^.;]{3,60}, (а|але) й",
+      "fix": "parallel-contrast tell; check if genuinely needed",
+      "severity": "info"
+    },
+    {
+      "id": "META_UNYKNUTY",
+      "pattern": "щоб уникнути (припущень|недостовірн)",
+      "fix": "meta-commentary about the analysis; cut (§3b)",
+      "severity": "error"
+    },
+    {
+      "id": "META_OZNACHALO_BY",
+      "pattern": "означало б (вносити|вводити|припускати)",
+      "fix": "meta-commentary; cut (§3b)",
+      "severity": "error"
+    },
+    {
+      "id": "META_SVIDOMO",
+      "pattern": "\\bсвідомо (завищен|занижен|обран|спрощен)",
+      "fix": "meta-commentary; cut (§3b)",
+      "severity": "error"
+    },
+    {
+      "id": "META_ZNEKHTUVAVSHY",
+      "pattern": "\\bзнехтувавши\\b|нехтуючи\\b",
+      "fix": "defending an omission; cut (§3b)",
+      "severity": "warn"
+    },
+    {
+      "id": "META_MY",
+      "pattern": "\\b(ми|нами|нам|нас)\\b",
+      "fix": "first person; use impersonal forms (§4)",
+      "severity": "warn"
+    },
+    {
+      "id": "META_AUTHOR_METHOD",
+      "pattern": "за (методом|моделлю|підходом|схемою) [А-ЯІЇЄ][а-яіїє']+а?( та співавтор\\w+)?",
+      "fix": "impersonal attribution; authors only in the reference list (§4)",
+      "severity": "error",
+      "case_sensitive": true
+    },
+    {
+      "id": "META_U_MODELI_X",
+      "pattern": "у (моделі|роботі|підході|схемі) [А-ЯІЇЄ][а-яіїє']+а\\b",
+      "fix": "impersonal attribution (§4)",
+      "severity": "error"
+    },
+    {
+      "id": "REF_BARE_TABL",
+      "pattern": "\\(табл\\.?\\s*\\d",
+      "fix": "«наведено в таблиці N» as a clause (§5)",
+      "severity": "error"
+    },
+    {
+      "id": "REF_BARE_RYS",
+      "pattern": "\\(рис\\.?\\s*\\d",
+      "fix": "«показано на рисунку N» as a clause",
+      "severity": "error"
+    },
+    {
+      "id": "REF_DYV",
+      "pattern": "\\(див\\.",
+      "fix": "bracketed cross-reference; carry it in the sentence",
+      "severity": "warn"
+    },
+    {
+      "id": "PARAPHRASED_QALY",
+      "pattern": "рік життя, скоригован\\w+ за якістю(?! *\\))",
+      "fix": "QALY (name first; gloss only on first mention, in brackets) (§6a)",
+      "severity": "warn"
+    },
+    {
+      "id": "PARAPHRASED_ICER",
+      "pattern": "відношення приросту витрат до приросту ефект",
+      "fix": "ICER (§6a)",
+      "severity": "warn"
+    },
+    {
+      "id": "REGISTER_ZAVDYAKY_CHOMU",
+      "pattern": "\\bзавдяки чому\\b|\\bчерез що\\b|\\bвнаслідок чого\\b",
+      "fix": "explanatory chaining; state the condition as its own sentence (§2b, Dmytro 2026-09-04)",
+      "severity": "warn"
+    },
+    {
+      "id": "REGISTER_TOMU_VERB",
+      "pattern": "\\bтому (скорочення|різницю|величину|оцінку|параметри|значення)[^.;]{0,40}\\b(обчислено|отримано|визначено|оцінено|взято)\\b",
+      "fix": "consequence narrated with «тому»; state what was done, give the condition separately (§2b)",
+      "severity": "warn"
+    },
+    {
+      "id": "REGISTER_PISLYA_CHOGO",
+      "pattern": "\\bпісля чого\\b|\\bа потім\\b|\\bдалі\\b",
+      "fix": "procedural narration; use «а» / a new sentence (§2b)",
+      "severity": "warn"
+    },
+    {
+      "id": "REGISTER_SAME_TOMU",
+      "pattern": "\\bсаме тому\\b|\\bадже\\b|\\bпри цьому\\b|\\bтобто\\b",
+      "fix": "conversational connective; scientific register states, it does not persuade or paraphrase (§2b)",
+      "severity": "warn"
+    },
+    {
+      "id": "PARAPHRASED_INB",
+      "pattern": "чист\\w+ (грошов\\w+ )?вигод\\w+ від додаткової інформації",
+      "fix": "EVPI / EVSI (§6a)",
+      "severity": "info"
+    }
+  ],
+  "allowed_latin": [
+    "QALY",
+    "ICER",
+    "EVPI",
+    "EVPPI",
+    "EVSI",
+    "popEVPI",
+    "popEVSI",
+    "ENG",
+    "INB",
+    "NMB",
+    "AUC",
+    "SE",
+    "SD",
+    "CI",
+    "DDD",
+    "ATC",
+    "WHO",
+    "NPV",
+    "PPV",
+    "LR",
+    "BCa",
+    "OMML",
+    "DOI",
+    "ISBN",
+    "IMRaD",
+    "HTA",
+    "ROC",
+    "TP",
+    "FP",
+    "TN",
+    "FN",
+    "COVID",
+    "SARS",
+    "CoV",
+    "MDR",
+    "p",
+    "n",
+    "N",
+    "ЛІЖКО"
+  ],
+  "lt_ignore_rules": [
+    "WHITESPACE_RULE",
+    "UK_HIDDEN_CHARS"
+  ],
+  "_lt_ignore_words_comment": "Regexes for words LanguageTool's dictionary lacks but which are correct domain terms. Full-match, case-insensitive. Add drug names and established compounds here, never a doubtful word.",
+  "lt_ignore_words": [
+    "нерандомізован\\w+",
+    "фармакоеконом\\w+",
+    "коваріат\\w*",
+    "цефотаксим\\w*",
+    "цефтріаксон\\w*",
+    "цефоперазон\\w*",
+    "сульбактам\\w*",
+    "азитроміцин\\w*",
+    "левофлоксацин\\w*",
+    "ципрофлоксацин\\w*",
+    "амоксицилін\\w*",
+    "клавуланат\\w*",
+    "інгавірин\\w*",
+    "бутстреп\\w*",
+    "апостеріорн\\w+",
+    "спряжен\\w+",
+    "ШОЕ",
+    "ДСГ",
+    "НСЗУ",
+    "ПМГ",
+    "наддисперсі\\w+",
+    "німатрелвір\\w*",
+    "ритонавір\\w*",
+    "паксловід\\w*",
+    "амінокапронов\\w+",
+    "одиниц\\w*·доб\\w*",
+    "корисност\\w*·доб\\w*"
+  ],
+  "reference_heading": "Перелік посилань"
+}

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Produce Zaiava_zvannia.docx from Dmytro's own template.
 
-Takes ../registry_application/source/Заява.docx and replaces the text of named
+Takes source/Заява.docx and replaces the text of named
 paragraphs, keeping each paragraph's own w:pPr and the w:rPr of its first run, then
 normalises the whole document to Times New Roman 12 pt, 1.5 line spacing, justified.
 
@@ -39,9 +39,14 @@ NEW = {
 FONT = ('<w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" '
         'w:cs="Times New Roman"/><w:sz w:val="24"/><w:szCs w:val="24"/>')
 SPACING = '<w:spacing w:line="360" w:lineRule="auto"/>'
-# the addressee/applicant block (0-22) and the short standalone lines keep their own
-# alignment; the title stays centred; everything else is justified.
-KEEP_ALIGNMENT = set(range(0, 23)) | {26, 27, 54, 59, 63}
+# The addressee/applicant block is Dmytro's and is left ENTIRELY alone — no font, no
+# spacing, no alignment. Applying 1.5 spacing here once blew the header out over a whole
+# page, because the template already carries «після 10 пт» on those paragraphs and the
+# block is built from blank paragraphs between the lines.
+SKIP = set(range(0, 24))
+# The title stays centred and the short standalone lines keep their alignment; the rest
+# of the body is justified.
+KEEP_ALIGNMENT = {26, 27, 54, 59, 63}
 
 zin = zipfile.ZipFile(src)
 doc = zin.read("word/document.xml").decode("utf-8")
@@ -92,7 +97,8 @@ for i, m in enumerate(paras):
     p = m.group(0)
     if i in NEW:
         p = set_runs(p, NEW[i])
-    p = restyle(p, justify=i not in KEEP_ALIGNMENT)
+    if i not in SKIP:
+        p = restyle(p, justify=i not in KEEP_ALIGNMENT)
     out.append(doc[last:m.start()])
     out.append(p)
     last = m.end()

@@ -33,7 +33,7 @@ served, no навчальні збори or specialised training, no війсь�
 
 ## How the заява is produced — edit Dmytro's file, do not rebuild it
 
-`Zaiava_zvannia.docx` is **`../registry_application/source/Заява.docx` with the wording replaced**,
+`Zaiava_zvannia.docx` is **`source/Заява.docx` with the wording replaced**,
 produced by `rewrite_zaiava.py` (paragraph index → new text; each paragraph keeps its own `w:pPr`
 and the `w:rPr` of its first run). Layout, fonts, indents and spacing are Dmytro's.
 
@@ -58,10 +58,12 @@ practice, not from any rule, and Dmytro removed it. Hand documents over at the c
 
 ## Open questions for Dmytro
 
-1. **Is this the matter the `Заява.docx` template is actually for?** The template as transferred is
-   written for a бронювання missing from the Реєстр (see `../registry_application/`). If the rank is
-   the live problem, say so and the template gets repurposed for this instead — the instrument and
-   the formal requirements are the same, only the facts, the legal grounds and the ПРОШУ change.
-2. Date of the 25th birthday — it sets the thirty-day term.
-3. Which district/city ТЦК та СП he is on accounting at.
-4. What Резерв+ shows in the **розряд запасу** field, if it shows one at all.
+1. Date of the 25th birthday — it sets the thirty-day term.
+2. Which district/city ТЦК та СП he is on accounting at, and its address.
+3. What Резерв+ shows in the **розряд запасу** field, if it shows one at all.
+4. The rest of the header block: ПІБ, date of birth, РНОКПП, addresses, e-mail, telephone.
+
+The `Заява.docx` in `source/` was originally written for a бронювання missing from the Реєстр.
+That matter is not live — the rank is the only problem — so the template was repurposed and the
+бронювання research deleted (2026-09-08). The instrument and the formal requirements are the same
+either way; only the facts, the legal grounds and the ПРОШУ differ.

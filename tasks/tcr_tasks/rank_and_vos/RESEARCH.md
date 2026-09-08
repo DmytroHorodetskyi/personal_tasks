@@ -6,9 +6,34 @@ The profile this concerns: never served, no навчальні збори, no в
 відстрочка), automatically moved from призовник to військовозобов'язаний on turning 25. Резерв+
 shows **ВОС 999** and **no військове звання**.
 
-The procedural half — how the заява is written, filed and proved — is not repeated here. It is the
-same instrument as the other matter in this folder: see
-[`../registry_application/RESEARCH.md`](../registry_application/RESEARCH.md) §2, §4.4 and §5.
+## 0. The instrument, and how it is filed
+
+There is **no official form**. Ст. 9 ч. 1 п. 2 Закону № 1951-VIII gives the right to apply
+«з мотивованою заявою», and п. 43 Порядку, затвердженого постановою КМУ від 29.07.2026 № 981,
+provides that corrections are made «за результатами розгляду відповідної мотивованої заяви» —
+prescribing no form, no template and no attachment list. A free-form заява is therefore correct;
+the word carrying the weight is **мотивована**, which is why the statutory quotations belong in it.
+
+Formal requirements come from **ст. 5 Закону України «Про звернення громадян» № 393/96-ВР**: ПІБ,
+місце проживання, the substance and the request, and **the applicant's signature with the date**.
+For an electronic filing, an e-mail address for the reply; a КЕП is not required by ст. 5, but is
+worth using where possible because it forecloses "we could not identify the sender".
+
+Three lawful channels — in person, by post, by e-mail. What matters is provable receipt:
+
+- **In person** — two copies; one is filed, the second gets the вхідний stamp with its number and
+  date. That stamped copy is the document a court is shown.
+- **By post** — рекомендованим листом з описом вкладення та повідомленням про вручення; keep all
+  three pieces.
+- **By e-mail** — to that ТЦК's official address. Fast, weakest as proof; use it in addition to one
+  of the above rather than instead.
+
+Record the filing date in `notes.md` — both clocks in §4 run from registration.
+
+If it is ignored: адвокатський запит, then an адміністративний позов. Courts have held that a ТЦК
+must not merely decide but **also enter the data** in «Оберіг», that the burden cannot be shifted
+onto the citizen, and that technical problems in the register do not excuse inaction
+([НААУ, судова практика](https://unba.org.ua/publications/10491-yak-zmusiti-tck-onoviti-dani-v-reestri-oberig-sudova-praktika.html)).
 
 ---
 
@@ -139,3 +164,5 @@ additional study is needed) for the written answer.
 - [ВОС 999: що це означає, пояснює Міноборони — 7eminar](https://7eminar.ua/news/12422-vos-999-shho-ce-oznacaje-poyasnyuje-minoboroni)
 - [Закон України «Про Єдиний державний реєстр призовників, військовозобов'язаних та резервістів» № 1951-VIII](https://zakon.rada.gov.ua/laws/show/1951-19) (ст. 9 ч. 1 п. 1, п. 2)
 - [Постанова КМУ від 29.07.2026 № 981 — ведення Реєстру](https://zakon.rada.gov.ua/laws/show/981-2026-%D0%BF) (п. 43)
+- [Закон України «Про звернення громадян» № 393/96-ВР](https://zakon.rada.gov.ua/laws/show/393/96-%D0%B2%D1%80) (ст. 5, ст. 20)
+- [Помилка в реєстрі «Оберіг»: як виправити — zakon.in.ua](https://zakon.in.ua/pomylka-v-reiestri-oberih-mozhe-koshtuvaty-tysiachi-hryven-iak-shvydko-vypravyty-nepravylni-dani/)

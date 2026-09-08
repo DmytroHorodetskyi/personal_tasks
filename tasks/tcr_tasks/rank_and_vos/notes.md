@@ -31,6 +31,21 @@ served, no навчальні збори or specialised training, no війсь�
    confirm the blank is in the register and not just in the app (`RESEARCH.md` §5).
 4. Then the мотивована заява to the **district / city** ТЦК та СП.
 
+## Style-check on a заява — expected findings, do not "fix"
+
+`Zaiava_zvannia_TEMPLATE.md` exits 1 and that is correct. A заява is not academic prose, and the
+findings that fire are the document's required form:
+
+- `COLON_AFTER_PREP` on «Від:» — a form header, not a sentence.
+- `LIST_IN_PROSE` ×7 and `TINY_SECTION` ×2 — the numbered ПРОШУ and ДОДАТКИ are mandatory in this
+  genre; a numbered request is what makes a partial answer visibly partial.
+- `LT:PRYSVOYUVATY_ZVANNIA` («присвоєння» → «надання») and `LT:UK_SIMPLE_REPLACE`
+  («недостовірних») — both words are quoted verbatim from п. 79 Порядку № 1487 and ст. 9 Закону
+  № 1951-VIII. Paraphrasing a statute you are quoting is a defect, not a fix.
+
+What the scan is still worth running for on this file: the LT spelling and register findings on the
+prose paragraphs, once the placeholders are filled.
+
 ## Open questions for Dmytro
 
 1. **Is this the matter the `Заява.docx` template is actually for?** The template as transferred is

@@ -8,7 +8,8 @@ the ТЦК, military-accounting documents, бронювання/відстроч
 
 | Folder | Matter |
 |---|---|
-| `registry_application/` | Заява to the ТЦК about entering/correcting data in the Реєстр (currently: a бронювання missing from the register) |
+| `registry_application/` | Заява to the ТЦК about entering/correcting data in the Реєстр — a бронювання missing from the register. Holds the procedural half (how the заява is written, filed and proved) that the other matters reference. |
+| `rank_and_vos/` | ВОС-999 and the missing військове звання in Резерв+ |
 
 Each matter folder holds `notes.md` (what it is, current state), `source/` (documents received
 as-is, never edited), `RESEARCH.md` where the rules had to be established, and the drafts.

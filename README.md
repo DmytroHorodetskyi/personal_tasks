@@ -22,9 +22,9 @@ blank template tracked and the filled copy local.
 | Folder | Contents | Rule for new files |
 |---|---|---|
 | `tasks/` | One folder per area of life (`tcr_tasks/`, …). Inside it, **one markdown per matter** — `<matter>.md` — holding what it is, where it stands and what was established; beside it a `<matter>/` folder for the artefacts: `source/` (documents received as-is, never edited), scripts, outputs. | A new matter gets one markdown and, if it has artefacts, one folder of the same name. Do not spread a matter across several notes. |
-| `code/` | Scripts. `build/` = the markdown→docx builder and the prose style checker; a task-specific script starts inside its task folder and moves to `code/` once a second task needs it. | Keep the top level flat until there is a reason to add a subfolder. |
+| `code/` | Scripts. `build/` = the markdown→docx builder and the prose style checker; `yt_transcript.py` = YouTube captions and chapters as plain text, `yt_frames.py` = stills from a video at given timestamps, for the numbers reviewers put in on-screen graphs rather than speech; a task-specific script starts inside its task folder and moves to `code/` once a second task needs it. | Keep the top level flat until there is a reason to add a subfolder. |
 | `knowledge/` | Cross-cutting notes that belong to no single task: `WRITING_STYLE.md` (the Ukrainian register rules), conventions, reference material. | Only put a file here if it genuinely spans tasks. |
-| `.claude/skills/` | Repeatable procedures for Claude Code, versioned with the repo: `build-docx`, `style-check`. | One skill per procedure that has been done twice and will be done again. |
+| `.claude/skills/` | Repeatable procedures for Claude Code, versioned with the repo: `build-docx`, `style-check`, `component-research`. | One skill per procedure that has been done twice and will be done again. |
 
 ## Conventions
 

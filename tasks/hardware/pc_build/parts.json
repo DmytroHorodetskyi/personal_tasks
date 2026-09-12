@@ -1,0 +1,338 @@
+[
+ {
+  "name": "CPU - Ryzen 5 7500F MPK (Lean)",
+  "query": "AMD Ryzen 5 7500F",
+  "match": [
+   "7500F",
+   "MPK"
+  ],
+  "exclude": [],
+  "shop_query": "7500F",
+  "shop_match": [
+   "7500F"
+  ],
+  "shop_exclude": [
+   "RTX",
+   "Radeon",
+   "GeForce",
+   "Powered"
+  ]
+ },
+ {
+  "name": "CPU - Ryzen 7 9700X BOX (Working, Max)",
+  "query": "AMD Ryzen 7 9700X",
+  "match": [
+   "9700X",
+   "WOF"
+  ],
+  "exclude": [
+   "MPK"
+  ],
+  "shop_query": "9700X",
+  "shop_match": [
+   "9700X"
+  ],
+  "shop_exclude": [
+   "MPK",
+   "Tray",
+   "EVOLVE",
+   "RTX",
+   "Powered"
+  ]
+ },
+ {
+  "name": "GPU - PowerColor RX 9070 GRE Hellhound 12GB (Lean, Working)",
+  "query": "PowerColor RX 9070 GRE Hellhound",
+  "match": [
+   "9070",
+   "GRE",
+   "Hellhound"
+  ],
+  "exclude": [],
+  "shop_query": "9070 GRE",
+  "shop_match": [
+   "9070 GRE",
+   "Hellhound"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "GPU - Sapphire RX 9070 PURE 16GB (Max)",
+  "query": "Sapphire Radeon RX 9070 PURE",
+  "match": [
+   "9070",
+   "PURE"
+  ],
+  "exclude": [
+   "XT",
+   "9070 XT"
+  ],
+  "shop_query": "11349-02",
+  "shop_match": [
+   "PURE"
+  ],
+  "shop_exclude": [
+   "XT",
+   "Восстановлено",
+   "упаков"
+  ]
+ },
+ {
+  "name": "Motherboard - ASRock B850M Pro RS WiFi (Lean)",
+  "query": "ASRock B850M Pro RS WiFi",
+  "match": [
+   "B850M",
+   "Pro RS",
+   "WiFi"
+  ],
+  "exclude": [],
+  "shop_query": "B850M Pro RS",
+  "shop_match": [
+   "B850M Pro RS"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "Motherboard - ASRock B850 Pro RS WiFi (Working, Max)",
+  "query": "ASRock B850 Pro RS WiFi",
+  "match": [
+   "B850 Pro RS",
+   "WiFi"
+  ],
+  "exclude": [
+   "B850M"
+  ],
+  "shop_query": "B850 Pro RS",
+  "shop_match": [
+   "B850 Pro RS"
+  ],
+  "shop_exclude": [
+   "B850M"
+  ]
+ },
+ {
+  "name": "Motherboard - ASUS TUF GAMING B850-PLUS WIFI (Max alternative)",
+  "query": "ASUS TUF GAMING B850-PLUS WIFI",
+  "match": [
+   "B850-PLUS"
+  ],
+  "exclude": [],
+  "shop_query": "B850-PLUS",
+  "shop_match": [
+   "TUF",
+   "B850-PLUS"
+  ],
+  "shop_exclude": [
+   "CSM",
+   "упаков"
+  ]
+ },
+ {
+  "name": "RAM - Kingston FURY 16GB (2x8) DDR5-6000 (Lean)",
+  "query": "Kingston FURY Beast DDR5 16GB 6000",
+  "match": [
+   "KF560C30BBEK2-16"
+  ],
+  "exclude": [],
+  "shop_query": "KF560C30BBEK2-16",
+  "shop_match": [
+   "KF560C30BBEK2-16"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "RAM - Crucial Pro 32GB (2x16) DDR5-6000 CL36 (Working, Max)",
+  "query": "Crucial Pro DDR5 32GB 6000",
+  "match": [
+   "CP2K16G60C36U5B"
+  ],
+  "exclude": [
+   "White"
+  ],
+  "shop_query": "CP2K16G60C36U5B",
+  "shop_match": [
+   "CP2K16G60C36U5B"
+  ],
+  "shop_exclude": [
+   "упаков"
+  ]
+ },
+ {
+  "name": "SSD - WD Green SN3000 1TB (Lean)",
+  "query": "WD Green SN3000 1TB",
+  "match": [
+   "SN3000",
+   "1"
+  ],
+  "exclude": [
+   "2 ",
+   "500"
+  ],
+  "shop_query": "WDS100T4G0E",
+  "shop_match": [
+   "SN3000",
+   "1TB"
+  ],
+  "shop_exclude": [
+   "500GB",
+   "2TB"
+  ]
+ },
+ {
+  "name": "SSD - Samsung 990 EVO Plus 1TB (Working)",
+  "query": "Samsung 990 EVO Plus 1TB",
+  "match": [
+   "990 EVO Plus",
+   "1"
+  ],
+  "exclude": [
+   "2TB",
+   "4TB"
+  ],
+  "shop_query": "MZ-V9S1T0BW",
+  "shop_match": [
+   "990 EVO Plus",
+   "1TB"
+  ],
+  "shop_exclude": [
+   "2TB",
+   "4TB",
+   "упаков"
+  ]
+ },
+ {
+  "name": "SSD - Kingston FURY Renegade G5 1TB (Max)",
+  "query": "Kingston FURY Renegade G5 1TB",
+  "match": [
+   "Renegade G5"
+  ],
+  "exclude": [
+   "2TB",
+   "4TB"
+  ],
+  "shop_query": "SFYR2S",
+  "shop_match": [
+   "Renegade G5",
+   "1TB"
+  ],
+  "shop_exclude": [
+   "2TB",
+   "4TB",
+   "8TB"
+  ]
+ },
+ {
+  "name": "Cooler - Deepcool AK400 (Working, Max)",
+  "url": "https://hotline.ua/ua/computer-kulery-i-radiatory/deepcool-ak400-r-ak400-bknnmn-g-1/",
+  "match": [
+   "AK400"
+  ],
+  "exclude": [
+   "ZERO",
+   "G2",
+   "Digital"
+  ],
+  "shop_query": "AK400",
+  "shop_match": [
+   "R-AK400-BKNNMN-G-1"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "PSU - be quiet! Pure Power 13 M 750W (all three)",
+  "query": "be quiet Pure Power 13 M 750W",
+  "match": [
+   "750"
+  ],
+  "exclude": [
+   "850",
+   "550",
+   "650",
+   "1000"
+  ],
+  "shop_query": "BP026EU",
+  "shop_match": [
+   "750"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "Case - Deepcool CC560 Limited V2, the plain non-ARGB (Lean)",
+  "query": "Deepcool CC560 Limited V2",
+  "match": [
+   "CC560",
+   "Limited",
+   "V2"
+  ],
+  "exclude": [
+   "ARGB"
+  ],
+  "shop_query": "CC560",
+  "shop_match": [
+   "CC560 Limited V2"
+  ],
+  "shop_exclude": [
+   "ARGB"
+  ]
+ },
+ {
+  "name": "Case - Lian Li Lancool 216 (Working, Max)",
+  "query": "Lian Li Lancool 216",
+  "match": [
+   "216"
+  ],
+  "exclude": [
+   "217",
+   "RGB"
+  ],
+  "shop_query": "Lancool 216",
+  "shop_match": [
+   "Lancool 216"
+  ],
+  "shop_exclude": [
+   "217",
+   "RGB"
+  ]
+ },
+ {
+  "name": "Monitor - AOC Q27G4XF (Lean)",
+  "query": "AOC Q27G4XF",
+  "match": [
+   "Q27G4XF"
+  ],
+  "exclude": [],
+  "shop_query": "Q27G4XF",
+  "shop_match": [
+   "Q27G4XF"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "Monitor - AOC Q27G4ZR (Working, Max)",
+  "query": "AOC Q27G4ZR",
+  "match": [
+   "Q27G4ZR"
+  ],
+  "exclude": [],
+  "shop_query": "Q27G4ZR",
+  "shop_match": [
+   "Q27G4ZR"
+  ],
+  "shop_exclude": []
+ },
+ {
+  "name": "OS - Windows 11 Home ESD KW9-00664 (all three)",
+  "query": "Windows 11 Home KW9-00664",
+  "match": [
+   "Home"
+  ],
+  "exclude": [
+   "Pro"
+  ],
+  "shop_query": "KW9-00664",
+  "shop_match": [
+   "KW9-00664"
+  ],
+  "shop_exclude": []
+ }
+]

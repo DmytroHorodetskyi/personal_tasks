@@ -250,8 +250,22 @@ omission.**
 
 [GECID.com, 2026-06-22](https://www.youtube.com/watch?v=cUSxa4PxI4I), 30 minutes, 1440p. It is
 the most applicable test located because it compares **the exact two cards sold here** - ASUS
-Prime RTX 5070 OC and ASUS Prime RX 9070 EVO OC, same cooler family, same 2.5 slots, ~30cm -
-and the cards were **supplied by Telemart**, one of the two stores that can assemble this build.
+Prime RTX 5070 OC and ASUS Prime RX 9070 EVO OC, same cooler family, same 2.5 slots, ~30cm.
+Choosing two cards from **one series** is deliberate and good method: it isolates the GPUs from
+the board partners, which the Jegs TV comparison (Sapphire Pulse against Palit Infinity 3) does
+not do.
+
+> **Conflict of interest, recorded 2026-09-13 after reading the transcript in full.** This is not
+> only a card loan. The video runs a **paid Telemart promotion with a live discount code** -
+> *"до 5 липня за промокодом GESID 500 ви можете отримати додаткову знижку у 500 грн на всі
+> відеоприскорювачі **від ASUS**"* - and the two cards under test are ASUS. **Telemart is one of
+> the two stores that would assemble this build**, and this review is the single source this
+> document leans on hardest.
+>
+> Weigh it, do not discard it. All **fourteen** of its claims were checked line by line against
+> the transcript in [../source_audit.md](../source_audit.md) and every one is verbatim accurate,
+> and its conclusion is genuinely balanced - it ends by recommending the **RTX 5070** for buyers
+> who want no compatibility surprises, which is not what a bought review does.
 
 Its verdict, in full rather than the convenient half:
 
@@ -280,7 +294,7 @@ can be read directly.
 Written after building `code/yt_frames.py`. Figures below are read off the videos' own charts
 and overlays, not from narration or summaries.
 
-**BENCHMARKS FOR GAMERS, 13 games, 1440p, DLSS 4.5 / FSR 4.1 Quality** - its closing average
+**BENCHMARKS FOR GAMERS, 13 games, 1440p, DLSS 4.5 / FSR 4.1 Quality** ([`2ufCzwK73GM`](https://www.youtube.com/watch?v=2ufCzwK73GM), 2026-05-22; average chart @ 10:38, **re-verified 2026-09-13**) - its closing average
 chart states plainly: **"13% faster on average at 1440p"**, in the RX 9070's favour. Per-game
 percentage difference, 9070 over 5070:
 
@@ -298,11 +312,20 @@ Direction confirmed from the raw overlay rather than assumed - Forza Horizon 6 R
 **RTX 5070 73.8 avg / 65.3 1% low against RX 9070 92.4 avg / 81.2 1% low.** The same frame shows
 the 5070 at **11 230 MB of its 12 288 MB** in use - the VRAM ceiling, visible in a still.
 
-**Jegs TV, Cyberpunk 2077, 1440p, RT Overdrive preset, frame generation off** - the path-tracing
-case: **RTX 5070 59 avg / 49 1% low against RX 9070 45 avg / 41 1% low. NVIDIA +31%.**
+**Jegs TV, Cyberpunk 2077, 1440p, RT Overdrive preset, frame generation off** (cards: **Sapphire Pulse RX 9070** against **Palit RTX 5070 Infinity 3** - near-reference designs, not the OC cards GECID used)
+([`hIZj4MOk6fo`](https://www.youtube.com/watch?v=hIZj4MOk6fo), 2026-07-16; Cyberpunk 2077 QHD chapter @ 14:50) - the
+path-tracing case: **RTX 5070 59 avg / 49 1% low against RX 9070 45 avg / 37 1% low. NVIDIA +31%
+on the average and +32% on the 1% low.**
 
-**Testing Games, Cyberpunk 2077 RT with upscaling, 2160p** - RX 9070 39, RTX 5070 38, RX 9070 XT
-48, RTX 5070 Ti 52. A tie at the 9070/5070 tier; the 5070 Ti takes the XT tier by 8%.
+> **Corrected 2026-09-13.** This line previously read "45 avg / **41** 1% low". The overlay at
+> 15:10 reads **37**. The 41 could not be reproduced at any frame checked, and the original entry
+> recorded no timestamp, so it cannot be traced. The average, the preset and the +31% are all
+> confirmed exactly; only the 9070's 1% low was wrong, and it was wrong **in the 9070's favour** -
+> the real 1% low deficit is 32%, not 20%.
+
+**Testing Games, Cyberpunk 2077 RT with upscaling, 2160p**
+([`4UqYr3nAj90`](https://www.youtube.com/watch?v=4UqYr3nAj90), 2026-03-09; chapter @ 3:59, **re-verified
+2026-09-13**) - RX 9070 39, RTX 5070 38, RX 9070 XT 48, RTX 5070 Ti 52. A tie at the 9070/5070 tier; the 5070 Ti takes the XT tier by 8%.
 
 ### This refines the ray-tracing claim again
 
@@ -464,8 +487,22 @@ omission.**
 
 [GECID.com, 2026-06-22](https://www.youtube.com/watch?v=cUSxa4PxI4I), 30 minutes, 1440p. It is
 the most applicable test located because it compares **the exact two cards sold here** - ASUS
-Prime RTX 5070 OC and ASUS Prime RX 9070 EVO OC, same cooler family, same 2.5 slots, ~30cm -
-and the cards were **supplied by Telemart**, one of the two stores that can assemble this build.
+Prime RTX 5070 OC and ASUS Prime RX 9070 EVO OC, same cooler family, same 2.5 slots, ~30cm.
+Choosing two cards from **one series** is deliberate and good method: it isolates the GPUs from
+the board partners, which the Jegs TV comparison (Sapphire Pulse against Palit Infinity 3) does
+not do.
+
+> **Conflict of interest, recorded 2026-09-13 after reading the transcript in full.** This is not
+> only a card loan. The video runs a **paid Telemart promotion with a live discount code** -
+> *"до 5 липня за промокодом GESID 500 ви можете отримати додаткову знижку у 500 грн на всі
+> відеоприскорювачі **від ASUS**"* - and the two cards under test are ASUS. **Telemart is one of
+> the two stores that would assemble this build**, and this review is the single source this
+> document leans on hardest.
+>
+> Weigh it, do not discard it. All **fourteen** of its claims were checked line by line against
+> the transcript in [../source_audit.md](../source_audit.md) and every one is verbatim accurate,
+> and its conclusion is genuinely balanced - it ends by recommending the **RTX 5070** for buyers
+> who want no compatibility surprises, which is not what a bought review does.
 
 Its verdict, in full rather than the convenient half:
 
@@ -494,7 +531,7 @@ can be read directly.
 Written after building `code/yt_frames.py`. Figures below are read off the videos' own charts
 and overlays, not from narration or summaries.
 
-**BENCHMARKS FOR GAMERS, 13 games, 1440p, DLSS 4.5 / FSR 4.1 Quality** - its closing average
+**BENCHMARKS FOR GAMERS, 13 games, 1440p, DLSS 4.5 / FSR 4.1 Quality** ([`2ufCzwK73GM`](https://www.youtube.com/watch?v=2ufCzwK73GM), 2026-05-22; average chart @ 10:38, **re-verified 2026-09-13**) - its closing average
 chart states plainly: **"13% faster on average at 1440p"**, in the RX 9070's favour. Per-game
 percentage difference, 9070 over 5070:
 
@@ -512,11 +549,20 @@ Direction confirmed from the raw overlay rather than assumed - Forza Horizon 6 R
 **RTX 5070 73.8 avg / 65.3 1% low against RX 9070 92.4 avg / 81.2 1% low.** The same frame shows
 the 5070 at **11 230 MB of its 12 288 MB** in use - the VRAM ceiling, visible in a still.
 
-**Jegs TV, Cyberpunk 2077, 1440p, RT Overdrive preset, frame generation off** - the path-tracing
-case: **RTX 5070 59 avg / 49 1% low against RX 9070 45 avg / 41 1% low. NVIDIA +31%.**
+**Jegs TV, Cyberpunk 2077, 1440p, RT Overdrive preset, frame generation off** (cards: **Sapphire Pulse RX 9070** against **Palit RTX 5070 Infinity 3** - near-reference designs, not the OC cards GECID used)
+([`hIZj4MOk6fo`](https://www.youtube.com/watch?v=hIZj4MOk6fo), 2026-07-16; Cyberpunk 2077 QHD chapter @ 14:50) - the
+path-tracing case: **RTX 5070 59 avg / 49 1% low against RX 9070 45 avg / 37 1% low. NVIDIA +31%
+on the average and +32% on the 1% low.**
 
-**Testing Games, Cyberpunk 2077 RT with upscaling, 2160p** - RX 9070 39, RTX 5070 38, RX 9070 XT
-48, RTX 5070 Ti 52. A tie at the 9070/5070 tier; the 5070 Ti takes the XT tier by 8%.
+> **Corrected 2026-09-13.** This line previously read "45 avg / **41** 1% low". The overlay at
+> 15:10 reads **37**. The 41 could not be reproduced at any frame checked, and the original entry
+> recorded no timestamp, so it cannot be traced. The average, the preset and the +31% are all
+> confirmed exactly; only the 9070's 1% low was wrong, and it was wrong **in the 9070's favour** -
+> the real 1% low deficit is 32%, not 20%.
+
+**Testing Games, Cyberpunk 2077 RT with upscaling, 2160p**
+([`4UqYr3nAj90`](https://www.youtube.com/watch?v=4UqYr3nAj90), 2026-03-09; chapter @ 3:59, **re-verified
+2026-09-13**) - RX 9070 39, RTX 5070 38, RX 9070 XT 48, RTX 5070 Ti 52. A tie at the 9070/5070 tier; the 5070 Ti takes the XT tier by 8%.
 
 ### This refines the ray-tracing claim again
 
@@ -677,6 +723,13 @@ If you decide to take the NVIDIA path after all, the model choice looks like thi
 
 All are 16GB GDDR7 on a 256-bit bus. The MSI SHADOW at 52 399 is the price floor; the rest
 charge 2 600-7 600 for cooler and brand differences.
+
+> **Shop change, 2026-09-13.** At **click.ua**, where Dmytro buys, the **RX 9070 GRE does not
+> exist in any brand**, so the ladder moves up a rung: Lean **PowerColor RX 9060 XT 16GB
+> 29 659** (-23% on the GRE, +4GB), Working **Sapphire RX 9070 PURE 16GB 43 908** (+18%, same
+> 220W and 2x 8-pin, so no other part moves), Max **Gigabyte RX 9070 XT Gaming 16GB 52 034**
+> (+30%, 304W on 3x 8-pin, this model's cooler not assessed here). Nothing sits between the
+> 9060 XT and the 9070 there: the RTX 5060 Ti 16GB at 38 999 measures below the GRE. See [../click_basket.md](../click_basket.md).
 
 ## Evidence (revised after the deep review pass, 2026-09-09)
 

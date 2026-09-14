@@ -10,7 +10,7 @@
 > | Where | UAH | Note |
 > |---|---:|---|
 > | **Rozetka `p471010299`** (61670) | **5 990** | Dmytro's figure, 2026-09-12. Confirm whether local or EU-shipped |
-> | Rozetka `p458861459` (EAN 5707119053228) | 5 895 | **ships from the EU**, dispatch ~18 Sep, +169 delivery |
+> | Rozetka `p458861459` (EAN 5707119053228) | 5 895 | **ships from the EU**, dispatch ~18 Sep, +169 delivery. *(Listing re-read 2026-09-13: all three verified — "Кур'єр Meest International (з ЄС)", "Відправимо 18 вересня", "169₴" — plus **a 30-day return window**, double the usual 14, which is the whole exchange period for a headset that has to be worn to be judged.)* |
 > | Telemart, ITbox | 6 799 | local stock, component-shop warranty |
 >
 > **Chosen because** its microphone is the only one in the field endorsed by a measuring
@@ -101,6 +101,32 @@ file previously made** and added thirteen parameters.
 **A boom mic that clips onto ordinary headphones** — Antlion ModMic and similar. It turns any
 closed-back headphone into a headset without a desk stand. Between "one box" and "two boxes"
 there is "one and a half".
+
+### And the two-box path itself — recorded 2026-09-13, because this file quoted the source and not the verdict
+
+Kimmy's video is the source of rows 2, 14 and 15 above. It is called **"Stop Buying Headsets from
+Gaming Companies"**, and this file took her parameters without once reporting her conclusion:
+
+> *"You're paying for one product that does two things at 60%, when the same money gets you two
+> products that each do their job at 100%."*
+> *"A $150 studio headphones plus a $30 mic is like $180 in total. Now, both beat gaming headset at
+> the same price."*
+
+Her named budget picks are the **Audio-Technica M40x** (~$80, closed-back) and **Sennheiser HD 560S**
+($150, open-back — *"my top competitive pick if your room is quiet"*), plus any cheap cardioid USB
+mic on a boom arm. PC Gamer says the same thing more mildly: *"I wouldn't disregard a great pair of
+headphones for gaming simply 'cause they don't have a microphone."*
+
+**Why the decision still stands, and it is her own reasoning:** *"If wireless and all-in-one
+convenience matters more than audio accuracy, a gaming headset is still a valid choice. Just know
+the trade-off."* The requirement here is **many work calls**, wireless was explicitly allowed, and
+the winning argument was a microphone endorsed for conference calls by a measuring outlet — none of
+which the two-box path was ever asked to beat.
+
+**What is honestly open: nobody has priced the two-box path in Ukraine.** No M40x, no HD 560S, no
+USB cardioid mic has been through `ua_prices.py`. It is recorded as a gap, not put to Dmytro as a
+decision, because the headset question was settled on a requirement the two-box path does not
+address better.
 
 ## What this means for the shortlist — an interim position, later overturned
 
@@ -315,14 +341,24 @@ products — the Pro series has velour pads and an aluminium frame.
 
 ### What the audio engineer's guide adds
 
-- **Best microphone on any headphone: Sony WH-1000XM6** — fuller, more natural voice in noisy
+- **Best microphone among consumer ANC flagships: Sony WH-1000XM6** *(scope corrected 2026-09-13:
+  this said "on any headphone". The source says "the best sounding microphone **amongst flagships
+  that I've used**" — no boom-mic headset is in that comparison.)* — fuller, more natural voice in noisy
   rooms where other headphones go thin and quiet. **18 499 at Foxtrot** (XM5 13 999). Consumer
   ANC headphones with internal mics, no boom. Out of range.
 - **Best gaming headphone 2026: Fractal Design Scape** ($200) — flip-to-mute mic, 40 h,
   dongle + Bluetooth, parametric EQ through a web page, close to the Harman curve.
-  **Not sold in Ukraine** — absent from all four shops.
+  **Not sold in Ukraine** — absent from all four shops. *(Added 2026-09-13: of its microphone he
+  says only "the mic is on par with most gaming headsets". The best-sounding gaming headphone of
+  the year has an ordinary mic, which is the half of the story this row left out.)*
 - Confirms the general point this file already carries: gaming headsets trade sound quality for
   exaggerated bass, and usually need EQ to be tolerable for music.
+- **Added 2026-09-13 — three of the nine ran their own mic tests and every consumer ANC mic
+  failed the same way.** 6 Months Later records himself through five flagships: the Sony *"sounds
+  like it's underwater a little bit"*, the AirPods Max *"just sounds like right now I'm wearing
+  headphones"*. He ranks the XM6 top, as this section already says, and two other guides agree.
+  **That is an argument for a boom mic, made three times independently**, and it supports what was
+  bought rather than the consumer headphones these guides cover.
 
 ### The field after both sweeps
 
@@ -331,7 +367,7 @@ products — the Pro series has velour pads and an aluminium frame.
 | **2 389-3 499** | **Razer BlackShark V2 X** (wired) | 4.1/5 across 370 owners; HWC: cheap for audio, mic good on PC |
 | **3 199** | **SteelSeries Arctis Nova 1** (wired) | **IGN's budget winner out of 20 headsets** |
 | 5 799-6 799 | Razer Barracuda X, SteelSeries Arctis Nova 5, ASUS ROG Pelta | untested mics |
-| **6 649-6 999** | **Razer BlackShark V2 HyperSpeed** | 4.6/5; **best wireless mic in the only listening test**; owner-confirmed keyboard rejection |
+| **6 649-6 999** | **Razer BlackShark V2 HyperSpeed** | 4.6/5; **second-best wireless mic in the only listening test** *(corrected 2026-09-13: this said "best". The winner is the V2 Pro, and Hardware Canucks separates them — "it's almost like the Pro version has more bandwidth in the microphone department", and "the sidetone on the HyperSpeed is way worse versus the Pro. It's not as loud.")*; owner-confirmed keyboard rejection |
 | 7 999-8 999 | **Razer BlackShark V3** | **IGN's mid-tier winner** |
 | 18 090 | Beyerdynamic MMX 300 Pro | **best headset mic by two sources** — out of range |
 
@@ -341,9 +377,11 @@ category (**Beyerdynamic, 18 090**) is three times what Dmytro wants to spend.
 
 ## Proper online search, 2026-09-11 — measured and written sources
 
-The file rested on one YouTube listening test. Searched the written outlets the guides
-themselves name as trustworthy: **RTINGS, SoundGuys, PCWorld, Tom's Guide, GamesRadar,
-PCGamesN, Trusted Reviews.** Three things changed.
+The file rested on one YouTube listening test. Searched **RTINGS, SoundGuys, PCWorld, Tom's Guide,
+GamesRadar, PCGamesN** and **Trusted Reviews**. *(Corrected 2026-09-13: this said these were "the
+outlets the guides themselves name as trustworthy". **Three** are named by a guide — Hardware
+Canucks: "I trust BatsyTech, rtings.com, SoundGuys". The other four were this file's own choice,
+which is fine, but it is not what it said.)* Three things changed.
 
 ### SoundGuys' dedicated "gaming headsets with good microphones" list
 
@@ -522,6 +560,20 @@ Recorded because three separate claims were asserted here before being checked:
 **The pattern in all three: a source was cited before it was read.** Same failure as the
 hotline floors in [../price_check.md](../price_check.md).
 
+**A fourth pattern, found 2026-09-13 by the source audit — the scepticism runs one way.** Item 3
+above discounts the Razer Insider threads as *"a support forum — a complaint-selected sample"*, and
+that is right. But the same objection applies to the **59 positive Reddit owner reports per
+headset** that this file's final tie rests on, and it is not made. The Headphone Show, which this
+file treats as the authority on research method, states it plainly:
+
+> *"Every single forum thread on a product on Head-Fi has purchase justification in it … it turns
+> into support groups for product owners. Take the recommendations from people in product threads
+> with a grain of salt."*
+
+Both samples are self-selected in opposite directions. **The tie does not move** — both headsets
+are measured by RTINGS and both come out good — but the 71%-versus-71% figure is softer evidence
+than it reads as, and it should not be the thing that decides anything.
+
 ### The verdict
 
 **SteelSeries Arctis Nova 5 — 6 799 at Telemart or ITbox**, or 5 895 from Rozetka's EU channel
@@ -614,3 +666,72 @@ evidence is the audio itself.
 | [DON'T Buy a Gaming Headset Before Watching This](https://www.youtube.com/watch?v=We6Ta36qJ_Q) | Hardware Canucks, 2023-12 | The comfort and build section in full — clamp, pads, headband, cup shape, cable noise, weight-is-not-everything. Stereo over 7.1. Specs are meaningless. Charge-only cables. Sidetone. Application compression |
 | [Stop Buying Headsets from Gaming Companies](https://www.youtube.com/watch?v=EdbMp-wWh2A) | Kimmy, 2026-01 | **Why a headset mic picks up the keyboard** — pattern and position. Bass tuning masks footsteps. The three questions: how noisy is the room, how long the sessions, wireless or not |
 | [The Best Wireless Gaming Headset MICROPHONES](https://www.youtube.com/watch?v=7_xjpBYwm5g) | Hardware Canucks, 2023-10 | **The listening test that overturned both corrections above** and ranked the field. BlackShark V2 Pro the winner; Cloud III and G Pro X rated poorly |
+
+**All sixteen videos re-read end to end 2026-09-13** — the seven above and the nine consumer
+guides — with a quote-by-quote record in [../source_audit.md](../source_audit.md). The parameter
+tables survived intact; what changed is listed in the corrections marked through this file.
+
+**Commercial position of the sixteen, checked 2026-09-13 and not recorded here before:**
+
+| | |
+|---|---|
+| **Paid sponsors** | **Thermaltake** (the mic roundup), **be quiet!** (the buying guide — the PSU vendor of this build), Freepik, Storyblocks, Fit Nexa. **None of the five sells a headset**, so none bears on the ranking. Hardware Canucks discloses both in the description; three of the others disclose on camera. |
+| **Retailers publishing buying guides** | **The Headphone Show is headphones.com's own channel** — *"all these videos are made possible by headphones.com"* — and its return-policy rule, quoted above as research discipline, is a shop's advice that also warns against a competitor. **Audio Advice** sells headphones; **Smart Home Sounds** is a hi-fi retailer. |
+| **Affiliate links** | **Fourteen of the sixteen.** Only PC Gamer and The Headphone Show carry none. Hardware Canucks' list includes the BlackShark V2 HyperSpeed, the model this file led with before the Nova 5. |
+| **The cleanest** | This is Tech Today: *"This video was not sponsored by any of the brands mentioned or their competitors. No brand had prior review, editorial control, or influence over this video or my choices."* Mark Ellis discloses a brand partner and a loaned B&O unit on camera. |
+
+**None of this changes a parameter.** It is recorded because the file presented sixteen
+independent voices and two of them are shops selling the category.
+
+**One of the nine is four years stale behind a 2026 title** — Ali Abdaal's *"The Best Headphones
+To Buy in 2026"* was uploaded **2022-03-16** and tests the Sony XM4, the first-generation AirPods
+Max and the Microsoft Surface Headphones 2. Discounted, on the same grounds
+[mouse.md](mouse.md) discounts a 2019 guide. Its author concedes the wider point himself:
+*"all these review videos are somewhat artificial because once you have one of these headphones it
+doesn't really matter which one you have."*
+
+**One of the nine has no bearing on this country at all** — Sillycorns tests ₹1 000–3 000
+headphones from Zebronics, Boat, Noise, Blaupunkt, Boult, Spigen and Portronics. None is stocked
+by any Ukrainian shop and none has a boom mic. Written down so it need not be re-read to find out.
+
+**Added from the full reads, 2026-09-13:**
+
+- **Dongle interference has a fix.** Hardware Canucks: *"if you're encountering any sort of
+  interference and you have the dongle plugged in to the back of your motherboard, plug it to the
+  front I/O of the case instead."* The same rule DiamondLobby gives for a mouse dongle.
+- **The suspension headband cuts both ways.** Row 11 above warns that self-adjusting bands *"for
+  larger heads, this doesn't really work"* — and the chosen headset has one, credited by owners
+  with preventing headaches. Both are in this file; they had never been set against each other.
+  The owner reports are specific to this model and the warning is general, but a large head or
+  thick hair is the case where they collide.
+- **Battery perspective.** PC Gamer notes the HyperX Cloud Alpha Wireless reaches **300 hours**.
+  Against that the 81-versus-60-hour gap between the two finalists is a smaller difference than
+  the category allows for, not a ceiling.
+- **Local prices sit well above the reviewers' reference prices.** IGN calls the Beyerdynamic
+  MMX Pro worth it *"around that $300 price point"* — it is **18 090** here, roughly 45% more —
+  and his mid-tier BlackShark V3 is *"150 bucks"* against 7 999–8 999. Worth knowing before
+  reading any dollar recommendation in this file as a Ukrainian one.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 9 of the 16 headset videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`zbClh_tBl6o`](https://www.youtube.com/watch?v=zbClh_tBl6o) | 6 Months Later | 2025-11-26 | The Best Wireless Headphones to Buy in 2026 |
+| [`sBba4MGPc2U`](https://www.youtube.com/watch?v=sBba4MGPc2U) | Ali Abdaal | 2022-03-16 | The Best Headphones To Buy in 2026 🎧 |
+| [`MSBnVb5SoUE`](https://www.youtube.com/watch?v=MSBnVb5SoUE) | Audio Advice | 2024-12-24 | The ULTIMATE Headphone Buying Guide: How to Choose the PERFECT Headphones - Beginners to Audiophiles |
+| [`U358E_318NE`](https://www.youtube.com/watch?v=U358E_318NE) | CEONTHEMAKING | 2025-11-08 | I Tried Them All — Best Headphones of 2025! |
+| [`7_xjpBYwm5g`](https://www.youtube.com/watch?v=7_xjpBYwm5g) | Hardware Canucks | 2023-10-22 | The Best Wireless Gaming Headset MICROPHONES |
+| [`We6Ta36qJ_Q`](https://www.youtube.com/watch?v=We6Ta36qJ_Q) | Hardware Canucks | 2023-12-04 | DON'T Buy a Gaming Headset Before Watching This! |
+| [`lgmpDHgU_6c`](https://www.youtube.com/watch?v=lgmpDHgU_6c) | IGN | 2026-07-12 | The Best Gaming Headsets in 2026 – Budget to Best |
+| [`EdbMp-wWh2A`](https://www.youtube.com/watch?v=EdbMp-wWh2A) | Kimmy | 2026-01-31 | Stop Buying Headsets from Gaming Companies |
+| [`ljV1iOJmE_E`](https://www.youtube.com/watch?v=ljV1iOJmE_E) | Mark Ellis Reviews | 2026-07-09 | The Only ANC Headphones Worth Buying in 2026 |
+| [`vwoe1cq6-ow`](https://www.youtube.com/watch?v=vwoe1cq6-ow) | PC Gamer | 2025-02-18 | How to pick the RIGHT GAMING HEADSET / Critical Rig |
+| [`ydbi2I_HEG0`](https://www.youtube.com/watch?v=ydbi2I_HEG0) | Seven Tech | 2026-06-12 | The ONLY 5 Budget Headphones Actually Worth Buying in 2026 |
+| [`AizS4q-ThHM`](https://www.youtube.com/watch?v=AizS4q-ThHM) | Sillycorns | 2026-08-14 | The Best Budget Headphones in 2026! |
+| [`2X6XNuFXnjU`](https://www.youtube.com/watch?v=2X6XNuFXnjU) | Smart Home Sounds | 2024-01-28 | Headphone Buying Guide: Don't buy before watching THIS 🎧 |
+| [`8EQhMv39jKc`](https://www.youtube.com/watch?v=8EQhMv39jKc) | SoundGuys | 2026-07-11 | The BEST Wireless Headphones of 2026 (so far)... |
+| [`Zb_YztpDdAg`](https://www.youtube.com/watch?v=Zb_YztpDdAg) | The Headphone Show | 2025-03-09 | Don't Buy Headphones Until You Watch This |
+| [`zakPRMGlRbw`](https://www.youtube.com/watch?v=zakPRMGlRbw) | This is Tech Today | 2026-01-01 | The BEST Headphones of the Year: An AUDIO ENGINEER's Review |
+

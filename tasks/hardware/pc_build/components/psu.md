@@ -85,10 +85,25 @@ is true of the GRE but **not of the Red Devil XT, which takes three**. The 750W 
 one spare, and its 12V-2x6 (600W-rated, unused by an AMD card) is separate. Single +12V rail,
 **62.5A = the full 750W**, so there are no per-rail limits to plan around.
 
-**Answered (see the video cross-check below):** the four 6+2-pin connectors arrive on **three
-cables - one dual-head and two single-head**. For a Red Devil, use the dual-head cable for two
-of its 8-pin sockets and a single-head cable for the third; do not daisy-chain all three off one
-cable. The card's three connectors carry ~255W between them (75W comes from the slot).
+**Answered (see the video cross-check below), and corrected 2026-09-13 by the source audit:**
+PC Builder counts **three 6+2-pin connectors** on this unit, not "three cables carrying four" -
+*"it comes with three PCIE 6+2 pins"* - and adds a constraint recorded nowhere here before:
+*"One of them you have to not use the 12 V high power for."* That is a shared-port exclusion. It
+does not block this build, because **no AMD card here uses the 12V-2x6** - but that is now the
+reason the Red Devil fits, and the margin is thinner than the retailer's "four connectors"
+implies. Verify against the unit's own manual before ordering.
+
+**Cabling a 3x 8-pin card: one cable per connector, daisy-chain last.** An earlier version of
+this line said the opposite. Both sources put the singles first:
+
+- PC Builder: *"one cable per connection **for the first two** eight-pin plugs, then you can
+  daisy chain **the third**"*.
+- JayzTwoCents argues against pigtails entirely, with the spec arithmetic: an 8-pin PCIe
+  connector is rated **150W** and the slot supplies **75W**, so a daisy-chained pair is asked for
+  more than one cable's share. *"If you go with a power supply that has individual cables for
+  your pcie you are now operating perfectly within spec."*
+
+The card's three connectors carry ~255W between them (75W comes from the slot).
 
 ### Cross-check against online PSU calculators (2026-09-11)
 
@@ -123,6 +138,13 @@ Five PSU guides supplied by Dmytro, read in full via `code/yt_transcript.py`: Ge
 and 2023, PC Builder "Best PSU 2026", JayzTwoCents 2021, Tech Guided 2024. **Nothing in them
 overturns the 750W conclusion**, and three gaps in this document came out of them.
 
+**Sponsorship, added 2026-09-13.** Two of the five are vendor-sponsored and this was not
+recorded: **GeekaWhat 2023 is sponsored by Corsair** - a PSU manufacturer, in a PSU buying guide
+that then walks through Corsair units - and **GeekaWhat 2026 by ASUS**. Neither changes anything
+below; both are quoted for general rules rather than for product picks. Weigh the Corsair one
+accordingly. (Separately: the two PC Builder guides cited elsewhere in this project are
+sponsored by **Seasonic**, whose Focus GX-850 appears in the options table.)
+
 **Gap 1 - the SPL PSU tier list, which this document was not using.** Two of the five guides
 treat it as the primary quality source, and they are right to: it is a maintained, public
 teardown-based grading of nearly every unit on the market, with the OEM named. Read directly
@@ -143,12 +165,13 @@ platform runs out of excursion headroom - so in this family, buying bigger is wo
 That is the exact opposite of the "when in doubt buy more watts" instinct, and it is measured.
 
 **Gap 2 - how to cable a 3x 8-pin card, which this doc had left as an open question.** Now
-answered. The Pure Power 13 M ships **three PCIe cables carrying four 6+2-pin connectors**: one
-dual-head cable and two single-head cables. (Both counts in circulation are right - retailers
-quote four *connectors*, the video quoted three *cables*.) For a Red Devil XT:
+answered, and **corrected 2026-09-13**: the reconciliation written here previously ("retailers
+quote four *connectors*, the video quoted three *cables*") was not what the video says. PC
+Builder counts **three 6+2-pin connectors**, and says one of them cannot be used alongside the
+12V-2x6. For a Red Devil XT:
 
-> **Use the dual-head cable for two of the card's three 8-pin sockets, and one single-head
-> cable for the third.** Do not run all three from one daisy-chained cable.
+> **One cable per connector. Daisy-chain only if you run out of cables, and then only for the
+> third socket.** Do not run the first two from one daisy-chained cable.
 
 PC Builder gives the same rule generally - one cable per connector for the first two, daisy
 chain only the third if you must. Also noted: **the 12V-2x6 cable occupies two PSU-side sockets
@@ -170,9 +193,15 @@ his rule would put Max on an 850W unit, not 750W. Against it: AMD's own figure f
 is 750W, Seasonic's calculator says 700W, and the 1.5x multiplier exists to cover transients
 *without relying on ATX 3.1 certification* - which this unit holds and which is tested to 2x
 rated power. It is a deliberately conservative blanket rule for readers who will not check a
-certification. **It is also the only source of the five that would size this build above 750W**,
-and it is the reason the Max build's 64% load is worth knowing rather than a detail: if the
-number had come out at 75-80%, the rule would deserve to win.
+certification. It is the reason the Max build's 64% load is worth knowing rather than a detail:
+if the number had come out at 75-80%, the rule would deserve to win.
+
+**Corrected 2026-09-13:** this paragraph previously said the 1.5x rule was *"the only source of
+the five that would size this build above 750W"*. It is **two of five**. JayzTwoCents does not
+stop at his blanket 850W - for a card of this class he says *"i usually recommend uh a thousand
+watt power supply for anyone running any sort of high-end components ... something that's like an
+80 series gpu or higher or something like a 6800 xt or higher."* An RX 9070 XT is above that
+line.
 
 **JayzTwoCents' blanket "buy an 850W Gold" is the habit this document already corrected** - it
 is a 2021 video, predates ATX 3.x entirely, and he argues from efficiency-curve and future-GPU
@@ -307,6 +336,16 @@ I got this component wrong twice, and the Cybenetics database is why:
   list - 12V holds **11.56V at 200% load** - with 21.8 ms hold-up and 27.3 mV ripple. ATX
   3.1, 12V-2x6, rear-mounted connectors. Its one compromise is Elite 2000h bulk caps rather
   than Japanese ones.
+
+  **Why the 21.8 ms hold-up is worth more than it looks** (added 2026-09-13, from the UPS video
+  batch). A UPS does not switch to battery instantly; it has a **transfer time**, and if that
+  gap exceeds the PSU's hold-up the machine reboots *"even though it never fully loses power"*
+  (Dave's Garage). Transfer times from those sources: **offline/standby 5-20 ms**,
+  **line-interactive 2-8 ms**, with E-Katalog's rule of thumb being *"no more than 5 ms"*.
+  **21.8 ms covers a line-interactive unit with a wide margin** and would be marginal against a
+  slow offline one - and line-interactive is the type every source in that batch names for a PC.
+  The UPS itself stays **parked** by Dmytro; this is recorded because it is a point in favour of
+  the PSU already chosen.
 - **ASUS TUF Gaming 850W Gold EVO** - the unit I recommended - measures **LAMBDA A- at
   29.37 dBA**, has **no 0dB fan-stop mode at all** (ASUS states this itself), **12V ripple of
   55.5 mV** with the lab flagging high ripple at the 5V OCP trip, 1.64% load regulation, and
@@ -323,6 +362,23 @@ I got this component wrong twice, and the Cybenetics database is why:
 - **Fanless exists at this power level**: the Cooler Master X Silent Edge Platinum 850 is
   **completely fanless at 6.00 dBA** (the lab's noise floor). For a 490W desk-side machine
   that is the categorically correct answer if you can find one and your case has airflow.
+
+> **Shop change, 2026-09-13.** Dmytro buys at **click.ua**, which sells no be quiet! Pure
+> Power 13 M 750W, no Super Flower Leadex VII XG and no Montech Century 2. Its whole 750W shelf
+> was checked unit by unit against the criteria below and the answer is the **Cougar GEX X2 850
+> at 5 799** (+380), Dmytro's call 2026-09-13: ETA Gold / LAMBDA Gold, **19.01 / 19.15 dBA
+> measured**, semi-passive, **4x PCIe 6+2-pin**, SCP verified on every rail including -12V,
+> seven-year warranty. It costs ATX **3.0** rather than 3.1 and looser 12V load regulation.
+> Runner-up **Lian Li EDGE750 at 5 854** (15.40 dBA, ATX 3.1, ten years, but 3x 6+2-pin and no
+> independent review); third **MSI MAG A750GLS at 6 999**. Also checked and rejected by name:
+> DeepCool PN750M and PN850D (two samples each died in -12V short-circuit testing), Gigabyte
+> GP-P850GM (the Gamers Nexus exploding-PSU batch), 1stPlayer HA-750BA4 (only 2x 6+2-pin),
+> 1stPlayer PS-850SFX (SFX form factor, 80mm fan), Asus Prime 750W Gold (LAMBDA S++, no fan
+> stop), Asus Prime AP-750G, Chieftec GPX-850FC (ATX 2.53), Seasonic Focus GX-750 and Core
+> GC-750, Gigabyte UD750GM PG5 V2, MSI MAG A750GL, Lian Li SP750G. Table and rejections: [../click_basket.md](../click_basket.md) - including the
+> **DeepCool PN750M (5 199)**, asked about by name and rejected on a safety result: Aris tried
+> **two samples and both died during 12V short-circuit-protection testing**, and the review
+> lists no SCP at -12V. Same defect class as the Chieftec Vega M below, but demonstrated.
 
 ## Verdict (revised 2026-09-11: the 750W, not the 850W)
 
@@ -372,3 +428,16 @@ Independent support for the split: ScatterVolt's 2026 combo guide puts 650-750W 
 **Prices, 2026-09-11:** Pure Power 13 M 750W **5 419 at Telemart** (in stock), 5 291 at
 hotline floor across 29 offers. The 850W is 5 796 at Telemart. Both are among the few lines
 where hotline's floor and a real store price agree to within ~2%.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 5 of the 5 PSU videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`Xx6rFaKaqp0`](https://www.youtube.com/watch?v=Xx6rFaKaqp0) | GeekaWhat | 2023-12-29 | How to Pick the Right PSU for Your Next Gaming PC Build! 🛠️ [Options for All Budgets] |
+| [`4et8XC9QG00`](https://www.youtube.com/watch?v=4et8XC9QG00) | GeekaWhat | 2026-03-26 | How to Pick the Best PSU for a PC Build in 2026! |
+| [`bUh2EZzJZRU`](https://www.youtube.com/watch?v=bUh2EZzJZRU) | JayzTwoCents | 2021-03-13 | Beginners Guide to Power Supplies... How to understand the ratings |
+| [`SrNIbt703jo`](https://www.youtube.com/watch?v=SrNIbt703jo) | PC Builder | 2026-03-05 | 🛑STOP🛑 Buying BAD PSUs! Best Power Supply for PC 2026 / Best PSU 2026 |
+| [`SS7P63fLE_8`](https://www.youtube.com/watch?v=SS7P63fLE_8) | Tech Guided | 2024-01-11 | How to Choose A Power Supply for Beginners |
+

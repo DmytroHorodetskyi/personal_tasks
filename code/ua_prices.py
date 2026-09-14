@@ -22,6 +22,10 @@ So a part gets two kinds of evidence: the advertised spread across ~40 sellers
 (direct, one request each). Rozetka serves search over JavaScript and cannot be
 read this way - check it by hand in a browser.
 
+**click.ua is listed first because it is the shop Dmytro buys from** (stated
+2026-09-13). The other shops stay in as a cross-check on whether a click.ua
+price is fair, not as places the basket would be ordered from.
+
 Usage:
 
     PYTHONUTF8=1 venv/Scripts/python.exe code/ua_prices.py parts.json -o out.md
@@ -63,7 +67,7 @@ HEADERS = {
 # Every host this program is allowed to contact. Adding one means checking that
 # it serves search results to a plain GET, and that we would buy from it.
 ALLOWED_HOSTS = {"hotline.ua", "telemart.ua", "brain.com.ua", "www.itbox.ua",
-                 "www.foxtrot.com.ua"}
+                 "www.foxtrot.com.ua", "click.ua"}
 
 
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -275,7 +279,53 @@ def itbox(query):
     return items
 
 
-SHOPS = [("Telemart", telemart), ("Brain", brain), ("ITbox", itbox), ("Foxtrot", foxtrot)]
+CLICK_CARD = re.compile(
+    r'title="Купити ([^"]{3,200})"'   # "Купити <SKU name>"
+    r'.{0,6000}?<b class="b">([\d\s ]+)₴</b>'                # "1 699 ₴"
+    r'(.{0,300}?)</div>', re.S)
+
+
+def click(query):
+    """click.ua - the shop Dmytro buys from, so its price is the one that decides.
+
+    Its search answers a bare `?q=` with a 302 that only appends the category it
+    matched (`&group=N`). We do not follow it: the target is checked to be the
+    same host and the same path we asked for, the group number is read off it,
+    and the URL is rebuilt and requested here. Nothing off-host is requested -
+    rule 2 above is about affiliate hops to unknown resellers, and this is not
+    one.
+    """
+    base = "https://click.ua/shop/search?q=" + urllib.parse.quote(query)
+    try:
+        body = fetch(base)
+    except urllib.error.HTTPError as exc:
+        if exc.code not in (301, 302, 303, 307, 308):
+            raise
+        target = urllib.parse.urlsplit(exc.headers.get("Location") or "")
+        if target.hostname not in (None, "click.ua") or target.path != "/shop/search":
+            raise RuntimeError("click.ua redirected off its own search: %s" % target.geturl())
+        group = urllib.parse.parse_qs(target.query).get("group", [""])[0]
+        if not group.isdigit():
+            raise
+        body = fetch(base + "&group=" + group)
+
+    items = []
+    for name, price, tail in CLICK_CARD.findall(body):
+        digits = re.sub(r"[^\d]", "", price)
+        if not digits:
+            continue
+        stock = None
+        if "в наявності" in tail.lower():
+            stock = True                      # "В наявності"
+        elif ("немає" in tail.lower()
+              or "закінч" in tail.lower()):
+            stock = False                     # "Немає" / "Закінчився"
+        items.append({"name": html.unescape(name), "price": int(digits), "stock": stock})
+    return items
+
+
+SHOPS = [("click.ua", click), ("Telemart", telemart), ("Brain", brain),
+         ("ITbox", itbox), ("Foxtrot", foxtrot)]
 
 # Serve search over JavaScript - a plain GET returns an empty shell. Check by hand.
 BY_HAND = ["Rozetka", "Comfy", "КТС", "MOYO", "Citycom"]

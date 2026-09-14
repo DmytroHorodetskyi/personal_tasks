@@ -92,7 +92,7 @@ prices below before using any of them.**
 | Ryzen 7 7700X | 9 500 | 5.4 | 8c/16t | 32MB | **105W** | Eight Zen 4 cores for 1 690 under a 9700X tray - but 105W moves the cooler from the AK400 to the Phantom Spirit (+1 330), so the real saving is ~360. No. |
 | Ryzen 5 9600X (tray) | 7 570 | 5.4 | 6c/12t | 32MB | 65W | Saves 3 600 over the 9700X and costs you headroom in exactly the place a dev machine feels it - parallel tooling. No. |
 | Ryzen 5 7600X3D | 12 399 | 4.7 | 6c/12t | 96MB | 65W | Cheap way to X3D gaming, but 6 cores and the older Zen 4 core. No, for a work-first machine. |
-| **Ryzen 7 9700X (tray / box)** | **11 190 / 12 599** | **5.5** | 8c/16t | 32MB | 65W | **The value pick.** Cool, quiet, cheap to cool, 8 cores for tooling. Gives up 1% lows in CPU-heavy games. |
+| **Ryzen 7 9700X (tray / box)** | **11 190 / 12 599** *(hotline floors — the build sheet carries **13 936** BOX at Rozetka; see the note below)* | **5.5** | 8c/16t | 32MB | 65W | **The value pick.** Cool, quiet, cheap to cool, 8 cores for tooling. Gives up 1% lows in CPU-heavy games. |
 | Ryzen 7 7800X3D (tray) | 14 087 | 5.0 | 8c/16t | 96MB | 120W | Still a great gaming chip, but Zen 4 and only 5 000 below the strictly better 9800X3D. No. |
 | **Ryzen 7 9800X3D (tray / box)** | **19 230 / 19 781** | **5.2** | 8c/16t | 96MB | 120W | **The justified upgrade.** Best gaming CPU of the generation, and *also ~6% faster than the 9700X in productivity*, so it is not a gaming-only tax. |
 | Ryzen 7 9850X3D | 21 950 | **5.6** | 8c/16t | 96MB | 120W | 2026 refresh, small clock bump for +2 700. Skip. |
@@ -102,6 +102,32 @@ prices below before using any of them.**
 | Intel Core Ultra 5 245K / 245KF | ~9 500 | 5.2 | 14c (6P+8E) | 24MB | 125W | **Cheapest 14-core here.** Loses to the 9700X in games and has no upgrade path. No. |
 | Intel Core Ultra 7 265K / 265KF | ~15 000 | 5.5 | 20c (8P+12E) | 30MB | 125W | **~80% more multi-core than a 9700X**, and **18% slower in games across 100+ titles**. Buys the thing you said you don't need, at the cost of the thing you said you want. No. |
 | Intel Core Ultra 9 285K | ~21 000 | 5.7 | 24c (8P+16E) | 36MB | 125W | Measured ~24-35% behind the 9800X3D in gaming across test suites. No. |
+
+**Price provenance, added 2026-09-13 by the source audit.** Dmytro sent
+[click.ua's AM5 list](https://click.ua/configurator/catalog/protsessoryi/14=am5) asking *"Ryzen 7
+9700X Tray - is it bad? the tray? dont see BOX on click, can you check yourself?"* **He was right
+on both counts.** Of the 24 AM5 SKUs that page lists, BOX versions exist for the 7700X, 9900X,
+7900X, 9800X3D, 7600X, 7400, 7800X3D, 9950X3D and 7600 — **but not for the 9700X**, which is tray
+only there at **12 892 ₴, in stock**.
+
+**It is above the 12 599 in the table above, and that is the expected direction.** *(An earlier
+version of this note said the table's provenance was unrecorded. That was wrong — the header two
+lines above the table states it: lowest hotline.ua offer, 2026-09-09. Corrected.)* Those are
+**hotline floors, not offers**, so the real figures run higher: [price_check.md](../price_check.md)
+found the 9700X BOX at **13 936 Rozetka / 14 499 Telemart / 15 099** elsewhere, and **13 936 is
+what the build sheet carries**. click.ua's **12 892 tray** sits between the floor and the shelf,
+which is what a tray SKU should do.
+
+**The part that was never answered: it is tray-only there.** Nine other AM5 chips on that page
+have a BOX SKU and the 9700X does not, so "buy the BOX, never tray" — the rule in
+[../pc_build.md](../pc_build.md) — cannot be followed at click.ua at all. Buy it where a BOX SKU
+exists, or accept tray warranty terms knowingly.
+
+**Settled 2026-09-13: tray accepted.** Dmytro buys at click.ua and answered *"tray - idk, let it
+be"*. So Working and Max take the **9700X tray at 12 892**, knowingly on the shop's warranty
+rather than AMD's 36 months. **Lean takes the 7500F Multipack at 7 085 instead of its tray at
+6 938** - 147 more, and it bundles the Wraith Stealth that [cooling.md](cooling.md) already
+specified for that build, so it is 1 552 cheaper than tray plus an AK400.
 
 ## Real shop prices (checked 2026-09-09)
 

@@ -37,10 +37,12 @@ drives it takes, and what still plugs in three years from now. Rows ordered acco
 | 4 | **LAN speed** | Wired ethernet. | 2.5GbE is the sane floor in 2026; the pick has **5GbE**. One board here is still on **1 GbE**, which is a 2015 spec. |
 | 5 | **Front-panel USB-C header** | The internal connector that makes the *case's* front USB-C port work. | **The thing people forget.** Without it that port is dead. Present on the pick, at 20Gbps. |
 | 6 | **BIOS support: flashback and update life** | Flashback updates the BIOS with no CPU installed. Longer-term, whether the vendor keeps shipping BIOSes decides if a Zen 6 chip ever drops in. | Flash the board **before first real use** - the worst 9800X3D outcomes cluster on stale firmware. No vendor has committed to Zen 6 on B650. |
-| 7 | **Wi-Fi and Bluetooth** | Onboard module or nothing. | If you want Wi-Fi, buy it onboard - a card afterwards costs more than the board difference. Bluetooth rides along, which is how a headset or controller connects. |
+| 7 | **Wi-Fi and Bluetooth** | Onboard module or nothing. **Corroborated 3:1** (2026-09-13): Socket-X, PC Centric and GeekaWhat all require it - GeekaWhat calls it *"a red line"* for his own build company; only Paul's Hardware (2020) offers the USB-dongle alternative. | If you want Wi-Fi, buy it onboard - a card afterwards costs more than the board difference. Bluetooth rides along, which is how a headset or controller connects. |
 | 8 | **Audio codec** | ALC897 is basic; ALC1220 / **ALC4080** are audibly better. | Only matters with desktop headphones rather than USB ones. The pick has ALC4080; most of the list is ALC897. |
 | 9 | **Chipset (B650 / B850 / X870)** | Sets features and lane counts, **not speed**. B850 gives PCIe 5.0 to the GPU slot; X870 mainly adds USB4. | **B850** is the sane default. X870 costs ~4 700 more here for a port you will not use. |
 | 10 | **Form factor** | ATX / mATX / ITX. | **ATX** - cheaper per feature, better cooling, easier to build in. |
+| 11 | **Fan headers (count)** | Every case and CPU fan plugs into one. Too few and you are buying splitters and hubs. Socket-X, 2026: *"A board with only two fan headers is a trap ... Aim for at least four or five."* | **Not checked** on the pick (added 2026-09-13). The Lancool 216 ships 3 fans and the AK400 adds one, so four headers is the floor. One lookup on ASRock's spec page settles it. |
+| 12 | **Rear I/O port count** | You run out of USB faster than you expect. The same brand survey notes lower-end **ASRock** boards *"cut back harder on onboard audio or rear USB connectivity to hit aggressive pricing"*. | **Not checked** on the pick (added 2026-09-13). Worth counting against keyboard, mouse, headset, webcam and an external drive. |
 
 **Ignore:** PCIe 5.0 to the GPU (an RX 9070 XT loses nothing on 4.0 x16), advertised phase
 counts with no thermal test behind them, armour and heatsink styling, and RGB headers.
@@ -100,13 +102,33 @@ Cinebench R23 on a **170W Ryzen 9 9950X**, i.e. a far harsher test than a 120W 9
 | ASUS PRIME B650M-K | 4 530 | thin | **128 C** | ALC897 | 1G | Hardware Unboxed's worst-in-class result. **Avoid.** |
 | ~~GIGABYTE B650 GAMING X AX V2~~ | 6 199 | unknown | no data | ALC897 | 2.5G | **Withdrawn.** No tier-1 review exists; every "review" online is a content farm with contradictory specs. Owner reports of random shutdowns fixed only by RMA. Oldest platform of the group and the least likely to get a Zen 6 BIOS. |
 | GIGABYTE B850 EAGLE WIFI6E | 6 899 | 8+2+2, 60A | **over 80 C** | ALC897 | **1 GbE only** | Passed, but bottom third. Also the only board here stuck on gigabit ethernet. Acceptable for a 120W CPU; no longer my pick. |
-| ~~ASRock B850 Pro RS~~ | 6 993 | 14+2+1, 80A | **54 C - best in class** | ALC897 | 2.5G | **Withdrawn on brand risk, not hardware** - see reliability below. The plain SKU also has no Wi-Fi; you would need the "WiFi" variant. |
+| ASRock B850 Pro RS | 6 993 | 14+2+1, 80A | **54 C - best in class** | ALC897 | 2.5G | **Withdrawal scoped 2026-09-13: it applied to a 9800X3D build and this is not one** - see reliability below. The plain SKU has no Wi-Fi; the builds take the **WiFi** variant. |
 | MSI B850 GAMING PLUS WIFI | 7 979 | - | no data | - | 2.5G | Fine, undocumented. |
 | **ASUS TUF GAMING B850-PLUS WIFI** | **9 295** | 14+2+1, 80A | **54 C - 2nd of 47** | mid-tier | 2.5G | The cheaper *and* the cooler of the two good picks. 3x M.2, screw-in heatsinks, Wi-Fi 7. |
 | ~~**MSI MAG B850 TOMAHAWK WIFI**~~ | 10 293 | 14+2+1, 80A MPS | **64 C** (was quoted here as 58 C) | **ALC4080** | **5 GbE** | **No longer the pick.** Warmer than the TUF, six-layer PCB, and 11 299 at Telemart today. Best audio and networking of the group. |
 | ASUS PRIME B850-PLUS WIFI | - | weak | **110 C** | - | 2.5G | Note the name: this is the *Prime*, not the TUF. **Avoid.** |
 | MSI MAG X870 TOMAHAWK WIFI | 14 999 | | | | | Adds USB4. No. |
 | MSI MAG Z890 TOMAHAWK WIFI | 16 499 | Intel LGA1851 | | | | Only relevant if you had chosen Intel. |
+
+## Scope correction 2026-09-13: the brand risk below is a 9800X3D finding, not a board finding
+
+**The contradiction that forced this.** This file withdrew the ASRock B850 Pro RS *"on brand
+risk, not hardware"*, while all three builds in [../../pc_build.md](../../pc_build.md) ship an
+**ASRock B850 Pro RS WiFi**. One of the two had to move. **The withdrawal moves**, for a reason
+stated in this file's own reliability section:
+
+> *"The **9700X and 9600X show no failure pattern at all** - non-X3D Zen 5 looks clean."*
+
+The section below was written when [cpu.md](cpu.md)'s pick was the **9800X3D**. It is not any
+more: Working and Max take the **9700X**, Lean the **7500F**. Every documented failure in that
+section is an X3D chip - 108 cases on the 9800X3D, ~2 on the 9950X3D, one on the 9850X3D, **none
+on the non-X3D parts these builds buy**. A May 2026 brand survey (Socket-X, 406k views) separately
+says the old ASRock reputation *"doesn't really fit anymore"* and raises no reliability concern in
+its ASRock section.
+
+**So the board stays**, on its measured merits: 14+2+1 80A VRM, **54 °C - best in class** of the 47
+boards Hardware Unboxed tested, 2.5G LAN, Wi-Fi 6E on the WiFi SKU. **If the CPU ever changes to an
+X3D part, this scope correction expires and the section below applies again in full.**
 
 ## Reliability: the 9800X3D board question (this changes the pick)
 
@@ -572,3 +594,18 @@ call in the abstract, so it is decided by the event that is coming anyway:
    here. Recorded in the Zen 6 section above; no action possible before purchase.
 5. **Flash the BIOS before first real use**, then enable EXPO. Unchanged advice from the
    reliability section.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 5 of the 7 motherboard videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`BvtNCM5ms3U`](https://www.youtube.com/watch?v=BvtNCM5ms3U) | GeekaWhat | 2025-12-30 | How to Pick Parts for a Gaming PC in 2026! 👀 |
+| [`lP-pinlU-Ko`](https://www.youtube.com/watch?v=lP-pinlU-Ko) | Paul's Hardware | 2020-05-17 | How to Choose a Motherboard: 3 Levels of Skill |
+| [`PfAsVb4Bza4`](https://www.youtube.com/watch?v=PfAsVb4Bza4) | PC Centric | 2021-09-09 | How To Choose A Motherboard for Your Gaming PC! 🔧(Ryzen & Alder Lake) / AD |
+| [`7CVkfi0_mME`](https://www.youtube.com/watch?v=7CVkfi0_mME) | Socket-X | 2026-05-11 | Every Motherboard Feature Explained: What You Actually Need in 2026 |
+| [`ITBy9ckvSFY`](https://www.youtube.com/watch?v=ITBy9ckvSFY) | Socket-X | 2026-05-15 | Every 2026 Motherboard Brand Explained. What’s the Real Difference? |
+| [`fsIh2eoWLT4`](https://www.youtube.com/watch?v=fsIh2eoWLT4) | Tech Guided | 2023-12-24 | How to Choose A Motherboard for Beginners |
+| [`VgWrOSG24Yg`](https://www.youtube.com/watch?v=VgWrOSG24Yg) | Tech Notice | 2025-09-14 | Ultimate Motherboard Guide - How to understand & Choose the BEST for YOU!? |
+

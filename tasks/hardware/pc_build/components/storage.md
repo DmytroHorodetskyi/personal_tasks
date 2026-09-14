@@ -200,7 +200,21 @@ room to spare**; 512GB would start life over half full.
 
 Read via `code/yt_transcript.py`: Linus Tech Tips "Please Stop Buying the Wrong SSD"
 (2026-04), PC Builder "Best SSD for Gaming 2026" (2026-05), Tech Notice "Ultimate SSD Guide"
-(2024-12), Tech Guided "How to Choose an SSD" (2024-01, nothing usable).
+(2024-12), Tech Guided "How to Choose an SSD" (2024-01).
+
+**Corrected 2026-09-13 by the source audit.** Two things about this heading were wrong.
+**Dmytro sent eight SSD videos, not four** - these four, plus an earlier batch of four Samsung
+990 comparisons (`IqqarIpZET8`, `auaAty99KM0`, `kmxVz5jmG7A`, `hpXXptnlfFw`) that this document
+never wrote up; see [source_audit.md](../source_audit.md). And **Tech Guided is not "nothing
+usable"**: it carries the same budget heuristic this project accepts from that channel for
+motherboards - *"we recommend that you spend anywhere between 3 to 7% of your total budget on
+your SSD"*. The 990 PRO 1TB at 12 399 in the 115 389 Working build is **10.7%**, above the band.
+Not decisive on its own - the drive is chosen on QD1 latency for a work load, and the heuristic
+comes from a $1 000 build - but it should be recorded rather than dismissed.
+
+**Sponsorship, not previously recorded:** Tech Notice's guide is sponsored by **AMD Ryzen Pro**
+and PC Builder's by **VIP-SCDKey** (grey-market Windows keys). Neither bears on the storage
+conclusions.
 
 **Heat-sink SKU: conditional, not a blanket no** (revised after Dmytro asked whether these
 rules were verified - the first version of this section overstated it from one source).
@@ -250,9 +264,9 @@ Netac have all hidden it. **Verify on TechPowerUp, never from the vendor page.**
 **Gen 5: not worth paying a premium for - but that was the wrong reason to drop the Renegade
 G5.** Two independent sources agree on the general point (PC Builder: don't pay for Gen 5
 unless the deal is absurd; Tech Notice: "for 99% of people Gen 5 drives are a waste of money").
-But the same Tech Notice testing measures Gen 5 at **~20% faster on the full-system-drive
-random test** - the one chart that matters here - and names a Gen 5 drive the best they have
-tested. So Gen 5 is genuinely faster; it is the price premium that usually kills it.
+But the same Tech Notice testing names a Gen 5 drive the best they have tested.
+(**Corrected 2026-09-13:** an earlier version of this line read "~20% faster on the
+full-system-drive random test". The 20% is spoken over the **quick** system-drive chart. Removed.) So Gen 5 is genuinely faster; it is the price premium that usually kills it.
 
 **And the Kingston FURY Renegade G5 at 11 999 was *cheaper* than the 990 PRO at 12 399**, so
 the premium argument never applied to it. An earlier version of this section said "Gen 5 buys
@@ -321,7 +335,7 @@ The DRAM question is no longer abstract. **Sustained write once the SLC cache is
 
 | Drive | Post-cache write |
 |---|---|
-| Samsung 990 PRO 1TB | **~3 000-4 000 MB/s** |
+| Samsung 990 PRO 1TB | ~~**~3 000-4 000 MB/s**~~ **unsourced, withdrawn 2026-09-13 - measured ~1 350 MB/s, see below** |
 | Samsung 990 EVO Plus | 1 200-1 777 MB/s (Tom's Hardware, StorageReview) |
 | Samsung 990 EVO Plus **1TB, measured** | **~850 MB/s** (proSSD, on the exact 1TB SKU) |
 
@@ -353,15 +367,52 @@ drives by design: a 6nm controller, and it ships without a heatsink because King
 board to supply one. Reviews titled "Look, Ma, No Heatsink!" and "Super Fast, Impressively Cool"
 back that.
 
-At **11 999 against the PRO's 10 100 floor it is now +1 899**, not cheaper as this document
-previously recorded - it was compared against Telemart's 12 399. Tech Notice measured Gen 5 at
-**~20% faster on the full-system-drive random test**, so the money buys something real.
+**The "+1 899" is withdrawn, 2026-09-13.** It was 11 999 against the PRO's **hotline floor**
+of 10 100 - the exact floor-against-shop comparison this document corrects thirty lines above and
+that Dmytro caught once already. Same shop, the shop the rest of the basket comes from:
+**Telemart, G5 11 999 against 990 PRO 12 399 = the G5 is 400 cheaper.** There is no premium to
+justify.
+
+**Corrected 2026-09-13: the ~20% is attached to the wrong chart, and it is the chart that
+carried the argument.** This document said *"Tech Notice measured Gen 5 at ~20% faster on the
+full-system-drive random test"*. Read in full, he speaks the figure over the **quick** system
+drive benchmark, which he defines as *"a secondary drive on your PC ... where you store your
+little documents"*. Over the **full system drive** chart - the one he calls *"probably the most
+important graph for most people"*, and the one this build's use resembles - he says only that
+Gen 5 drives *"are on top of the chart"*, **with no figure at all**.
+
+So **that sentence is struck from this document** - Gen 5's advantage on the full-system-drive
+chart is unquantified by Tech Notice, who says only that Gen 5 drives *"are on top of the chart"*.
+But the G5's case never rested on a video figure: the like-for-like number below stands
+independently - **PCMark 10 Storage, 990 PRO 4 651 / 743 MB/s against the G5's 8 062 / 1 178
+MB/s** (StorageReview, 2TB sample - see the caveat there). Faster on a measured test, and 400
+cheaper at the same shop. **The 2026-09-11 verdict is unchanged: Max keeps the Renegade G5.**
 
 **Caveat if it is chosen:** it needs the board's Gen5 M.2 slot, which is the one nearest the CPU
 and on some boards shares lanes with the GPU slot. Confirm against the final board - that is the
 motherboard question, not this one.
 
-### Verdict - tiered, 2026-09-11
+### Shop change, 2026-09-13: the Max pick reopens on price
+
+Dmytro buys at **click.ua**, not Telemart. Every price below was read at Telemart,
+and at click.ua the ordering is different:
+
+| Drive | click.ua, in stock | Telemart, 2026-09-13 |
+|---|---:|---:|
+| WD Green SN3000 1TB | 7 483 | 6 999 |
+| Samsung 990 EVO Plus 1TB | 12 581 | 10 679 |
+| **Samsung 990 PRO 1TB** | **12 162** | 12 399 |
+| **Kingston FURY Renegade G5 1TB** | **16 700** | 13 999 |
+
+**At the shop he actually buys from, the G5 costs 4 538 more than the 990 PRO** -
+it is no longer the cheaper drive, which was half its case. The measured PCMark 10
+gap is unchanged; what changed is that there is now a real premium to weigh.
+**Settled 2026-09-13: the G5 stays in Max at 16 700** - Dmytro's call, and Max is
+not being built.**
+**Working: at click.ua the 990 PRO is 419 *cheaper* than the EVO Plus** - the EVO
+Plus question below disappears there. See [../click_basket.md](../click_basket.md).
+
+### Verdict - tiered, 2026-09-11 (priced at Telemart - see the shop change above)
 
 | Build | Drive | UAH | Why this tier gets it |
 |---|---|---:|---|
@@ -411,9 +462,10 @@ stock the EVO Plus at all**, so on the single-store basket the question does not
   full-system-drive test. **Not for this machine**, whose stated workload is containers and heavy
   repos. Take it only if the 1 500 matters more than sustained write, and accept splitting the
   order across two shops.
-- **Better but pricier: Kingston FURY Renegade G5 1TB at 11 999** (+1 899 over the PRO's floor) -
-  Gen 5, DRAM, ~20% faster on the test that matters, thermally cleared by the board's Gen5
-  heatsink. The genuine upgrade if the money is there.
+- **Better but pricier: Kingston FURY Renegade G5 1TB at 11 999** - Gen 5, DRAM, thermally
+  cleared by the board's Gen5 heatsink. The genuine upgrade if the money is there. *(Superseded:
+  the "+1 899 over the PRO's floor" and "~20% faster" in the original of this line are both
+  withdrawn - see the 2026-09-13 correction above.)*
 - **Lean build: WD Green SN3000 at 6 999** unchanged.
 
 
@@ -429,3 +481,146 @@ Dmytro asked, correctly, which of these were verified and which came from a sing
 | Gen 4 needs no drive-mounted heatsink if the board has a heat cover | PC Builder + Tech Notice. **Two.** |
 | Gen 5 drives need active thought about cooling | Tech Notice. **One.** |
 | Keep 15% free; ~600 TBW per TB; no price relief before 2027 | PC Builder (15%, outlook), Tech Notice (TBW). **One each** - industry-standard figures rather than test results. |
+
+## CLOSED 2026-09-13: the Working build's drive is the Samsung 990 PRO 1TB
+
+**Dmytro buys at click.ua**, where the **990 PRO 1TB (MZ-V9P1T0BW) is 12 162** and the **990 EVO
+Plus 1TB (MZ-V9S1T0BW) is 12 581**, both in stock, both 60-month warranty. The PRO is **419
+cheaper** and ahead on every listed spec - 7 450/6 900 against 7 150/6 300, PCIe 4.0 x4 against
+PCIe 5.0 x2, DRAM against HMB, same 600 TBW. **The cheaper drive is the better drive, so the
+sustained-write argument below decides nothing here.** It is kept because parts of it were wrong
+and must not be re-derived from the old text.
+
+**click.ua's spec tables are not trustworthy:** they swap the read and write labels, and the 990
+PRO page lists IOPS as "22 000/80 000", out by roughly 50x. Price and stock only.
+
+### CORRECTED 2026-09-13: the 990 PRO's sustained-write figure in this file was wrong
+
+**What this file said:** *"Samsung 990 PRO 1TB — ~3 000-4 000 MB/s"* post-cache, in the table
+above, with **no source named**. Dmytro asked where it came from. It came from nowhere: no
+publication, no test, no reviewer. The only place that phrasing appears is an affiliate content
+site (vividrepairs.co.uk). **It is withdrawn.** The two rows beside it were sourced and stand.
+
+**What the measurements actually say.** Same-method figures are grouped and every capacity is
+stated. **Do not scale between capacities** - an earlier version of this section said post-cache
+write "scales with die count, so 1TB is roughly half its 2TB sibling". **That is false for this
+family**, and Samsung says why: it caps direct-to-TLC write for consistency. Measured on one
+bench, the 990 PRO goes **1.4 GB/s at 2TB to "above 1.6 GB/s" at 4TB** - +15% for double the dies
+([Tom's Hardware, 4TB review](https://www.tomshardware.com/reviews/samsung-990-pro-4tb-ssd-review/2):
+*"The drive did not drop down to a folding state like most other drives in our testing, instead
+holding steady in TLC mode at above 1.6 GB/s ... the 990 Pro balances capacity and performance such
+that its non-pSLC speeds are not particularly impressive, but this is traded off for excellent
+consistency"*). The 1TB measures ~1 350 MB/s, in line with its own 2TB sibling, not half of it.
+Each row below therefore stands only for the capacity it names:
+
+| Drive | pSLC cache | Write after the cache is gone | Source |
+|---|---|---|---|
+| 990 PRO **2TB** | ~240 GB | **~1.4 GB/s** — *"After the pSLC cache runs out, the 990 Pro maintains around 1.4 GBps in a direct-to-TLC mode. This is slower than expected and, indeed, the rest of the drives in the test will all eventually out-write it."* | [Tom's Hardware](https://www.tomshardware.com/reviews/samsung-990-pro-ssd-review/2), 2022 |
+| 990 PRO **2TB** | 187 GB | **1.7 GB/s**, 1.8 GB/s average to fill | [TechPowerUp](https://www.techpowerup.com/review/samsung-990-pro-2-tb/6.html) |
+| 990 **EVO Plus 2TB** | ~226 GB | **~1.5 GB/s direct-to-TLC, ~1.8 GB/s steady state** — *"the TLC write speeds are around 1.5 GB/s, but the drive's ability to recover cache here and there means a steady state of almost 1.8 GB/s"* | [Tom's Hardware](https://www.tomshardware.com/pc-components/ssds/samsung-990-evo-plus-ssd-review/2), 2024 |
+| 990 PRO **1TB** — the SKU this build buys | **~115 GB** | **≈1 300-1 400 MB/s**, derived: a 200 GB file averaged **2 436 MB/s** end to end, *"After approx. 115 GB, the cache was full and performance was throttled"* — so the 85 GB written past the cache took ~62 s | [ssd-tester.com](https://ssd-tester.com/samsung_990_pro_1tb.html), HD Tune Pro, 2022-12-05 |
+| 990 **EVO Plus 1TB** — the SKU this build buys | ~12% of capacity | **~850 MB/s**, and the cache does not recover predictably | proSSD `hpXXptnlfFw`, on `MZ-V9S1T0BW` |
+
+**Three things follow, and one of them reverses an argument this file made.**
+
+1. **At 2TB the EVO Plus out-writes the 990 PRO post-cache** — 1.5-1.8 against 1.4 GB/s, both
+   measured by Tom's Hardware on the same bench. The DRAM does not buy sustained sequential write.
+   This file's line that the PRO buys *"3-4x sustained write"* was wrong by roughly a factor of
+   three.
+2. **At 1TB the PRO is still ahead, but by ~1.6x, not 3-4x** — ~1 350 against ~850 MB/s — and the
+   two numbers come from **different testers with different methods**, so treat the ratio as
+   indicative. No one has measured both 1TB SKUs on one bench.
+3. **What the DRAM actually buys is not sequential write.** It is the FTL lookup table: 4K random
+   read at QD1, the "does the machine feel fast" metric, and degradation as the drive fills. On
+   that the PRO is measured best in class — Tom's: *"Random read, low queue depth performance tends
+   to be relevant for a drive's 'real world' feel, and the 990 Pro is the best we've yet tested
+   here."*
+
+## The plain 990 EVO, priced and settled (2026-09-13)
+
+**The question.** [../pc_build.md](../pc_build.md) decision 1 held that the plain **Samsung 990
+EVO** — no "Plus" — might beat the shortlisted EVO Plus, on Tech Notice's finding that *"the Evo
+offers better performance in pretty much every case scenario"* (`kmxVz5jmG7A` @ 10:15). It had
+never been priced in Ukraine. It now has been.
+
+**It is not buyable here.** Prices read 2026-09-13 with `code/ua_prices.py`; hotline used only as
+a directory of who stocks what, every actionable price read at the named shop.
+
+| | **990 EVO 1TB** `MZ-V9E1T0BW` | **990 EVO Plus 1TB** `MZ-V9S1T0BW` | **990 PRO 1TB** `MZ-V9P1T0BW` |
+|---|---|---|---|
+| Telemart | **not stocked** | **10 679**, in stock | **12 399**, in stock |
+| Brain | **not stocked** | 12 581 | **12 162** |
+| ITbox (same catalogue as Brain) | **not stocked** | 12 581, in stock | **12 162**, in stock |
+| Foxtrot | not stocked | no result (HTTP 302) | not stocked |
+| Offers nationally (hotline) | **2**, both from one seller (1SERVER), 11 589 – 11 622 | 76 offers, 9 875 – 13 565 | 91 offers, 10 079 – 15 692 |
+| Rated read / write | **5 000 / 4 200 MB/s** | 7 150 / 6 300 MB/s | 7 450 / 6 900 MB/s |
+| DRAM | no — HMB | no — HMB | **yes**, 1GB LPDDR4 |
+| TBW / warranty | 600 TB / 5 y | 600 TB / 5 y | 600 TB / 5 y |
+
+Two sellers is not a supply. Neither shop that would assemble the machine carries it, its single
+advertised price is **910 above the EVO Plus** and only **573 below the 990 PRO at Brain**, and
+its listing says *"Відвантаження зі складу уточнюйте у продавця"* — stock to be confirmed with
+the seller. **Option (c) of decision 1 is answered and closed: there is nothing to buy.**
+
+**And the case for it was weaker than it read.** Tech Notice tested **2TB** samples of both the
+EVO and the EVO Plus — *"I have the two terab model of both Evo and Evo plus"* (`kmxVz5jmG7A` @
+0:33). This build buys 1TB. His charts split, they do not sweep:
+
+| Chart | Winner | Words |
+|---|---|---|
+| Quick system drive (a **secondary** documents drive) | **EVO** | EVO Plus *"about 12% slower than the 990 Evo"* (@ 4:29) |
+| Data / archive drive | **EVO** | *"that's our Samsung 990 Evo and then the Evo plus is lower down in performance"* (@ 5:37) |
+| **Full system drive** — *"how good is it when doing that"*, OS + programs | **EVO Plus** | *"this right now here is the best system drive that Samsung has offered or what I have tested"* (@ 6:47) |
+| Drive consistency — 20TB written, 20 hours | **EVO** | *"the 990 Evo is a lot higher than our 990 Evo plus ... we're about 8% slower"* (@ 9:08) |
+
+So *"better performance in pretty much every case scenario"* is three charts of four, and **the
+one it loses is the one this document chose the EVO Plus on** — the full-system-drive test. The
+plain EVO is also the slower part on paper at 1TB: **5 000 / 4 200 against 7 150 / 6 300**.
+
+**The second source on the plain EVO is against it outright.** NASCompares (`auaAty99KM0`,
+2024-02-26, affiliate-monetised) puts it last of three Samsungs: *"the newest Drive of the three
+is notably lower in terms of performance across the board arriving with the lowest ... sequential
+read and right performance"* (@ 1:43), and its use case is not this machine — *"if you're running
+a Mini PC ... a Slimline laptop ... this will be a great choice"* (@ 8:29), against *"these two
+drives in a like for like installation will do better than that drive"* (@ 10:45), the two being
+the 990 PRO and the 980 PRO.
+
+**What this leaves.** The choice for Working is **EVO Plus or 990 PRO**, and it now depends on
+which shop assembles the machine:
+
+| Basket | EVO Plus | 990 PRO | The PRO costs |
+|---|---:|---:|---|
+| **Telemart** | 10 679 | 12 399 | **+1 720** |
+| **Brain / ITbox** | 12 581 | 12 162 | **−419 — the PRO is cheaper *and* has the DRAM** |
+
+That is new and it matters more than the reviews: Brain is the shop with the **36-month assembly
+warranty** if the whole basket is bought there, and on a Brain basket the drive question
+disappears. On a Telemart basket the 1 720 buys the DRAM cache, the measured sustained write —
+**~3 000-4 000 MB/s against the 1TB EVO Plus's ~850** (proSSD, `hpXXptnlfFw`, on the exact
+`MZ-V9S1T0BW` SKU) — and an SLC cache that recovers predictably, against *"результаты не всегда
+стабильные"*.
+
+**Recommended, not decided: Working ships the 990 PRO.** The stated workload is containers, heavy
+repos and git — the write half, which is the half both HMB drives lose. Decision is Dmytro's; the
+build table is unchanged until he says.
+
+**One video cited in this file carries no content.** `IqqarIpZET8` ("Samsung 990 PRO vs Samsung
+990 EVO Plus", Gadget Rivalry, 323 views) has a 4:24 transcript consisting entirely of `[music]`
+and the word *"Heat."* — no spoken comparison exists in it. Nothing in this document rests on it,
+and nothing should.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 4 of the 8 storage videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`IqqarIpZET8`](https://www.youtube.com/watch?v=IqqarIpZET8) | Gadget Rivalry | 2026-07-06 | Samsung 990 PRO  vs Samsung 990 EVO Plus  – Best NVMe SSD for Gaming & PC? |
+| [`3uG1hGXh5xU`](https://www.youtube.com/watch?v=3uG1hGXh5xU) | Linus Tech Tips | 2026-04-08 | Please Stop Buying the Wrong SSD |
+| [`auaAty99KM0`](https://www.youtube.com/watch?v=auaAty99KM0) | NASCompares | 2024-02-26 | Samsung 990 Pro vs 990 EVO vs 980 Pro SSD Comparison - Which Is Best? |
+| [`a_eea_JHGkM`](https://www.youtube.com/watch?v=a_eea_JHGkM) | PC Builder | 2026-05-02 | 🛑 STOP Buying Bad SSDs! 🛑 Best SSD for Gaming 2026 / Best SSD 2026 |
+| [`hpXXptnlfFw`](https://www.youtube.com/watch?v=hpXXptnlfFw) | proSSD | 2025-01-29 | Что нового??? Обзор SSD Samsung 990 EVO Plus 1TB (MZ-V9S1T0BW) |
+| [`pdyniBtGcDo`](https://www.youtube.com/watch?v=pdyniBtGcDo) | Tech Guided | 2024-01-03 | How to Choose An SSD for Beginners |
+| [`kmxVz5jmG7A`](https://www.youtube.com/watch?v=kmxVz5jmG7A) | Tech Notice | 2024-11-11 | Samsung 990 EVO vs EVO PLUS - Why you're BUYING the Wrong DRIVE! |
+| [`3f9hEn5_QZw`](https://www.youtube.com/watch?v=3f9hEn5_QZw) | Tech Notice | 2024-12-19 | Ultimate SSD Guide for 2025 - Don't buy the WRONG Storage! #creators |
+

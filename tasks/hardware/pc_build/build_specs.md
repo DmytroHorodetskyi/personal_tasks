@@ -8,6 +8,21 @@ The three builds and their totals are in [../pc_build.md](../pc_build.md). The f
 in [components/](components/) - this file carries acceptance criteria only. Prices are mostly
 Telemart, 2026-09-10; they are the reference point, not a quote.
 
+> **Parts changed 2026-09-13 when the shop was settled as click.ua.** The acceptance criteria in
+> every table below still stand - that is what this file is for - but the specific parts in the
+> "Part" and "Price" rows have moved. Current basket, with the reasoning for each substitution:
+> [click_basket.md](click_basket.md).
+>
+> | Component | This file says | Now |
+> |---|---|---|
+> | CPU SKU | MPK / BOX | MPK (Lean) / **tray** - click.ua sells no BOX AM5 |
+> | GPU | 9070 GRE 12GB (Lean, Working), 9070 PURE (Max) | **9060 XT 16GB** / **9070 PURE 16GB** / **9070 XT 16GB** - the GRE is not sold there |
+> | RAM | Crucial Pro 2x16 CL36 | **Kingston Fury Beast 2x16 CL36** |
+> | SSD | 990 EVO Plus (Working) | **990 PRO** - cheaper than the EVO Plus at click.ua |
+> | PSU | be quiet! Pure Power 13 M 750W | **Cougar GEX X2 850** - the be quiet! is not sold there |
+> | Case | Lancool 216 / CC560 Limited V2 | **AeroCool D502A / P500C** - neither is sold there |
+> | Monitor | AOC Q27G4XF/ZR | **ASGARD AS275QC** (settled 2026-09-12, before the shop change) |
+
 **Every row is a measurable quantity with its unit.** Where the industry uses a label -
 "DDR5-6000", "CL36", "PCIe 4.0" - the number behind it is given too, because a label cannot be
 compared against a substitute and a number can.
@@ -109,7 +124,7 @@ AM5; no EXPO/XMP; 64GB at 59 486, which is 2.7x the price of 32GB.
 | **Price** | 6 999 | 12 399 | 12 399 | - |
 | Live alternative | - | 990 EVO Plus 1TB, 10 679 | 990 EVO Plus 1TB, 10 679 | Named best-value on the chart that matters despite having no DRAM. |
 | Capacity | 1TB | 1TB | 1TB | 270GB migrates from the current machine, and 1440p titles run 100-150GB each. 512GB starts life over half full; 2TB is money this build cannot spare. |
-| Interface | PCIe 4.0 x4, M.2 2280 | PCIe 4.0 x4, M.2 2280 | PCIe 4.0 x4, M.2 2280 | **x4 is the lane count that matters** - a x2 or x1 slot or adapter halves or quarters the ceiling. 2280 = 22mm wide, 80mm long. Gen 5 is ~20% faster on the test that matters but runs much hotter and needs the board's M.2 cooling confirmed first. |
+| Interface | PCIe 4.0 x4, M.2 2280 | PCIe 4.0 x4, M.2 2280 | PCIe 4.0 x4, M.2 2280 | **x4 is the lane count that matters** - a x2 or x1 slot or adapter halves or quarters the ceiling. 2280 = 22mm wide, 80mm long. Gen 5 measures faster on PCMark 10 Storage (990 PRO 4 651 / 743 MB/s against the Renegade G5's 8 062 / 1 178, StorageReview) but runs hotter and needs the board's M.2 cooling confirmed first. *(The "~20%" that stood here was Tech Notice's quick-system-drive figure - withdrawn 2026-09-13.)* |
 | Cache | HMB accepted | **DRAM preferred** | **DRAM preferred** | This is the only drive, so it is the OS drive - where DRAM matters most, and more as it fills. A proven HMB controller is fine; a cheap DRAM-less drive is not. |
 | Heatsink | bare SKU | bare SKU | bare SKU | The board's M.2 cover usually conflicts with the drive's own, and removing the drive's can void the warranty. |
 | The metric | random, not sequential | random, not sequential | random, not sequential | Every Gen 4 drive is within a hair on sequential. Random small I/O is what git, node_modules and container layers actually do. |

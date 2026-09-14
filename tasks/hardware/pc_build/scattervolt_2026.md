@@ -1,7 +1,7 @@
 # ScatterVolt, "Best CPU GPU Combo for Every Budget! (2026)" — full record
 
 Source: [youtu.be/UyKvDu9dZUs](https://www.youtube.com/watch?v=UyKvDu9dZUs), 49:26, published
-2026-08-16, 220k views. Read via `code/yt_transcript.py` on 2026-09-10; transcript not kept.
+2026-08-16, 220k views. Read via `code/yt_transcript.py` on 2026-09-10. **Transcript kept from 2026-09-13** at [`sources/combo_UyKvDu9dZUs.md`](sources/combo_UyKvDu9dZUs.md) - 47 476 chars, re-read end to end by the source audit, which found every tier-9 and tier-10 figure below to be verbatim accurate.
 
 **Source tier: opinion, not measurement.** A build-guide channel with no test rig and no
 methodology page, quoting US prices. Under the rules in [tools.md](tools.md) it is good for

@@ -97,6 +97,11 @@ Prices: lowest hotline.ua offer, 2026-09-09, UAH. All 2x16GB unless noted.
 ## Verdict (revised)
 
 > **Updated 2026-09-10.** Still 32GB DDR5-6000 CL36 for the Working and Max builds, but at
+> **Superseded 2026-09-13: click.ua does not stock the Crucial Pro 2x16 CL36 kit.** The build
+> takes the **Kingston Fury Beast 2x16GB DDR5-6000 CL36 (KF560C36BBE2K2-32) at 25 099** - same
+> capacity, same speed, same CL36 - and Lean the **Fury Beast 2x8GB DDR5-6000 CL30 at 17 974**.
+> See [../click_basket.md](../click_basket.md). The reasoning below is unchanged.
+>
 > store prices the kit is the **Crucial Pro at 24 099** - Telemart had no Corsair Vengeance in
 > stock. **The Crucial also wins on merit, not only availability:** 36-38-38-80 against the
 > Corsair's 36-44-44-96 at the same CL36 and data rate. The **Lean build carries 16GB** (15 599);
@@ -209,13 +214,27 @@ that gap:
   between DDR5-6000 CL30 and DDR5-6000 **CL40**. Our CL36 sits between them, and the gap shrinks
   with a slower GPU or a higher resolution. On 13th/14th-gen Intel the comparable figure was
   5.6% between CL30 and DDR5-**5200** CL40.
-- **Linus Tech Tips, February 2026** - four CPUs at eight DDR5 speeds from 4800 up. On a 9800X3D
-  and a 9950X, **anything with a tuned EXPO profile is indistinguishable**, and the spread
-  narrows further with ray tracing or at higher resolution. Their exception is productivity:
-  **their compile test did gain from faster memory**, which is the half of this machine's
-  workload that matters. They also note module capacity can matter as much as speed.
+- **Linus Tech Tips, February 2026** - four CPUs at eight DDR5 speeds from 4800 up. **Citation
+  corrected 2026-09-13:** the two CPUs say different things and an earlier version of this line
+  merged them. *"Anything with a tuned expo profile, you probably won't notice a difference"* is
+  said of the **9950X**. Of the **9800X3D** he says *"6,000 mega transfer CL30 is still the sweet
+  spot"* - so LTT names CL30, and citing him against paying for it was wrong. The spread does
+  narrow with ray tracing or at higher resolution. Their exception is productivity: **their
+  compile test did gain from faster memory**, which is the half of this machine's workload that
+  matters, and their advice for that case is explicit - *"if you're making money with your
+  machine, you might want to consider ponying up for a high-speed, low latency kit."* They also
+  note module capacity can matter as much as speed.
+- **Gamers Nexus, 2020** (`vbHyF50m-rs`, supplied by Dmytro and previously uncited) is the
+  counterweight, and it is the only source here that benchmarked **production** work against
+  memory tuning: **3.5% in Blender and 1.6% in 7-zip**, against 10-17% in games. His own
+  conclusion points the same way as this document's - once the faster memory costs ~$100 more,
+  *"you're kind of approaching just the better class of CPU."*
 
-**Net: this doc's "DDR5-6000, do not pay for CL30" verdict holds, now on measured data.**
+**Net: this doc's "DDR5-6000, do not pay for CL30" verdict holds** - but on the Hardware Unboxed
+8.5% figure and the Gamers Nexus production measurements, **not** on LTT, who names CL30 as the
+sweet spot. **The size of the compromise, stated as a number for the first time:** PC Builder's
+absolute-latency formula is CL x 2000 / speed, so the CL36 kit is **12.0 ns** against **10.0 ns**
+for 6000 CL30 and 6400 CL32, and 9.33 ns for 6000 CL28.
 
 ## Price check, 2026-09-10
 
@@ -282,8 +301,16 @@ not always printed on the PCB.
 rather than a fixed amount, so observed usage on a larger machine overstates what a game actually
 needs. Measured usage on a 32GB machine is not evidence that 16GB would have failed.
 
-**Nothing usable** came from GamingScan's "How To Choose RAM" (2019) - DDR4-era, and its
-quad-channel and four-stick advice is actively wrong for AM5.
+**GamingScan's "How To Choose RAM" (2019), re-read in full 2026-09-13 - the earlier dismissal
+was wrong on both counts.** It was recorded here as *"nothing usable ... its quad-channel and
+four-stick advice is actively wrong for AM5"*. It does not give four-stick advice: it recommends
+**two sticks** and explicitly confines quad-channel's benefit to *"servers and workstations
+running memory hungry software"*, not gaming. That is correct for AM5. It also carries the
+**never-mix-kits rule independently** - *"we don't advise combining different RAM modules
+especially ones from different manufacturers ... it can lead to some unexpected compatibility
+issues crashes"* - which is a second source for the rule this document derives from Corsair
+version numbers. What **is** genuinely obsolete is its capacity advice: *"32 gigabytes is a bit
+too much for gaming at the moment"*, DDR4-era and superseded.
 
 ## "Heavy repos" has no number, so the 32GB case rests on references (2026-09-11)
 
@@ -462,7 +489,15 @@ treats **32GB as the practical floor for a working machine and 16GB as not recom
 
 **2. The prebuilt market, at this build's exact components.** Machines sold around a **9700X
 paired with an RX 9070 GRE / 9070 / 9070 XT** ship predominantly with **32GB DDR5** -
-iBuyPower, AVGPC, VTG, Dan's Custom, Micro Center's PowerSpec among them. 16GB configurations
+iBuyPower, AVGPC, VTG, Dan's Custom, Micro Center's PowerSpec among them.
+
+> **The Ukrainian half of this, added 2026-09-13 by the source audit.** Every builder named above
+> is American, which was the weak point of this line of evidence. Dmytro had already sent two
+> Ukrainian machines and neither was ever recorded: the **ASGARD Hel at click.ua, 96 099 ₴** — a
+> Ryzen 5 8400F with an **RX 9070 XT 16GB** and **32GB DDR5-5600** — and **gamingpc.com.ua's
+> Vision 5 Pro at 119 073 ₴** — a Ryzen 7 7700 with an RTX 5070 and **32GB DDR5-5600**. **Both
+> ship 32GB**, one beside each of the two GPUs this build has considered. That is the local
+> corroboration the argument was missing. 16GB configurations
 of the same pairing do exist (CyberPowerPC lists a 9700X + 9070 GRE 12GB with 16GB DDR5-6000),
 so it is not unheard of - but 32GB is the configuration the market treats as standard for this
 class of machine.
@@ -481,3 +516,16 @@ They converge: **16GB is a gaming-acceptable budget choice and a poor working-ma
 32GB is the standard for this class.** That is exactly the split already built into the three
 tiers - Lean 16GB, Working and Max 32GB - and it is now supported by a lab, a builder, the
 publishers and the market rather than by any single argument.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 4 of the 5 RAM videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`vbHyF50m-rs`](https://www.youtube.com/watch?v=vbHyF50m-rs) | Gamers Nexus | 2020-05-22 | Intel i5-10600K Cache Ratio & RAM Overclock Beats 10900K: How Much Memory Matters |
+| [`mkpCvaBBo-c`](https://www.youtube.com/watch?v=mkpCvaBBo-c) | GamingScan | 2019-11-02 | How To Choose RAM [Ultimate Guide] |
+| [`05HRLuU--jI`](https://www.youtube.com/watch?v=05HRLuU--jI) | Linus Tech Tips | 2026-02-26 | Stop WASTING Money on Fancy RAM |
+| [`9-yjwxhmr40`](https://www.youtube.com/watch?v=9-yjwxhmr40) | PC Builder | 2026-04-11 | 🛑STOP🛑 Buying Bad RAM! Best Ram for Gaming 2026 / DDR4 vs DDR5 |
+| [`eFmQG4BuiGw`](https://www.youtube.com/watch?v=eFmQG4BuiGw) | Socket-X | 2026-05-21 | Every 2026 RAM Brand Explained. What’s the Real Difference? |
+

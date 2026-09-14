@@ -1,5 +1,39 @@
 # Monitor
 
+**Status: closed 2026-09-12 — ASGARD Gaming AS275QC, 6 999 UAH at click.ua** (Foxtrot matches
+at 6 999; Rozetka wants 7 799). 27" VA curved, WQHD 2560x1440, 200Hz, 5000:1 claimed,
+FreeSync + G-Sync, VESA 100x100, **no height adjustment**. Chosen by Dmytro.
+
+**This overturns the AOC Q27G4ZR verdict recorded below, and two rules this file was applying.**
+
+1. **"Height adjustment is not a luxury at eight hours a day"** was written by this research,
+   **not stated by Dmytro**. His monitor requirements were 27", 1440p and no 4K. The rule was
+   then used to reject monitors - the same failure as the XXL mousemat and the 70 cm desk
+   depth, where an inference hardened into a requirement.
+2. **"Reject any panel with no independent measurements"** turns out to eliminate *almost the
+   entire catalogue* at the shop actually being bought from. Checked 2026-09-12: of eleven
+   monitors offered there, exactly **one** - the Gigabyte G27Q2 - has a measured review of
+   that specific model. Even the Samsung Odyssey G5 S27CG550 has none (RTINGS tested other
+   G5 variants, not this one). A rule that admits one product is a rule about availability,
+   not about quality.
+
+**What the AS275QC does have:** two owner reviews, both positive and both specific -
+Comfy 4/5 (27 Aug 2026): 1440p at 27" is sharp, *"текстові документи та сайти читати
+одне задоволення"*, adapted to the curve in two hours, no dead pixels or bleed;
+click.ua 5/5: used for work and games, no complaints. Thin, but real owners.
+
+**Accepted trade-offs:** VA smears on dark transitions and shifts gamma at the corners more
+than IPS; the curve bows straight lines; fixed height; 8-bit colour (16.7M) against the
+Gigabyte's 10-bit and 94% DCI-P3; and the 5000:1 and "1 ms" figures are the manufacturer's,
+where "1 ms" on VA is an MPRT number rather than grey-to-grey. **14-day return covers the
+panel lottery.**
+
+**ASGARD is a Ukrainian brand**, not a shop label - also stocked by Foxtrot, Comfy, Rozetka
+and MOYO. An earlier draft of this file called it a house brand; that was wrong.
+
+**The AOC research below stands as the record of the alternative** and is still the answer if
+the AS275QC disappoints: Q27G4ZR 8 669 or Q27G4XF 6 899, both at Rozetka.
+
 ## What the monitor does for this machine
 
 It is the only component you look at, it outlives every other part (a good panel serves two
@@ -238,11 +272,17 @@ overruled by the owner. **Do not reopen it.**
 
 ### Corrections to this document
 
-**1. "Dim at 365 nits" overstates it.** RTINGS' stated threshold is that **monitors brighter
-than 300-350 nits are good enough for most well-lit rooms**. The Q27G4XF's measured **365 nits
-is above that line**, not below it. The honest phrasing is "adequate, with no headroom for a
-sunlit window", not "dim". This matters because that sentence is the main argument against the
-Lean monitor and it is weaker than written.
+**1. "Dim at 365 nits" overstates it - but so did this correction, and the two are reconciled
+here (2026-09-13).** RTINGS' stated threshold is that **monitors brighter than 300-350 nits are
+good enough for most well-lit rooms**, so the Q27G4XF's measured **365 nits is above that line**.
+But Aman, also among the six, treats **350 as a floor rather than a comfort point** - *"anything
+below that is basically cheap office-level brightness that feels just dim"* - and sets **500 nits
+as the minimum for a bright room or a desk near a window**.
+
+**The synthesis: 365 nits clears the bar for a controlled room and does not clear it for a bright
+one.** That is what the criteria table above means by "under ~400 nits is noticeably dim in a
+bright room", and the two statements no longer contradict each other. For a desk-bound work
+machine indoors this is adequate; it is not headroom.
 
 **2. Single response-time figures are not how the best lab measures motion.** RTINGS uses
 **CAD (cumulative absolute deviation)** across 72 grey-to-grey transitions in every overdrive
@@ -257,13 +297,23 @@ panels being under-measured.
 
 ### The question this pass actually opens: 240Hz or 180Hz on Working and Max
 
-Every source says the same thing about high refresh rates, and it cuts against the current pick:
+**Four of the six say the same thing about high refresh rates, one says the opposite, and one is
+silent** (corrected 2026-09-13 - this previously read "every source"):
 
 - **RTINGS:** diminishing returns - "you'll notice a bigger change between 120 and 240 Hz than
   between 240 and 360 Hz", and the frame rate has to be there to use it.
 - **Aman:** for work "60 Hz or even 120 Hz is completely fine... higher refresh rates don't
-  really make a difference in most work apps"; above that "only really matters if you're playing
-  at a high competitive level".
+  really make a difference in most work apps". His rule is to match the panel to your actual
+  frame rate: *"if your system can't reach those numbers, then there's no reason to spend extra."*
+  (The "only really matters if you're playing at a high competitive level" line quoted here
+  before is his, but it is about **response time**, not refresh rate.)
+- **The Tech Chap:** *"I think 144 or 165 Hertz is The Sweet Spot"*, and his closing
+  recommendation is *"a 27 inch 1440p 165hz IPS or VA is absolutely ideal"* - the Q27G4XF exactly.
+- **JayzTwoCents:** his sweet spot is *"27 in 1440p resolution 144 HZ refresh rate with a 1
+  millisecond response time"*.
+- **ECPU dissents:** *"240 Hz is the sweet spot for high-end and competitive gaming"*, and his
+  all-round recommendation is **144-240 Hz** at 1440p/27".
+- **MikMat Tech** does not address it, and is a 2022 video whose OLED and TN claims are obsolete.
 
 | | AOC Q27G4XF | AOC Q27G4ZR |
 |---|---|---|
@@ -389,3 +439,42 @@ Q27G4ZR's 2 930 is accepted as buying panel quality (400 cd/m2 against 300, 0.3 
 **Buy the monitor from any shop.** Neither is stocked at Brain or Telemart, both are stocked by
 a dozen others, and a monitor is a peripheral rather than a part that gets assembled into the
 machine - the single-store constraint does not reach it. Same for keyboard, mouse and desk.
+
+## The click.ua listing, re-read 2026-09-13 by the source audit
+
+Dmytro sent the listing with *"did you do proper research? … there are measurements on the same
+bloody site, did you bother to open them?"* **He was right that there are.** The page was read
+again over verified TLS; **the decision is closed and nothing here reopens it.**
+
+**Everything this file states is confirmed.** *"Монітор ASGARD Gaming 27" AS275QC VA Black Curved
+200Hz"*, **8 599 ₴ → 6 999 ₴**, *"В наявності"* — the price has not moved and it is still in stock.
+VA, WQHD 2560×1440, 200 Hz, 1 ms, curved. *"Регулювання по висоті: **відсутнє**"* — no height
+adjustment, as recorded. And the single review this file called thin but real is still the only
+one: Антон, 2026-07-28, *"Хорошее четкое изображение, плавная картинка без рывков в динамичных
+играх"*.
+
+**Three specifications on that page are not in this file:**
+
+| | |
+|---|---|
+| **Brightness** | **300 cd/m²** — dimmer than the AOC Q27G4ZR's measured 365-434 nits recorded above, and low for a bright room |
+| **Contrast** | **5000:1** — the VA advantage over the IPS alternatives' ~1200:1, and the reason blacks look better on this panel |
+| **Inputs** | **2 × HDMI and 2 × DisplayPort** — four inputs, where the AOC has one DisplayPort. *(Relevant to [../peripherals/laptop_display.md](../peripherals/laptop_display.md): a spare input is how a laptop shares the desk screen.)* |
+| Also | 2 × 2 W speakers, AMD FreeSync and Nvidia G-Sync |
+
+**None of this changes the pick**, which was Dmytro's on stated criteria. It is recorded because
+the file argued the monitor without ever quoting the numbers on the page he pointed at.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 6 of the 6 monitor videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`6F0iI_OxU9E`](https://www.youtube.com/watch?v=6F0iI_OxU9E) | Aman | 2026-04-06 | If You’re About to Buy a Monitor, Watch This First |
+| [`2adjvq793Dc`](https://www.youtube.com/watch?v=2adjvq793Dc) | ECPU | 2026-03-26 | How to Choose a Monitor in 2026 |
+| [`mtA4hqZb4IE`](https://www.youtube.com/watch?v=mtA4hqZb4IE) | JayzTwoCents | 2024-12-31 | Ultimate Gaming Monitor Guide: Find the BEST Screen for Your Setup |
+| [`yKvj63oG7D0`](https://www.youtube.com/watch?v=yKvj63oG7D0) | MikMat Tech | 2022-04-15 | You Bought The WRONG Monitor! (Monitor Panels Explained) |
+| [`u2VbWEKHCWU`](https://www.youtube.com/watch?v=u2VbWEKHCWU) | RTINGS Computer | 2026-05-26 | How to Buy The Right Gaming Monitor (For Your Needs) |
+| [`ptUchraop3c`](https://www.youtube.com/watch?v=ptUchraop3c) | The Tech Chap | 2023-05-20 | Monitor Buying Guide - What You NEED to Know! |
+

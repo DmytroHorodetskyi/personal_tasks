@@ -157,16 +157,26 @@ Sources: Tech Guided *How to Choose A PC Case* (2024-01), CORSAIR/Linus *How to 
 case* (2019, vendor), Mr Matt Lee *Case Sizes Explained* (2025-03), **PC Builder *Best PC Case
 2026*** (2026-03) and **GeekaWhat *Best PC Cases to Buy Right Now*** (2025-09).
 
-**None of the five contains a thermal or noise measurement.** They are buying guides; the
-recommendations in them are US-market cases (Thermaltake V170, Okonos Aqua 3/7, Montech XR,
-Gamdias Atlas M1) that are not sold here. This document already rests on **Gamers Nexus
-noise-normalised data**, which outranks all five. **Nothing in them changes the Lancool 216.**
+**None of the five contains a thermal or noise measurement.** They are buying guides, and this
+was re-confirmed by reading all five end to end on 2026-09-13. This document rests on **Gamers
+Nexus noise-normalised data**, which outranks all five, and the CC560 V2's lack of a lab test is
+not closed by anything in them.
+
+**But one of them endorses the pick, and that was left out (added 2026-09-13).** The
+US-market cases listed here before - Thermaltake V170, Okonos Aqua 3/7, Montech XR, Gamdias
+Atlas M1 - are PC Builder's *budget and mid-range* picks. His premium section says: **"my
+favorite front intake PC case of all time, and that is the Lancool 216."** And his reason is the
+stated criterion rather than looks: *"The two fans in the front are 160 mm ARGB ... You can spin
+these fans much slower and get similar air flow to for instance 3 120 millimeter fans and they're
+almost silent."* That is an airflow-per-noise argument for exactly the two 160mm intakes in the
+table below. It does not change the pick - it supports it.
 
 What they do add is a set of checkable rules, applied here:
 
 | Rule | Source | This build |
 |---|---|---|
-| **Mesh front is the single biggest thermal decision** | all five | Both picks have one. Already the first row of the criteria table above |
+| **Mesh front is the single biggest thermal decision** | **four of five** (corrected 2026-09-13: Tech Guided, Mr Matt Lee, GeekaWhat, PC Builder. The **CORSAIR 2019 video never mentions mesh** - it is a five-minute vendor advertisement) | Both picks have one. Already the first row of the criteria table above |
+| **At least an inch of clearance between the PSU shroud and the GPU's fans**, or you *"increase noise levels while simultaneously restricting the airflow"* | Mr Matt Lee (added 2026-09-13) | **Not checked.** Worth measuring against both cases with a ~327mm Hellhound GRE - it is a noise-and-thermals rule, which is the whole brief |
 | **Minimum 2 intake + 1 exhaust fan** | PC Builder 2026 | **Lancool 216: 2x 160mm front intake + 1x 140mm rear** - meets it exactly. **CC560 V2: 3x 120mm front + 1x 120mm rear** (verified on Deepcool's own spec) - meets it with one to spare. **Neither build needs a fan purchase** |
 | **Spend 5-10% of the build budget on the case including fans** | PC Builder, Tech Guided | Working 4 949 / 116 405 = **4.3%**; Lean 2 280 / 90 687 = **2.5%**. **Both below the band** - this build is not overspending on cases, and the Lean case is at the floor of what the rule considers sane |
 | **Negative pressure is acceptable in 2026** (metal mesh intercepts dust); filters belong on intakes only, not exhausts | PC Builder 2026 | No action. Lancool has front/top/bottom filters, CC560 V2 a magnetic top filter |
@@ -193,6 +203,12 @@ measures anything. Only a lab test can.
 
 ## DECISION (2026-09-11): both cases settled, question closed
 
+> **Superseded 2026-09-13 by the shop, not by the reasoning.** click.ua stocks **neither** the
+> Lancool 216 nor the CC560 Limited V2. The build takes the two AeroCool cases Dmytro picked
+> there instead - **D502A-G-WT-v1 3 056** (Working, Max) and **P500C-G-WT-v1 3 045** (Lean) -
+> both specced against this file's criteria below and cleared. See
+> [../click_basket.md](../click_basket.md).
+
 **Working + Max: Lian Li Lancool 216, 4 949. Lean: Deepcool CC560 V2, 2 280.** Dmytro's call,
 made on the stated thermals-and-noise-only criteria.
 
@@ -204,3 +220,72 @@ purpose is being cheap. Known and accepted consequences: no lab noise number, an
 USB-C port** despite the board having the header.
 
 **No case fans to buy** in either build.
+
+## Front USB-C and clearances: checked 2026-09-13, the D502A build is clean
+
+The build at [click_basket.md](../click_basket.md) pairs the **AeroCool D502A-G-WT-v1** with the
+**ASRock B850 Pro RS WiFi**. Both sides read off the makers' own specification pages, not a shop
+listing:
+
+| | Stated |
+|---|---|
+| ASRock B850 Pro RS WiFi internal headers | *"2 x USB 2.0 Headers ... 2 x USB 3.2 Gen1 Headers ... **1 x Front Panel Type C USB 3.2 Gen2x2 Header (20 Gb/s)**"* |
+| AeroCool D502A I/O ports | *"**Type C x 1** | USB3.0 x 2 | HD Audio & Mic."* |
+
+**The front USB-C port will work.** This was open since the case was chosen and is now closed.
+
+**Clearances from the same AeroCool page, against the parts actually being bought:**
+
+| Limit | Case allows | The part | Margin |
+|---|---|---|---|
+| CPU cooler height | **171mm** | Deepcool AK400, 155mm | 16mm |
+| GPU length (no front radiator) | **400mm** | Sapphire RX 9070 PURE, ~320mm | ~80mm |
+| PSU length incl. cables | **220mm** | Cougar GEX X2 850, **140mm** | 80mm |
+
+Also on record from that page: **four ARGB fans included** (3x 120mm front + 1x 120mm rear),
+internal cable depth **19.6mm**, SPCC body, 0.5mm steel.
+
+## Two cases Dmytro asked about and this file never answered
+
+**Added 2026-09-13 by the source audit.** On 2026-09-12 he sent two click.ua listings and asked
+*"i also chose this case. is it ok? please check per our reqs"* and then *"this one?"*. **No
+document in this repo recorded an answer.** Both are priced and specified here so the question is
+closed on the record. **The decision above stays as it is** — Lancool 216 and CC560 V2, Dmytro's
+call on stated criteria — and nothing below reopens it.
+
+| | **AeroCool P500C-G-WT-v1** | **AeroCool D502A-G-WT-v1** |
+|---|---|---|
+| SKU | ACCM-PN01043.21 White | ACCM-DS02043.21 White |
+| **UAH, click.ua, 2026-09-13** | **3 045** (from 3 199), in stock | **3 056** (from 3 599), in stock |
+| Size | 398 × 285 × 476 mm | 477 × 213 × 461 mm |
+| **Max GPU** | **450 mm** | **400 mm** (without a front radiator) |
+| **Max cooler** | **162 mm** | **171 mm** |
+| Fans included | **4 × 120 mm ARGB** — 3 side + 1 rear | **4 × ARGB** — 3 front + 1 rear |
+| Front panel | not stated | **2 × USB 3.x, 1 × USB Type-C, 1 × audio** |
+| Dust filters | magnetic, top and bottom | magnetic top and side, removable bottom |
+| Glass | curved tempered, front **and** side | metal/glass, 0.5 mm steel |
+| Radiators | 120/240/280/360 top, 120/240/360 bottom, 120/240/280 side, 120 rear | not stated |
+
+**The one thing this settles elsewhere.** [pc_build.md](../../pc_build.md) and the source audit
+both assert that *"the AeroCool D502A has front USB-C"* while noting the board's header was never
+matched to a case. **The listing confirms it**: *"2 USB 3.x, 1 USB Type-C, 1 audio"*. That claim
+was accurate and, until now, unverified.
+
+**Against this file's own criteria**, both clear the mechanical bars — 450 mm and 400 mm of GPU
+room against a 304 mm card, 162 mm and 171 mm of cooler height against a 155 mm AK400 — and both
+include four fans. What neither has is a **lab noise figure**, which is the same gap the CC560 V2
+was accepted with. Recorded as information, not as a candidate: the question was closed on
+2026-09-11 and is not reopened here.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 5 of the 5 case videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`sDqOUfqcLY0`](https://www.youtube.com/watch?v=sDqOUfqcLY0) | CORSAIR | 2019-08-10 | How to choose your next case |
+| [`fLxP3u4xho0`](https://www.youtube.com/watch?v=fLxP3u4xho0) | GeekaWhat | 2025-09-30 | Best PC Cases to Buy Right Now! 🛠️ [Options for All Budgets & Form Factors] |
+| [`xhy4KrcbcQA`](https://www.youtube.com/watch?v=xhy4KrcbcQA) | Mr Matt Lee | 2025-03-10 | Which Size Case is Right For You? Gaming PC Case Sizes Explained. |
+| [`bT_SznZRKpA`](https://www.youtube.com/watch?v=bT_SznZRKpA) | PC Builder | 2026-03-12 | 🛑STOP🛑 Buying Bad PC Cases! Best PC Case 2025 - ATX / mATX / Mini ITX PC Cases |
+| [`vhyqtZx0NHM`](https://www.youtube.com/watch?v=vhyqtZx0NHM) | Tech Guided | 2024-01-06 | How to Choose A PC Case for Beginners |
+

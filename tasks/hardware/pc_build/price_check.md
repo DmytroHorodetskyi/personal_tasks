@@ -1,5 +1,11 @@
 # Price check across shops, 2026-09-11
 
+> **Shop settled 2026-09-13: Dmytro buys at click.ua.** Every table below was
+> built around Telemart because `code/ua_prices.py` contacted four shops and
+> click.ua was not one of them - a tooling gap, never a preference. click.ua is
+> now in the script and priced first. **See [click_basket.md](click_basket.md)**;
+> the shops below are a fairness cross-check, not where the basket is ordered.
+
 Every part in all three builds, priced at **named retailers and checked for
 stock** - not at a hotline floor. Run with
 [`code/ua_prices.py`](../../../code/ua_prices.py) against [parts.json](parts.json);
@@ -132,6 +138,11 @@ Two corrections that do not move money but prevent a wrong purchase:
 | **Total** | **92 092** | **117 059** | **126 199** |
 | Was carried | 85 287 | 114 859 | 124 279 |
 | Change | **+6 805** | **+2 200** | **+1 920** |
+
+> **Superseded in one row, 2026-09-12.** The monitor is now the **ASGARD AS275QC at 6 999** in
+> all three builds - see [components/monitor.md](components/monitor.md). Totals become
+> **92 192 / 115 389 / 124 529**. The table above is left as the record of the 2026-09-11 pass
+> and is not rewritten.
 
 **All three still fit the 130 000 range**, Max with **3 801** to spare - down from
 the 5 388 the old numbers claimed, so the headroom is thinner than it looked but

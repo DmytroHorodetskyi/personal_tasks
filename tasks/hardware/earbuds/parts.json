@@ -1,0 +1,12 @@
+[
+ {"name": "Anker Soundcore Liberty 5 Pro", "query": "Soundcore Liberty 5 Pro", "match": ["Liberty 5"], "exclude": [], "shop_query": "Soundcore Liberty 5", "shop_match": ["Liberty 5"], "shop_exclude": []},
+ {"name": "Anker Soundcore Liberty 5", "query": "Soundcore Liberty 5", "match": ["Liberty 5"], "exclude": ["Pro"], "shop_query": "Soundcore Liberty 5", "shop_match": ["Liberty 5"], "shop_exclude": ["Pro"]},
+ {"name": "OnePlus Buds 4", "query": "OnePlus Buds 4", "match": ["Buds 4"], "exclude": ["Pro"], "shop_query": "OnePlus Buds 4", "shop_match": ["Buds 4"], "shop_exclude": []},
+ {"name": "CMF Buds Pro 2", "query": "CMF Buds Pro 2", "match": ["Buds Pro 2"], "exclude": [], "shop_query": "CMF Buds Pro 2", "shop_match": ["CMF"], "shop_exclude": []},
+ {"name": "Anker Soundcore P31i", "query": "Soundcore P31i", "match": ["P31i"], "exclude": [], "shop_query": "Soundcore P31i", "shop_match": ["P31i"], "shop_exclude": []},
+ {"name": "Huawei FreeBuds 6i", "query": "Huawei FreeBuds 6i", "match": ["FreeBuds 6i"], "exclude": [], "shop_query": "FreeBuds 6i", "shop_match": ["6i"], "shop_exclude": []},
+ {"name": "Nothing Ear 3a", "query": "Nothing Ear 3a", "match": ["Ear"], "exclude": [], "shop_query": "Nothing Ear", "shop_match": ["Nothing"], "shop_exclude": []},
+ {"name": "Sony WF-1000XM5", "query": "Sony WF-1000XM5", "match": ["XM5"], "exclude": ["WH"], "shop_query": "WF-1000XM5", "shop_match": ["XM5"], "shop_exclude": ["WH"]},
+ {"name": "Technics EAH-AZ80", "query": "Technics EAH-AZ80", "match": ["AZ80"], "exclude": [], "shop_query": "EAH-AZ80", "shop_match": ["AZ80"], "shop_exclude": []},
+ {"name": "Samsung Galaxy Buds3 FE", "query": "Samsung Galaxy Buds3 FE", "match": ["Buds"], "exclude": [], "shop_query": "Galaxy Buds3 FE", "shop_match": ["Buds"], "shop_exclude": []}
+]

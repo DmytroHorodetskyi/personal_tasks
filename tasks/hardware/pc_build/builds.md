@@ -2,74 +2,74 @@
 
 # The three builds, costed
 
-Shop prices, stock-checked 2026-09-11, from [price_check.md](price_check.md).
+Prices read at **click.ua** and stock-checked 2026-09-13 - the shop Dmytro buys from.
+Working from [click_basket.md](click_basket.md); other shops in [price_check.md](price_check.md).
 Peripherals are budgeted separately and listed at the end.
 
 ## Totals
 
 | Build | UAH |
 |---|---:|
-| Lean - 6 cores, 12GB card, 16GB RAM, 180Hz | 92 092 |
-| Working - the recommendation | 117 059 |
-| Max - RX 9070 16GB, faster SSD | 126 199 |
+| Lean - 6 cores, 16GB card, 16GB RAM | 94 475 |
+| Working - the recommendation | 129 581 |
+| Max - RX 9070 XT, Gen 5 SSD | 142 245 |
 
-### Lean - 6 cores, 12GB card, 16GB RAM, 180Hz - 92 092 UAH
-
-| Part | Model | UAH | Shop |
-|---|---|---:|---|
-| CPU | Ryzen 5 7500F (tray) | 6 519 | Brain |
-| Motherboard | ASRock B850M Pro RS WiFi (mATX) | 6 965 | Telemart |
-| RAM | 16GB (2x8) DDR5-6000 | 16 035 | Rozetka |
-| GPU | Radeon RX 9070 GRE 12GB | 32 179 | Telemart |
-| SSD | WD Green SN3000 1TB | 6 999 | Telemart |
-| PSU | be quiet! Pure Power 13 M 750W | 5 419 | Telemart |
-| Cooler | Deepcool AK400 | 1 699 | Telemart |
-| Case | Deepcool CC560 Limited V2 | 2 280 | Rozetka |
-| Monitor | AOC Q27G4XF 27in 1440p 180Hz | 6 899 | Rozetka |
-| OS | Windows 11 Home | 7 098 | Brain |
-| | **Total** | **92 092** | |
-
-### Working - the recommendation - 117 059 UAH
+### Lean - 6 cores, 16GB card, 16GB RAM - 94 475 UAH
 
 | Part | Model | UAH | Shop |
 |---|---|---:|---|
-| CPU | Ryzen 7 9700X (BOX) | 13 936 | Rozetka |
-| Motherboard | ASRock B850 Pro RS WiFi (ATX) | 8 642 | Rozetka |
-| RAM | 32GB (2x16) DDR5-6000 CL36 | 23 789 | Rozetka |
-| GPU | Radeon RX 9070 GRE 12GB | 32 179 | Telemart |
-| SSD | Samsung 990 EVO Plus 1TB | 10 679 | Telemart |
-| PSU | be quiet! Pure Power 13 M 750W | 5 419 | Telemart |
-| Cooler | Deepcool AK400 | 1 699 | Telemart |
-| Case | Lian Li Lancool 216 | 4 949 | Telemart |
-| Monitor | AOC Q27G4ZR 27in 1440p 240Hz | 8 669 | Rozetka |
-| OS | Windows 11 Home | 7 098 | Brain |
-| | **Total** | **117 059** | |
+| CPU | Ryzen 5 7500F (Multipack, bundled cooler) | 7 085 | click.ua |
+| Motherboard | ASRock B850M Pro RS WiFi (mATX) | 7 632 | click.ua |
+| RAM | Kingston Fury Beast 16GB (2x8) DDR5-6000 CL30 | 17 974 | click.ua |
+| GPU | PowerColor RX 9060 XT 16GB Hellhound | 29 659 | click.ua |
+| SSD | WD Green SN3000 1TB | 7 483 | click.ua |
+| PSU | Cougar GEX X2 850 850W | 5 799 | click.ua |
+| Case | AeroCool P500C-G-WT-v1 | 3 045 | click.ua |
+| Monitor | ASGARD AS275QC 27in 1440p 200Hz VA | 6 999 | click.ua |
+| OS | Windows 11 Home | 8 799 | click.ua |
+| | **Total** | **94 475** | |
 
-### Max - RX 9070 16GB, faster SSD - 126 199 UAH
+### Working - the recommendation - 129 581 UAH
 
 | Part | Model | UAH | Shop |
 |---|---|---:|---|
-| CPU | Ryzen 7 9700X (BOX) | 13 936 | Rozetka |
-| Motherboard | ASRock B850 Pro RS WiFi (ATX) | 8 642 | Rozetka |
-| RAM | 32GB (2x16) DDR5-6000 CL36 | 23 789 | Rozetka |
-| GPU | Sapphire RX 9070 16GB PURE | 39 999 | Telemart |
-| SSD | Kingston Renegade G5 1TB | 11 999 | Telemart |
-| PSU | be quiet! Pure Power 13 M 750W | 5 419 | Telemart |
-| Cooler | Deepcool AK400 | 1 699 | Telemart |
-| Case | Lian Li Lancool 216 | 4 949 | Telemart |
-| Monitor | AOC Q27G4ZR 27in 1440p 240Hz | 8 669 | Rozetka |
-| OS | Windows 11 Home | 7 098 | Brain |
-| | **Total** | **126 199** | |
+| CPU | Ryzen 7 9700X (tray) | 12 892 | click.ua |
+| Motherboard | ASRock B850 Pro RS WiFi (ATX) | 9 168 | click.ua |
+| RAM | Kingston Fury Beast 32GB (2x16) DDR5-6000 CL36 | 25 099 | click.ua |
+| GPU | Sapphire RX 9070 16GB PURE | 43 908 | click.ua |
+| SSD | Samsung 990 PRO 1TB | 12 162 | click.ua |
+| PSU | Cougar GEX X2 850 850W | 5 799 | click.ua |
+| Cooler | Deepcool AK400 | 1 699 | click.ua |
+| Case | AeroCool D502A-G-WT-v1 | 3 056 | click.ua |
+| Monitor | ASGARD AS275QC 27in 1440p 200Hz VA | 6 999 | click.ua |
+| OS | Windows 11 Home | 8 799 | click.ua |
+| | **Total** | **129 581** | |
 
-Variant: **ASUS TUF B850-PLUS WIFI (ATX)** instead of ASRock B850 Pro RS WiFi (ATX), if Brain quotes rather than Telemart - 126 956 total (+757).
+### Max - RX 9070 XT, Gen 5 SSD - 142 245 UAH
+
+| Part | Model | UAH | Shop |
+|---|---|---:|---|
+| CPU | Ryzen 7 9700X (tray) | 12 892 | click.ua |
+| Motherboard | ASRock B850 Pro RS WiFi (ATX) | 9 168 | click.ua |
+| RAM | Kingston Fury Beast 32GB (2x16) DDR5-6000 CL36 | 25 099 | click.ua |
+| GPU | Gigabyte RX 9070 XT 16GB Gaming | 52 034 | click.ua |
+| SSD | Kingston FURY Renegade G5 1TB | 16 700 | click.ua |
+| PSU | Cougar GEX X2 850 850W | 5 799 | click.ua |
+| Cooler | Deepcool AK400 | 1 699 | click.ua |
+| Case | AeroCool D502A-G-WT-v1 | 3 056 | click.ua |
+| Monitor | ASGARD AS275QC 27in 1440p 200Hz VA | 6 999 | click.ua |
+| OS | Windows 11 Home | 8 799 | click.ua |
+| | **Total** | **142 245** | |
+
+Variant: **ASUS TUF B850-PLUS WIFI (ATX)** instead of ASRock B850 Pro RS WiFi (ATX), the alternative board priced in ../pc_build.md - 143 053 total (+808).
 
 ### Peripherals (separate budget) - 13 481 UAH
 
 | Part | Model | UAH | Shop |
 |---|---|---:|---|
-| Keyboard | AULA F75 Pink Switch, wired | 1 699 | Brain / ITbox / Foxtrot / Telemart |
-| Mouse | Razer Cobra, wired, 58 g | 2 499 | Telemart / ITbox / Foxtrot |
-| Mouse mat | A4Tech X7-300MP, 437x350 | 299 | Telemart / Brain / ITbox |
+| Keyboard | AULA F75 Pink Switch, wired | 1 699 | Brain / ITbox / Foxtrot |
+| Mouse | Razer Cobra, wired, 58 g | 2 499 | ITbox / Foxtrot |
+| Mouse mat | A4Tech X7-300MP, 437x350 | 299 | Brain / ITbox |
 | Headphones | SteelSeries Arctis Nova 5 Wireless | 5 990 | Rozetka |
 | Desk | Стіл Оптима L, 138x82x75 | 2 994 | Rozetka (+ delivery) |
 | | **Total** | **13 481** | |

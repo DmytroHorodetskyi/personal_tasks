@@ -30,8 +30,11 @@ than a guess.
 
 ## Fit: the two measurements, and what they rule out
 
-Added 2026-09-11 after eight buyer's guides were checked (sources at the bottom). Five of the
-eight open on this and treat everything else as secondary.
+Added 2026-09-11 after eight buyer's guides were checked (sources at the bottom). **Four of the
+eight** open on this and treat everything else as secondary — Rocket Jump Ninja ×2 and Kimmy open
+on the measurements, DiamondLobby 2024 opens on shape. *(Was "five of the eight"; recounted
+2026-09-13. DiamondLobby 2026, Hardware Canucks and GamingScan all open on sensors or marketing,
+and the LTT video is not a buyer's guide.)*
 
 **How to measure** — do it once, it takes a minute:
 
@@ -45,8 +48,26 @@ eight open on this and treat everything else as secondary.
 
 | Source | Rule |
 |---|---|
-| Rocket Jump Ninja (21 years of FPS reviews) | Mouse dimensions ≈ **60%** of hand measurements; mouse length ≈ length of the middle finger back to the knuckle. Grip width is the measurement that decides aim; length decides comfort. |
+| Rocket Jump Ninja (10 years of mouse reviews) | Mouse dimensions ≈ **60%** of hand measurements; mouse length ≈ length of the middle finger back to the knuckle. Grip width is the measurement that decides aim; length decides comfort — his words: *"that's the one that affects aim the most, so not comfort but your aim potential"*. |
 | Kimmy (40+ mice tested) | Hand under 17.5 cm = small, 17.5–19 cm = medium, 19 cm+ = large. Medium hands → mouse length ~115–125 mm. Hand width under 8 cm → grip width 53–58 mm; ~8–9 cm → 57–60 mm; 9 cm+ → 62–64 mm. |
+
+**Corrected 2026-09-13 by the source audit:** this table credited Rocket Jump Ninja with
+*"21 years of FPS reviews"*. That number is off his site banner — *"100+ mouse reviews from over
+21 years of FPS/Quake Experience"* — and describes how long he has **played**, not reviewed. In
+the video he says *"10 years ago, I started doing mouse reviews."*
+
+**And the band below is Kimmy's *medium* band.** By her own rule *"large is like 19 plus"*, a
+19.0 cm hand is large, and for large hands she says *"anything above is okay"*. So the 115–125 mm
+target is the conservative reading, not the only one, and it does **not** rule out the 125.8 mm
+G Pro X Superlight 2 Dex or the 128 mm DeathAdder V3 the way this file used it to. It changes
+nothing about the pick — three millimetres off a shell already known to suit the hand beats any
+band — but the band is not the fence it was being used as.
+
+**A third source disputes the measuring method itself.** DiamondLobby measures the hand *relaxed*,
+not flat: *"I think it's best to measure it when it's in a relaxed and natural position, as that's
+closer to how your hand is going to be when it's on a mouse. My 18 by 10 cm hands when flat on a
+desk are actually 15 by 10 cm in a relaxed position."* On that method every flat-hand number above
+is ~3 cm long. Recorded because two sources are not a consensus when the third measures differently.
 
 Tools both name: **rocketjumpninja.com/mouse-search** (takes hand length + width + grip type,
 returns mice with their length and grip width), **eloshapes.com** (2D outline overlays, misses
@@ -59,36 +80,71 @@ numbness or cramping after two weeks is the wrong mouse.
 ## What eight buyer's guides agree on
 
 Checked 2026-09-11: Rocket Jump Ninja ×2, DiamondLobby ×2, Kimmy, Hardware Canucks, Linus Tech
-Tips, GamingScan.
+Tips, GamingScan. **All eight re-read end to end 2026-09-13** — the counts below were recounted
+and three of them were wrong; see [../source_audit.md](../source_audit.md).
 
-- **Shape and fit beat every spec on the box.** Unanimous among the seven current ones.
+- **Shape and fit beat every spec on the box.** **Six of the seven current ones** say so
+  explicitly. *(Was "unanimous among the seven": the Linus Tech Tips video is a cheap-clone
+  comparison and never discusses shape at all.)*
 - **Weight: lighter, and it is a comfort argument, not only an aim one.** DiamondLobby's
   ceiling for shooters was **~85 g in 2024 and under 55–65 g by 2026**; Rocket Jump Ninja says
   under 60 g; Hardware Canucks says anything under 80 g feels much the same and balance matters
-  more than the number. All three tie heavy mice to wrist and arm fatigue over long sessions.
-  **This revises row 3 of the spec table above** — the earlier "near-irrelevant for eight hours
-  of cursor work" was the wrong way round.
+  more than the number. **DiamondLobby is the one who ties weight to fatigue** — *"lightweight
+  mice have played a key role in making me able to play games well into my 60s without feeling
+  any wrist or arm pain at all"* — in both videos. *(Was "all three tie heavy mice to wrist and
+  arm fatigue": Hardware Canucks makes no fatigue claim, and Rocket Jump Ninja frames weight as
+  an aim spec.)* **This still revises row 3 of the spec table above** — the earlier
+  "near-irrelevant for eight hours of cursor work" was the wrong way round.
 - **Many-button mice: buy them for a reason, not for the count.** Hardware Canucks' fourth
   "mistake" is his own: bought an MMO-style mouse to move keyboard shortcuts onto it, never used
   the side buttons, went back to a comfortable shape — and notes those bodies run large.
   DiamondLobby is blunter, and specifically about the G502: *"the less people using a G502 for
-  long hour gaming the better"*, on wrist and finger strain. Neither is a measurement, and both
+  long hour gaming the better"*, on wrist and finger strain — **that line is in his video
+  description, not in the video**, corrected 2026-09-13, where this file read as though it were
+  spoken. Neither is a measurement, and both
   are one reviewer's hands. But the 13-button, 89–106 g G502 is the exact shape both are
-  warning about, so it does not get picked here by default.
+  warning about, so it does not get picked here by default. **DiamondLobby also says rubberised
+  side grips are to be avoided by default** — *"if you don't like it you have to apply grip
+  tape"* — which is the Cobra's known weak point, independently arrived at.
 - **Sensor and polling rate are settled.** Any current sensor is fine; above 1 000 Hz is a
   gimmick (Hardware Canucks cites Battle(non)sense's measurements; RJN cannot see it on a
-  high-speed camera).
-- **Wireless 2.4G is not a compromise.** Six sources agree. Only GamingScan (2019) says
-  otherwise, and it also argues optical-vs-laser — it is six years stale and discounted here.
-- **The price ceiling is lower than this file's top end.** DiamondLobby: optimal **$90–125**,
-  and do not exceed **$130** for a gaming mouse. Three candidates below sit above that.
+  high-speed camera). Hardware Canucks also gives the reason the DPI ceiling is ~3 200:
+  Battle(non)sense measured the input-lag gain as *"on a log scale [that] diminishes beyond
+  3200 DPI"*. **The one number that is pass/fail is click latency: Rocket Jump Ninja's threshold
+  is *"under 4 milliseconds"***, which sorts LTT's lab results exactly — the $20 Attack Shark's
+  10.8 ms fails it, the DeathAdder's sub-2 ms clears it.
+- **Wireless 2.4G is not a compromise.** **Three of the eight say so** — Rocket Jump Ninja 2025
+  (*"Wireless is as good as wired now"*), DiamondLobby 2024 (*"Wireless is 100% safe to have
+  now"*) and Hardware Canucks (*"no compromise versus wired mice in input lag and click
+  latency"*). *(Was "six sources agree": Kimmy and DiamondLobby 2026 never mention wireless,
+  and RJN 2020 argues the other side of it — that modern cables are soft enough not to matter.)*
+  Only GamingScan (2019) argues **against** wireless, and it also argues optical-vs-laser — it is
+  six years stale and discounted here. **If a wireless one is bought:** DiamondLobby's rule is
+  never to plug the dongle into the case, but into the supplied desk adapter, to avoid
+  interference.
+- **The price ceiling is lower than this file's top end.** DiamondLobby **2024**: optimal
+  **$90–125**, and the justification above $150 is *"really tough"*. DiamondLobby **2026**: the
+  average person *"shouldn't over spend $130"*. *(This file had merged the two into one
+  statement; they are two videos two years apart.)* Three candidates below sit above that.
 - **Cheap is no longer a warning sign — for specific brands.** DiamondLobby 2026 calls ATK /
   VXE R1 Pro, VXE MAD R, MCHOSE L7 Pro and A7 Ultra "endgame level" at $45–65. LTT's lab put
   the $40 Metaphyuni Panda P1 Pro as the sweet spot — good accuracy, stable latency — while the
   $20 Attack Shark R1 showed jitter and **10.8 ms** latency against **sub-2 ms** for the
   $100 DeathAdder V3 HyperSpeed. Both warn that warranty on these means shipping to China.
   **None of these brands is in the candidate table below, and none has been price-checked in
-  Ukraine** — see open question 2.
+  Ukraine** — see open question 1.
+
+  **What this file left out of both, added 2026-09-13.** LTT's lab verdict on the premium mouse
+  is not a shrug: the DeathAdder V3 HyperSpeed is *"in a league of its own with sub-2 millisecond
+  latency"* and *"delivered flawless tracking even at high DPI"*; the $20 clone is *"more the
+  mouse you keep in your backpack for your laptop than the one that you would daily drive"*, and
+  LTT's sample also had battery-life trouble. And DiamondLobby's case **for** brand mice is as
+  explicit as his case for the clones: they *"often have an extra year of warranty, higher
+  quality control standards and provide more reliable firmware and software"*. LTT puts a number
+  on that — main-switch ratings of **80 M clicks** for the Razer and the Panda against **20 M**
+  for the Attack Shark and **10 M** for the DeathAdder Essential. **That qualifies the "Ignore"
+  list above:** click ratings are marketing *between brand mice*, where they are all high; they
+  are a real 8× gap between a brand mouse and a cheap clone.
 
 ## Candidates, priced
 
@@ -183,6 +239,17 @@ switch brand or its rated lifespan. PC Gamer: solid, but the price bump stops it
 no-brainer against the old G305 on sale. Recurring across reviews: too small for large hands or
 palm grip (not an issue here), barely visible RGB, and one flagged flaw in the skates.
 
+**Added 2026-09-13 from the full reads — the Logitech has a failure mode too, and this file only
+recorded the Razer's.** Hardware Canucks names **Razer Synapse and Corsair iCUE** as the two
+driver suites that *"get a lot of heat"*, and LTT caught Synapse first-hand: *"it dumped me out of
+the game to prompt me to install my stupid Razer software … Razer is the only one that
+successfully got me killed so far."* That is the Cobra's side, and it is worse-evidenced than the
+Reddit aggregate suggested. But the same reviewer says *"after your Logitech starts to
+double-click. We all know it's true"*, and he has had *"Logitech G Hub just simply failing to
+start"* — which is the same worry as PCGamesN's note below that Logitech will not state the
+switch brand or its rated lifespan. **Both finalists carry one; the file had been reading as
+though only the Razer did.**
+
 **What this does to the decision: nothing decisive.** Neither mouse has a reliability problem
 that shows up in measurement. If the scroll wheel is the part that gets used hardest — long
 files, all day — that is the one argument for paying the extra 1 129 for the Logitech.
@@ -269,8 +336,26 @@ Buyer's guides, transcripts and frames pulled 2026-09-11 with `code/yt_transcrip
 | Hardware Canucks | Gaming Mice Buying Guide - Avoid Big Mistakes! — `UMHmPdVbaIM` | 2022-01-21 |
 | GamingScan | What To Look For In A Gaming Mouse — `EYoFzaAjLsQ` | 2019-12-16 — **stale, discounted** |
 
-Frames were checked for on-screen numbers in all three videos that could carry them: LTT's lab
-results (8:28–10:00) are spoken, not charted; Kimmy's size bands (1:40–2:30) are spoken over
-b-roll, with 17.5 cm confirmed on screen at 1:55; the Rocket Jump Ninja search form
-(`QVI3mepUHuE` 1:05, `UMHmPdVbaIM` 4:12) confirms the two inputs and that its results carry
-**Length (cm)** and **Grip Width (cm)** per mouse.
+**Monetisation, checked 2026-09-13 and not disclosed here before:** every one of the eight is
+commercially interested. Two carry a named paid sponsor — **Thermaltake** (Hardware Canucks,
+whose description also states *"review unit provided free of charge by the companies mentioned"*)
+and **Pulseway** (Linus Tech Tips). Rocket Jump Ninja carries Amazon, eBay and mwave affiliate
+deals **and sells his own mouse design** (Xtrfy MZ1), and plugs a third party's mouse inside the
+price chapter. DiamondLobby's descriptions are Amazon affiliate links to the exact $45–65 mice
+quoted above as *"endgame level"*. Kimmy's says it outright: *"These are all my amazing affiliate
+links."* GamingScan is an affiliate site. **None of this makes the guidance wrong** — the fit
+rules agree across channels that are paid in different directions, which is the best evidence
+they are real — but eight independent voices they are not.
+
+**Frames, pulled 2026-09-13** (this file previously asserted frame checks with no frames saved;
+these are on disk):
+
+| Frame | What it shows |
+|---|---|
+| [`frames/6RlGpvcW51s_01m55s.png`](../frames/6RlGpvcW51s_01m55s.png) | **17.5 cm** on screen — the small/medium boundary. The auto-caption renders it "70.5 cm", so the transcript alone could not have proved it. |
+| [`frames/6RlGpvcW51s_02m20s.png`](../frames/6RlGpvcW51s_02m20s.png) | Kimmy's size bands are spoken over b-roll of a tape measure — no chart, as this file said. |
+| [`frames/QVI3mepUHuE_01m05s.png`](../frames/QVI3mepUHuE_01m05s.png) | The Rocket Jump Ninja site banner, *"100+ mouse reviews from over 21 years of FPS/Quake Experience"* — the source of the "21 years" error corrected above — and the Amazon/mwave affiliate footer. |
+| [`frames/QVI3mepUHuE_03m45s.png`](../frames/QVI3mepUHuE_03m45s.png) | The search form (hand length, hand width, leniency, grip type, wireless, left-handed, minimum buttons) and its result columns: **Name, Weight (g), Size, Length (cm), Grip Width (cm), Review**. |
+| [`frames/UMHmPdVbaIM_04m12s.png`](../frames/UMHmPdVbaIM_04m12s.png) | The same form in Hardware Canucks' hands, demo values **19 cm × 11.5 cm**, plus a *Shape* filter the 2020 version lacks. |
+
+LTT's lab results (8:28–10:00) are spoken, not charted, so no frame carries them.

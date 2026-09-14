@@ -182,11 +182,25 @@ performance and noise." GeekaWhat's 2026 parts guide goes further and recommends
 for a Ryzen 7. **This build puts a single-tower AK400 on the 9700X in the Working and Max
 builds.**
 
-The counter-argument, stated so it can be judged rather than assumed:
+The counter-argument, stated so it can be judged rather than assumed - and **weakened
+2026-09-13 when the video was read in full**:
 
 - Both recommendations are made for the **Ryzen 7 class**, whose best-known member is the
   **105W / 142W PPT** 7700X. The **9700X ships at 65W / 88W PPT** - the same envelope this
   document already calls "a 65W chip does not need more".
+- **But he is not generalising from the 7700X.** In context he lists *"the Ryzen 7700X, **9700X**,
+  and the big X3D CPUs"* together and gives that whole tier the dual-tower minimum, while giving
+  the tier below - *"Ryzen 5 7000 9000 series CPUs"*, which is Lean's 7500F - a separate and
+  explicitly lighter rule: *"at least a budget tower air cooler. And honestly, this is probably
+  all you really need as long as your case has good airflow."* He sorted the 9700X deliberately.
+- **And the method this document uses to defend the pick is the one its own source calls
+  unreliable.** Tech Guided: *"there is no standardized way to calculate TDP, Intel and AMD
+  calculate differently"*, and the fix is expert benchmarks - he names **Gamers Nexus and
+  Hardware Unboxed**. That is exactly the search needed to close question 1 below.
+- **A third source points the other way.** Hardware Whisperer rates tower coolers at *"150W to
+  over 250W"* and calls them *"an excellent choice for high-performance CPUs where overclocking
+  is not required"* - which describes a non-overclocked 9700X at 88W PPT. Generic rather than
+  measured, so it does not close the question either.
 - The tier below, which PC Builder says a **budget single tower** handles comfortably, is the
   Ryzen 5 7000/9000 series - and the **Lean build's 7500F is exactly that**, so the AK400 is
   already above requirement there.
@@ -274,6 +288,74 @@ and one boilerplate line that AMD also prints on a 6-core chip. The case for it 
 65W / 88W PPT envelope. If the 9700X is ever switched into its optional **105W / 142W PPT** mode,
 this conclusion does not hold and the Phantom Spirit at 2 845 becomes the right cooler.
 
+## CLOSED 2026-09-13: the measured AK400 test exists, and it clears the 9700X
+
+Every earlier pass ended on *"no measured AK400-on-9700X test was found"*, which left the question
+to class-level opinion. **A measurement of the cooler's actual capacity does exist**, and it
+settles the question the only way Tech Guided said it could be settled - *"there is no
+standardized way to calculate TDP ... use benchmarks"*.
+
+| What was measured | Result | Source |
+|---|---|---|
+| AK400 on a **Ryzen 9 5950X overclocked to 4.45 GHz @ 1.312V, 220W of CPU package power** | **delta 68 °C** over a 22 °C room at full fan; **69 °C** at a noise-normalised 40 dBA | [KitGuru](https://www.kitguru.net/components/cooling/luke-hill/deepcool-ak400-cpu-cooler-review/all/1/) |
+| AK400 **Digital** on a Ryzen 5 5600X | *"peaking at 63 degrees Celsius ... exactly the same peak load temperature as the original AK400"* | [APH Networks](https://aphnetworks.com/reviews/deepcool-ak400-digital/3) |
+| Ryzen 7 9700X under Blender | *"The max operating temperature is set at 95°C, but as you can see in the graph above, I was way below that with a good air cooler"* | [Hardware Busters](https://hwbusters.com/cpu/amd-ryzen-7-9700x-cpu-review-performance-thermals-power-analysis/11/) |
+
+**A second, independent measurement - added after Dmytro asked whether one source was closing
+this.** Basic Tutorials tested the AK400 on a **Ryzen 5 3600X** (95 W TDP, 128 W PPT) under
+Cinebench R23 in a case, room baseline 36 dB:
+
+| AK400 | Idle delta | Cinebench delta | Noise |
+|---|---:|---:|---:|
+| 100% PWM | 9.2 °C | **48.0 °C** | 41 dB |
+| 50% PWM | 9.3 °C | **50.0 °C** | 38 dB |
+
+[Basic Tutorials](https://basic-tutorials.com/reviews/hardware-reviews/deepcool-ak400/)
+
+**And it kills the linear model an earlier version of this section used.** 68 °C at 220 W is
+0.31 °C/W; 48 °C at a ~95-125 W chip is 0.38-0.50 °C/W. Delta does not scale with watts alone -
+heat density, IHS and bench-versus-case all move it - so **do not extrapolate °C/W**. Read the two
+measurements as a bracket instead:
+
+| Load measured | Delta over ambient | In a 22 °C room |
+|---|---:|---:|
+| ~95-125 W chip (3600X, Cinebench, in a case) | 48-50 °C | **~70-72 °C** |
+| 220 W chip (5950X OC, open bench) | 68-69 °C | ~90 °C |
+
+The 9700X's 88 W PPT sits **at or below the lower bracket**, on a chip whose IHS Hardware Busters
+credits with *"lower thermal resistance"* than earlier parts. So the worst honest reading is
+**~70 °C under sustained all-core load, 25 °C below the 95 °C limit**, and the 105 W / 142 W mode
+lands between the two brackets rather than above them.
+
+**So the AK400 is not lacking, and it clears the 105 W mode too** - which the 2026-09-11
+conclusion had explicitly excluded for want of a number. The three guides that point at liquid
+cooling for *"a Ryzen 7 or higher"* are sorting by product tier, not by watts; the 9700X is a 65 W
+part sitting in a tier defined by 105 W and 170 W chips.
+
+**What the +1 146 for a Phantom Spirit 120 SE actually buys: noise, not capability.** KitGuru
+measured the AK400's fan at **42 dBA at its 1850 RPM maximum** and called it *"mediocre"* against
+competitors, and needed **90% duty cycle** to hold 40 dBA. On a 88 W chip the fan will rarely be
+near maximum, but that is the axis on which the upgrade is defensible - not thermals.
+
+### The cart has a different SKU than this document specifies
+
+Dmytro's configurator shows **DeepCool AK400 Digital SE Black, `R-AK400-BKADMN-GJD`, 1 699**. This
+document specifies the plain **`R-AK400-BKNNMN-G-1`**, *"not the ZERO DARK / DIGITAL / DIGITAL PRO
+variants"*. Thermally it does not matter - APH Networks measured the Digital at the same peak load
+temperature as the original - and the price is identical, so this is a note, not an objection. The
+Digital carries an LCD display block that needs power; **how it is powered was not confirmed**
+(the review page consulted does not say), so check the box contents before assuming a spare header
+is not needed.
+
+### The shop's warning is a heuristic, not a measurement
+
+The click.ua configurator says *"Ваша збірка сумісна, проте система охолодження процесора не значно
+перевищує його тепловиділення (менше 35%)"*. That is a margin rule applied to two numbers in the
+shop's database - a cooler rating against a CPU TDP - and the shop does not publish either input.
+It is not a thermal test and it does not override the measurements above. The same page's spec
+tables were separately found to swap read/write figures and misstate IOPS by ~50x, so its
+generated advice carries no weight here.
+
 ## DECISION (2026-09-11): the Lean build buys no cooler
 
 Dmytro's call. The **7500F MPK ships with an AMD Wraith Stealth** - listed by AMD for the MPK
@@ -287,3 +369,14 @@ What is being accepted on Lean: the Wraith Stealth is audibly louder than a towe
 load and has less headroom, though it is AMD's own bundled solution for this 65W chip. It is
 also **reversible at any time** - the AK400 can be added later for the same 1 699, since the
 cooler is the one part of the build that can be changed without touching anything else.
+
+## Every video behind this document
+
+**Added 2026-09-13 by the source audit.** This file named its videos by channel and year only — **no id, no link** — which is the exact complaint the audit was started over: *"the docs were found to cite videos by channel name with no ID and no timestamp, leaving nothing Dmytro could re-check."* 3 of the 3 CPU cooler videos could not be traced from this page at all. The full set, with the transcript on disk and the quote-by-quote record in [source_audit.md](../source_audit.md):
+
+| Video | Channel | Date | Title |
+|---|---|---|---|
+| [`dwvlv7VPW_c`](https://www.youtube.com/watch?v=dwvlv7VPW_c) | Hardware Whisperer | 2025-01-08 | CPU Coolers Explained. Cooler types and how to choose the right one for you. |
+| [`ju2OYF16RKA`](https://www.youtube.com/watch?v=ju2OYF16RKA) | PC Builder | 2026-03-22 | 🛑STOP🛑 Buying BAD Coolers! Best CPU Cooler 2026 for Ryzen & Intel Builds |
+| [`7f-Guxj4kl0`](https://www.youtube.com/watch?v=7f-Guxj4kl0) | Tech Guided | 2023-12-24 | How to Choose A CPU Cooler for Beginners |
+

@@ -7,9 +7,11 @@
 > 75%, 82 keys, Kailh Pink **linear**, gasket mount, hot-swap, wired USB-C, EN/UA legends.
 > **Black `6978080504890`** or **white `6978080504883`** — same price either way.
 >
-> **1 699 at all four of Brain, ITbox, Foxtrot and Telemart.** Do not buy it on Rozetka:
-> its listings are marketplace sellers at 2 100-3 800 for the same SKU, and the black was
-> out of stock there on 2026-09-11.
+> **1 699 at all four of Brain, ITbox, Foxtrot and Telemart — and now at Rozetka too.**
+> *(Corrected 2026-09-13.* This said *"do not buy it on Rozetka: marketplace sellers at
+> 2 100-3 800, black out of stock".* Re-read on the listing Dmytro actually sent: Rozetka sells
+> the black `6978080504890` **first-party at 1 699, in stock**, and **1 614 with a Rozetka card**
+> — the cheapest price found anywhere, with a 12-month warranty and 14-day exchange.*)*
 >
 > **Chosen because** it was the only board on the shortlist Dmytro liked the look of, it is
 > 75% (his lean) and linear (his choice), and 1 699 at four independent shops is the market
@@ -21,8 +23,18 @@
 >
 > **Accepted risks:** no service centre in Ukraine (warranty is the shop that sold it), and
 > no tier-1 outlet has ever reviewed this keyboard — the evidence is 63 owner reviews. At
-> 1 699 the exposure is capped, and every beginner guide consulted says the same thing: buy
-> cheap first, learn what you like, then buy the real one.
+> 1 699 the exposure is capped.
+>
+> **Corrected 2026-09-13.** This box used to end *"every beginner guide consulted says the same
+> thing: buy cheap first, learn what you like, then buy the real one."* **One** of the six tells
+> that story — Brad Colbow, who went $35 → $65 → Keychron Q3. **Two put this board below their
+> own floor:** KeebNews's sweet spot is *"80 to 120"* dollars and *"any less than that, way too
+> much plastic, which makes it feel a little cheaper and sound a little more hollow"*; Colbow's
+> $35 board *"sound[ed] really hollow"*. **1 699 UAH is about $41.** Against that, Justin Tech
+> says good keyboards exist under $50, and the 63 owner reviews measure precisely what the
+> heuristic guesses at — they praise the typing feel and sound. The decision stands on Dmytro's
+> own look-and-feel preference and a capped 1 699; the heuristic is recorded because it was
+> found, not because it changes anything.
 
 Requirement as stated by Dmytro (2026-09-11): *"convenient to use for work and games"*, with
 no preference between membrane, mechanical or low-profile — the differences were not known,
@@ -38,8 +50,8 @@ the original rows were wrong. Grouped by what they decide.
 
 | # | Spec (unit) | What it means, plainly | What it decides here |
 |---|---|---|---|
-| 1 | **Layout / size** | Five separate areas: typing block, function row, navigation cluster, arrows, numpad. Each layout drops some. **100%** all five. **96%** keeps all five but squeezes them, saving 5.5 cm. **TKL (80%)** drops the numpad, saving ~7.6 cm. **75%** also removes the spacing, saving another 5 cm. **65%** drops the function row. **60%** drops the arrows too. | The most consequential single choice. See the mouse-collision row below. |
-| 2 | **Mouse collision** | With a TKL, in games where the mouse sweeps a lot, the mouse **hits the left edge of the keyboard**. A 75% is ~5 cm narrower and stops it. | The one concrete reason to take 75% over TKL, and it comes from gaming, not from desk tidiness. Against it: 75% crams the arrows and nav keys together. |
+| 1 | **Layout / size** | Five separate areas: typing block, function row, navigation cluster, arrows, numpad. Each layout drops some. **100%** all five. **96%** keeps all five but squeezes them, saving 5.5 cm. **TKL (80%)** drops the numpad, saving ~7.6 cm. **75%** also removes the spacing, saving another **2 in — which the source calls "4 cm"** (2 in is really 5.1 cm; his own conversion is loose, and this file had quoted the conversion rather than the source). **65%** drops the function row. **60%** drops the arrows too. | The most consequential single choice. See the mouse-collision row below. |
+| 2 | **Mouse collision** | With a TKL, in games where the mouse sweeps a lot, the mouse **hits the right-hand edge of the keyboard** — the side the mouse is on. *(This file previously said "left edge", which is backwards; the source says only "the side of the keyboard".)* A 75% is ~5 cm narrower and stops it. | **Two independent reasons to take 75% over TKL.** Joshua Chang's is collision, and it is stated for *"competitive games or games where you're moving the mouse a lot"* — competitive play is outside this build's use case. Justin Tech gets there without it: *"I wouldn't really recommend a TKL keyboard as 75% is basically the same thing."* Against both: 75% crams the arrows and nav keys together. |
 | 3 | **Detachable numpad** | A separate wireless numpad, docked either side of a TKL. | Makes "I need the numpad sometimes" stop deciding the layout. Not stocked at the four shops checked. |
 | 4 | **ANSI vs ISO** | Two physical standards. ANSI has a wide bar Enter and a long left Shift; **ISO** has a tall Enter and a short left Shift with an extra key. | **Was missing from the first pass.** Ukrainian retail sells both, often without saying which. Keycap sets and replacement caps are not interchangeable between them. |
 | 5 | **Height** | Standard keys travel ~4 mm; **low-profile** ~3 mm on a thinner case. | Less finger movement over an eight-hour day, and the easiest transition from a laptop keyboard — one reviewer coming from laptops kept hitting wrong keys on full-height boards and found low-profile fixed it. **Cost:** far fewer keycap and switch options exist for low-profile. |
@@ -48,16 +60,16 @@ the original rows were wrong. Grouped by what they decide.
 
 | # | Spec (unit) | What it means, plainly | What it decides here |
 |---|---|---|---|
-| 6 | **Type** | *Linear*: smooth the whole way. *Tactile*: a bump where the key registers. *Clicky*: tactile plus a loud click. *Silent*: a dampened linear or tactile. | Tactile for typing accuracy, linear marginally smoother for games, clicky unusable on a call. **Open — no preference stated.** |
+| 6 | **Type** | *Linear*: smooth the whole way. *Tactile*: a bump where the key registers. *Clicky*: tactile plus a loud click. *Silent*: a dampened linear or tactile. | Tactile for typing accuracy, linear marginally smoother for games, clicky unusable on a call. **Closed: linear.** And the switch guide itself says this row matters less than the row count suggests — *"generally, your keyboard is much more important than the switch"*, and *"every single switch in this list is technically good enough for most games"*. Added 2026-09-13; it is the line that makes closing this row without a tester reasonable. |
 | 7 | **Colour is no longer the type** | Red=linear / brown=tactile / blue=clicky held until ~2023. Switches now ship in any colour with any behaviour. | **The first pass leaned on colour names** ("Pink Switch", "Super Red"). Those names now say nothing; the spec sheet has to be read. |
 | 8 | **Actuation force (g)** | The push needed to register a key. ~35-45 g light, ~60-70 g heavy. | **Missing from the first pass.** Heavier suits someone who bottoms out hard or fires keys accidentally; lighter tires the hand less. |
 | 9 | **Travel (mm)** | Total depth, and the depth at which it registers. "Speed" switches register earlier. | **Missing from the first pass.** The low-profile row above is really this row. |
 | 10 | **Factory lubed** | Whether the maker greased the switch. | **The minimum bar, and missing from the first pass.** Unlubed switches sound pingy and feel scratchy. Every reviewer names this before naming a brand. |
 | 11 | **Bump position** (tactile only) | At the top of the press, or midway down. | A real difference between two switches both sold as "tactile". |
-| 12 | **Housing plastic** | Nylon and POM sound lower; polycarbonate sounds higher and clackier. | Explains why two boards with the same switch *type* sound nothing alike. |
+| 12 | **Housing plastic** | **Nylon sounds lower; polycarbonate and POM sound higher and clackier** — denser plastic, higher pitch. *(Corrected 2026-09-13: this row had POM on the low side. The source groups it with polycarbonate: "materials like polycarbonate and POM might have a higher pitch to them, aka more clacky.")* | Explains why two boards with the same switch *type* sound nothing alike. |
 | 13 | **Pin count, 3 or 5** | Five-pin switches have two extra plastic legs. A three-pin board needs them clipped off. | Only matters when buying replacement switches later — but it is the thing that makes a hot-swap board refuse a switch. |
 | 14 | **Hot-swap** | Switches pull out by hand, no soldering. | **The single most useful spec while the preference is unknown** — the feel changes later for the price of switches, not a keyboard. |
-| 15 | **Hall effect / magnetic** | Magnets track the stem continuously instead of a contact closing. Actuation becomes adjustable **0.1-4.0 mm**, per key, and analogue (press depth = walk vs run). | Enables snap-tap / SOCD, **banned in CS2 as a cheat**. Reviewers agree it trades sound and feel away for competitive response. Explicitly outside this build's use case. |
+| 15 | **Hall effect / magnetic** | Magnets track the stem continuously instead of a contact closing. Actuation becomes adjustable **0.1-4.0 mm**, per key, and analogue (press depth = walk vs run). | Enables snap-tap / SOCD, **banned in CS2 as a cheat**. **The two reviewers who discuss the feel disagree** — Hipyo Tech: *"you're generally sacrificing sound and feel for gaming performance"*; PC Gamer: hall effect switches *"also feel super nice to type on."* *(This row said "reviewers agree", corrected 2026-09-13.)* Either way, explicitly outside this build's use case. |
 
 ### C. The build — what it sounds like
 
@@ -73,10 +85,10 @@ the original rows were wrong. Grouped by what they decide.
 
 | # | Spec | What it means, plainly | What it decides here |
 |---|---|---|---|
-| 21 | **Connection** | Wired USB-C, 2.4 GHz dongle, Bluetooth. | **Corrected.** The first pass treated wireless as a mild plus. PC Gamer's position is blunter and right for a desk machine: on a keyboard wireless is a luxury, and **Bluetooth latency is bad enough that you cannot game over it**. The mouse and headset are where wireless earns its money. |
+| 21 | **Connection** | Wired USB-C, 2.4 GHz dongle, Bluetooth. | **Corrected.** The first pass treated wireless as a mild plus. PC Gamer's position is blunter and right for a desk machine: on a keyboard wireless is a luxury, and **Bluetooth latency is bad enough that you cannot game over it**. The mouse and headset are where wireless earns its money. **Not unanimous** *(noted 2026-09-13)*: KeebNews says *"I generally prefer wireless"* on a keyboard. Nobody disputes the Bluetooth-latency half. |
 | 22 | **Firmware / remapping** | QMK/VIA is open firmware; any key reassignable on the board itself. Logitech uses G Hub. | Useful for development: shortcuts live in the keyboard, not in per-app config. |
 | 23 | **Legends** | Whether Ukrainian characters are printed on the caps. | All SKUs below are UA variants. |
-| 24 | **Switch tester** | A small board holding one of each switch, or a sample pack. | **The only honest way to close row 6.** Every one of the six guides recommends it; none of the four shops stocks one. |
+| 24 | **Switch tester** | A small board holding one of each switch, or a sample pack. | **The only honest way to close row 6.** **Three of the six guides recommend it** — Hipyo Tech emphatically, Justin Tech as one of five methods, Brad Colbow about a kit Keychron gave him. *(Was "every one of the six": KeebNews never mentions one, and PC Gamer's advice is to read reviews and watch sound tests instead. Recounted 2026-09-13.)* None of the four shops stocks one. |
 
 **Ignore:** RGB, polling rates above 1 000 Hz, rated keystroke life (every switch here is rated
 50-100M presses), "gaming" plate materials, and — per the switch guide — **old Cherry MX Red
@@ -98,8 +110,10 @@ survive in 2026, and whether any reaches Dmytro:
 **Mitigations exist for all of them anyway.** Blender ships an *Emulate Numpad* preference
 that maps the number row, and a tilde pie menu its users often prefer; Alt+codes can be
 remapped with AutoHotkey; and a separate wireless numpad can be docked on either side of a
-TKL when it is actually needed — the layout guide argues left-docking is better than having
-it welded to the right.
+TKL when it is actually needed. **The left-docking argument is PC Gamer's, not the layout
+guide's** *(reattributed 2026-09-13)*, and it is made as a joke — *"only losers have a numpad on
+the right hand side of their keyboard, you can quote me on that"*. Joshua Chang, the layout guide,
+simply offers both sides.
 
 **Conclusion: no numpad.** Nothing in the stated use case reaches even the strongest of these,
 and the strongest one was checked against the machine rather than assumed. That closes the
@@ -134,6 +148,13 @@ the unpublished rows (force, travel, lube, keycaps, damping) are exactly what th
 
 | | **HATOR Rockfall 3 Mecha TKL** | **Aula F75 Pink** | Keychron C3 Max |
 |---|---|---|---|
+*Three F75 rows below read "not published" and are in fact published on the Rozetka listing, read
+2026-09-13: the plate is **polycarbonate** (*"Монтажна плита з полікарбонату"*), the damping is
+**five layers** (*"PORON … 8-кратно спінену IXPE-підкладку … PET-акустичну мембрану, силіконову
+нижню прокладку та PORON-нижній демпфер"*), and the **stabilisers are factory-tuned**
+(*"стабілізатори та балансувальна штанга точно відрегульовані"*). Keycap material is still not
+stated anywhere, so "PBT per shop listings, unconfirmed" stands.*
+
 | SKU | HTK850UA | 6978080504890 | C3M-H1-UA |
 | **UAH / shop** | **2 899** — Telemart, ITbox | **1 699** — Brain, ITbox, Foxtrot, Telemart | 3 959 Brain / 3 999 Telemart, Foxtrot |
 | Layout | TKL, 81 keys | 75%, 82 keys | TKL — *Foxtrot's page says 65%, but its own 365 mm width is TKL* |
@@ -238,6 +259,11 @@ F75s. Aula sells both under the same name and they look identical. Not a defect;
 happen to a buyer who knows which SKU he is ordering. The real complaints sit in the 3- and
 4-star reviews.
 
+**And the sentence that misleads them is on the listing itself, found 2026-09-13.** Rozetka's own
+product copy for the **wired** F75 opens: *"**Бездротова** механічна клавіатура з підключенням
+**Wired**"* — "wireless mechanical keyboard with Wired connection". This file inferred the cause
+from the reviews; it is in the seller's first line.
+
 | Complaint | Source | Independently confirmed? |
 |---|---|---|
 | **Legends do not light up** — opaque keycaps, RGB glows around the keys not through the letters | Rozetka, several | **Yes.** Multiple sources describe the F75's legends as non-shine-through, with the artwork side-printed rather than top-printed; backlighting the characters needs a different keycap set |
@@ -285,8 +311,13 @@ UAH, 2026-09-11, direct at the named shop, in stock unless noted.
 | Keychron K3 Max (K3M-H3-UA) | 75% | tactile (Brown) | yes | low-profile | wireless/BT/USB | 8 999 | Brain — out of stock at ITbox |
 | Keychron V3 Ultra (V3U-D1-UA) | TKL | linear | yes | standard | wireless | 8 999 | Brain — out of stock at ITbox |
 
-**Rozetka is not a source for the Aula.** Its F75 listings are marketplace sellers at
-2 100-3 800 for the same SKU that Brain, ITbox, Foxtrot and Telemart all sell at 1 699.
+**~~Rozetka is not a source for the Aula.~~ No longer true — re-checked 2026-09-13.** This said
+its F75 listings were *"marketplace sellers at 2 100-3 800"*. On the listing Dmytro actually sent
+([p576082966](https://rozetka.com.ua/ua/aula-6978080504890/p576082966/)), **Rozetka sells the black
+6978080504890 itself at 1 699 ₴ — the same as the four component shops — and 1 614 ₴ *"при оплаті
+Карткою Rozetka"*, which would be the cheapest price anywhere.** It is **in stock**; the
+out-of-stock note recorded during the earlier check no longer holds. Warranty there is **12 months
+with a 14-day exchange**, against the shop-only warranty assumed below.
 
 ## What the table says
 
@@ -324,9 +355,38 @@ Telemart, Brain, ITbox and Foxtrot read direct; Rozetka by hand. Method and why 
 not a price source: [../price_check.md](../price_check.md).
 
 Parameters verified 2026-09-11 against six buying guides supplied by Dmytro, read with
-`code/yt_transcript.py` and spot-checked on frames with `code/yt_frames.py`. **None is a
-benchmark video** — there are no on-screen numbers to read, so the transcripts carry
-everything and the frames only confirm the layout comparisons.
+`code/yt_transcript.py`. **All six re-read end to end 2026-09-13** — see
+[../source_audit.md](../source_audit.md) for the quote-by-quote record and the corrections marked
+above. **None is a benchmark video** — there are no on-screen numbers to read, so the transcripts
+carry everything.
+
+**Frames pulled 2026-09-13**, which confirm exactly that:
+[`CCkirAxRR-A_01m50s.png`](../frames/CCkirAxRR-A_01m50s.png),
+[`CCkirAxRR-A_04m28s.png`](../frames/CCkirAxRR-A_04m28s.png) and
+[`CCkirAxRR-A_06m07s.png`](../frames/CCkirAxRR-A_06m07s.png) show the layout comparisons filmed
+side by side with **no figure on screen**. Every centimetre in row 1 is spoken only, which is why
+the "4 cm or 5 cm" question there could not be settled any other way.
+
+**Commercial ties, checked 2026-09-13 and not disclosed here before — four of the six run to
+Keychron:**
+
+- **Joshua Chang** — the sole source for the whole layout chapter. His description opens with a
+  Keychron referral link and lists a Keychron hall-effect board for each layout, all tagged
+  `?ref=ryxcrqld`; the boards on camera are that series, and he says so: *"These keyboards that
+  I've been using throughout the video are Keychron's newest Hall Effect series."*
+- **Brad Colbow** — the sole source for row 5 (low-profile). Keychron **sent him** the switch
+  tester and the low-profile board, and the board he calls perfect is the **K3 Max that appears
+  in the price table above at 8 999**.
+- **KeebNews** — Keychron referral link in the description, and on camera: *"I have four Keychron
+  keyboards … you can't go wrong."*
+- **Hipyo Tech** — an affiliate stack (`?ref=hipyo`) across Kinetic Labs, Varmilo, Wuque Studio
+  and Epomaker, a Keychron switch tester among them, plus his own keycap and deskmat shop.
+- **Justin Tech** — Amazon affiliate links across all three of his price bands.
+- **PC Gamer** — **no affiliate or sponsor link of any kind.** The only clean source of the six.
+
+None of this makes the guidance wrong, and it cuts the way the file already went: the Keychron
+C3 Max was declined here on its own contradictory paperwork, which looks better knowing how much
+of the source set points at that brand.
 
 | Video | Channel, date | What it contributed |
 |---|---|---|

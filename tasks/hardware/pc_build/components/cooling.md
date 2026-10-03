@@ -143,6 +143,11 @@ over-think it, but do not put a low-pressure fan behind a fine filter.
 > cooler at all** and uses the Wraith Stealth bundled with its 7500F MPK. Full reasoning in the
 > DECISION section at the end of this file.
 >
+> **Open option, 2026-09-14:** the click.ua consultant proposed a **DeepCool AG620 G2 WH
+> ARGB at 2 559, +860 same-shop** - a real dual tower that fits, priced and measured in the
+> AG620 section below. It buys noise headroom, not capability; the AK400 stays the pick
+> until Dmytro says otherwise.
+>
 > **Simplified 2026-09-10:** all three builds in [../../pc_build.md](../../pc_build.md) use a
 > 65W CPU (7500F or 9700X), so the Phantom Spirit line below applies to no current
 > configuration.
@@ -355,6 +360,105 @@ shop's database - a cooler rating against a CPU TDP - and the shop does not publ
 It is not a thermal test and it does not override the measurements above. The same page's spec
 tables were separately found to swap read/write figures and misstate IOPS by ~50x, so its
 generated advice carries no weight here.
+
+## The shop consultant's AG620 G2 (2026-09-14)
+
+The consultant at click.ua proposed swapping the cooler to a **DeepCool AG620 G2 WH ARGB
+(R-AG620-WHAMMG2-G)** — a dual-tower air cooler, i.e. the step this file priced on 2026-09-11 as
+"+1 050-1 150 per build" and then declined. **The price is new: it is +860, not +1 146, and the
+Phantom Spirit this file named as the step-up is not sold at click.ua at all.**
+
+### Prices, all read direct at the shops, 2026-09-14
+
+| Cooler | click.ua | Brain | ITbox | Telemart |
+|---|---:|---:|---:|---:|
+| **Deepcool AK400** (R-AK400-BKNNMN-G-1) — current pick | **1 699**, in stock | 1 699 | 1 699, in stock | 1 699, in stock |
+| **AG620 G2 WH ARGB** (R-AG620-WHAMMG2-G) — proposed | **2 559**, in stock | 2 559 | not listed | not listed |
+| AG620 G2 ARGB black (R-AG620-BKAMMG2-G) | not listed | 2 449 | 2 449, in stock | not listed |
+| AG620 ARGB V2 (previous gen, R-AG620-WHAMMN-GJD) | 2 929, in stock | 2 929 | 2 929, in stock | 2 929, in stock |
+| Thermalright Phantom Spirit 120 SE | **not stocked** | not stocked | not stocked | out of stock |
+
+**The premium is same-shop and therefore real: +860 per build at click.ua**, 1 720 across Working
+and Max. hotline's directory shows the black G2 advertised from 2 158 across 10 sellers; that is
+the usual cheapest-of-forty figure and is not what click.ua charges.
+
+### Specifications
+
+| | **Deepcool AK400** (current) | **DeepCool AG620 G2 WH ARGB** (proposed) |
+|---|---|---|
+| Type | single tower, air | **dual tower, air** |
+| Heatpipes | 4 × 6 mm | **6 × 6 mm** |
+| Fans | 1 × 120 × 25 mm PWM | **2 × 120 × 25 mm PWM**, ARGB |
+| Fan speed | up to ~1 850 rpm | 500–2 000 rpm / 500–2 200 rpm |
+| Airflow | ~66 CFM | 62.16 / 68.85 CFM |
+| Static pressure | not published | 1.75 / 2.10 mmAq |
+| Rated noise | ~29 dB(A) | ≤28.10 / ≤30.93 dB(A) |
+| **Height** | **155 mm** | **159 mm** (heatsink 156 mm; 129 × 136 × 159 mm assembled) |
+| Weight | ~660 g | **1 046 g** |
+| Sockets | AM4/AM5, LGA1700/1200/115x | AM5/AM4, **LGA1851/1700** |
+| ARGB connector | none | 3-pin 5 V ARGB |
+| **click.ua, 2026-09-14** | **1 699** | **2 559** |
+
+Specs from [DeepCool's own page for the WH ARGB SKU](https://www.deepcool.com/products/Cooling/cpuaircoolers/AG620-G2-WH-ARGB-Superior-Performance-6-Heatpipe-Dual-Tower-CPU-Cooler/2026/22802.shtml).
+
+### It fits, and it matches the case
+
+- **Height 159 mm against the AeroCool D502A's 171 mm** — 12 mm of margin. Working and Max both
+  use the D502A, so this is clear. (The P500C in the Lean build allows 162 mm, which would leave
+  only 3 mm — but Lean buys no cooler at all, so it does not arise.)
+- **RAM: Kingston Fury Beast non-RGB, ~34.9 mm** — under any dual tower's front fan. No conflict.
+- The case is the **white** D502A-G-WT-v1 and the board (ASRock B850 Pro RS WiFi) has ARGB
+  headers, so the WH ARGB SKU is the cosmetically consistent one. That is what the +110 over the
+  black G2 buys.
+
+### The measured case for it — and what it does not say
+
+No lab test of the **G2** with a noise-normalised figure was found in this pass. What exists is
+Tom's Hardware on the **previous-generation AG620** (same 6 × 6 mm dual-tower stack, different
+fans and mount), tested on an i9-13900K:
+
+> "a solid dual tower air cooler that pairs well with Intel's Core i9-13900K, handling loads of
+> up to **277W** … at full fan speeds I found the noise produced by this cooler to be slightly
+> annoying. The pitch of the fans is whiny"
+> — [Tom's Hardware, 2023-01-15](https://www.tomshardware.com/reviews/deepcool-ag620-air-cooler/2)
+
+and, at the power level that actually matters here:
+
+> "When limited to **125W**, the AG620 **ran silently**; the noise profile is essentially
+> indistinguishable from the rest of the system fans."
+
+**Read honestly:** 277 W of capacity against the 9700X's **88 W PPT** is enormous overkill, and
+this file already established the AK400 lands at **~70 °C in a 22 °C room, 25 °C below the 95 °C
+limit**, on the same chip. The AG620 does not fix a thermal problem, because there is not one.
+What it buys is the axis the CLOSED 2026-09-13 section named: **noise**. Two 120 mm fans on six
+heatpipes hold 88 W far below their 2 000 rpm ceiling, where the AK400's single fan is already
+the one KitGuru called *"mediocre"* at 42 dBA at its 1 850 rpm maximum.
+
+**The caveats, stated rather than buried:**
+
+1. The 277 W and "ran silently" figures are the **G1**, not the G2. The G2 changed the fans, which
+   is precisely the part the reviewer complained about — the whine may be fixed or may not. Nobody
+   has measured it.
+2. **The consultant's own reason is not evidence.** click.ua's configurator warns that the cooler
+   *"не значно перевищує його тепловиділення (менше 35%)"*. That is a margin rule over two numbers
+   in the shop's database, not a thermal test, and this file already recorded that the same page's
+   spec tables swap read/write figures and misstate IOPS by ~50×. The recommendation may simply be
+   the configurator talking.
+
+### Verdict
+
+**No change forced. The AK400 is not undersized and the consultant has not produced a measurement.**
+But at **+860 same-shop** — not the +1 146 this file declined on 2026-09-11 — the dual-tower step
+is now the cheapest it has ever been here, and the white ARGB SKU is the one that matches the case.
+
+- **Keep the AK400 (1 699)** if the money matters more than the last few dBA. Nothing in this pass
+  weakens the 2026-09-13 closure.
+- **Take the AG620 G2 WH ARGB (2 559, +860)** if a quieter machine under sustained all-core load
+  and a matching white ARGB tower are worth 1 720 across the two builds. This is the honest version
+  of the upgrade — a real dual tower, in stock, at his shop.
+- **Cheaper way to the same thing:** the **black AG620 G2 ARGB at 2 449 (ITbox, in stock)** —
+  identical cooler, −110, does not match the white case.
+- **Do not buy** the AG620 **ARGB V2** at 2 929: it is the previous generation at +370 over the G2.
 
 ## DECISION (2026-09-11): the Lean build buys no cooler
 

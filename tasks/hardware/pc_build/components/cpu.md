@@ -129,6 +129,26 @@ rather than AMD's 36 months. **Lean takes the 7500F Multipack at 7 085 instead o
 6 938** - 147 more, and it bundles the Wraith Stealth that [cooling.md](cooling.md) already
 specified for that build, so it is 1 552 cheaper than tray plus an AK400.
 
+**Verified online 2026-09-14, and it closes the warranty question.** The tray SKU was re-checked
+at the shop directly rather than through the configurator listing:
+
+| Checked | Result |
+|---|---|
+| [click.ua product page, `p147785`](https://click.ua/shop/protsesor-amd-ryzen-7-9700x-left-parenthesis3dot8ghz-32mb-65w-am5right-parenthesis-tray-left-parenthesis100minus000001404right-parenthesis-p147785) | **Гарантія: 36 міс**, обмін і повернення 14 днів. **12 892 ₴** (from 13 380), **в наявності**, "відправимо сьогодні" |
+| The page's packaging switcher | `<span class="active">Tray</span> <span class="disabled">Box</span>` — click.ua renders a Box option for this chip and **greys it out**. Not a gap in the catalogue: the shop states the Box SKU is unavailable |
+| click.ua search for `9700X` | one CPU listing only, the Tray. The other hits are prebuilt ASGARD systems |
+| Box (WOF, 100-100001404WOF) elsewhere, same day | Telemart **14 499** in stock; Brain / ITbox / Foxtrot **18 080** |
+| Tray (100-000001404) elsewhere, same day | Telemart **12 559** in stock; Brain / ITbox **13 226** |
+
+**What this corrects.** This file recorded the tray as accepted *"knowingly on the shop's warranty
+rather than AMD's 36 months"*. **click.ua gives 36 months on the tray SKU anyway** — the same term
+AMD gives on a BOX — so the thing being knowingly accepted was never actually given up. Nothing
+needs asking at the counter.
+
+**What is still true:** the Box genuinely cannot be bought at click.ua, and the nearest Box is
+Telemart at 14 499, **+1 607** over click.ua's tray — for a chip that ships with no cooler in
+either box. **No change: 9700X tray at 12 892 stays in Working and Max.**
+
 ## Real shop prices (checked 2026-09-09)
 
 The hotline figures in the options table are the aggregator's **lowest** offer, which is

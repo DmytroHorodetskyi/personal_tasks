@@ -1200,6 +1200,85 @@ stands.
 **Vision 5 Pro** (133 170 all-in, 8 641 over Max for a lower-tier GPU) are both out. **The build
 stays a parts build.** Do not raise prebuilts again unless he does.
 
+### 7b. Reopened 2026-09-20 by Dmytro: the ASGARD Garm
+
+Item 7 says *"Do not raise prebuilts again unless he does."* **He did** — he sent
+[the Garm's click.ua page](https://click.ua/shop/personalniy-kompbacktickyuter-asgard-garm-left-parenthesisa87fdot32dots10dot57dot12dot5967right-parenthesis-p161901)
+with *"somehow it looks better and cheaper than the final version we decided on"*. It is cheaper.
+It is not better, and the headline gap is about a third of what the sticker suggests.
+
+**ASGARD Garm (A87F.32.S10.57.12.5967) — click.ua, 112 799 ₴, in stock**
+
+| | **ASGARD Garm** | **Working build** (repriced 2026-09-14) |
+|---|---|---|
+| CPU | **Ryzen 7 8700F** — 8c/16t **Zen 4 "Phoenix"**, 4.1–5.0 GHz, **16 MB L3**, **PCIe Gen 4**, 65 W | **Ryzen 7 9700X** — 8c/16t **Zen 5**, up to **5.5 GHz**, **32 MB L3**, **PCIe Gen 5** |
+| GPU | **RTX 5070 12 GB** | **RX 9070 16 GB** |
+| RAM | 32 GB DDR5-6000, 2 modules | 32 GB DDR5-6000 CL36 |
+| Board | **B650** (chipset only — model not stated) | ASRock B850 Pro RS WiFi |
+| SSD | 1 TB NVMe — **make not stated** | Samsung 990 PRO 1 TB |
+| PSU | **not stated anywhere on the listing** | Cougar GEX X2 850 |
+| Cooler | **not stated** | Deepcool AK400 |
+| Case | **not stated** | AeroCool D502A-G-WT-v1 |
+| OS | **без ОС** | Windows 11 Home, 8 799 |
+| Monitor | none | ASGARD AS275QC, 6 999 |
+| LAN / Wi-Fi | 2.5 Gb + Wi-Fi | 2.5 Gb + Wi-Fi |
+| **Price** | **112 799** | **133 877** |
+
+8700F specification from [TechPowerUp's CPU database](https://www.techpowerup.com/cpu-specs/ryzen-7-8700f.c3567)
+and AMD: *Zen 4 (Phoenix), 16 MB L3, PCI-Express Gen 4, no integrated graphics, 65 W.*
+
+### The gap is 5 280, not 21 078
+
+The Garm is a **tower only**. Strip the two things the build sheet carries that it does not:
+
+| | |
+|---|---:|
+| Working build, as priced | 133 877 |
+| − Windows 11 Home | −8 799 |
+| − monitor | −6 999 |
+| **Working, tower only** | **118 079** |
+| **ASGARD Garm** | **112 799** |
+| **Real difference** | **5 280** |
+
+### And the 5 280 is the CPU downgrade, almost exactly
+
+click.ua's own shelf prices the two chips at **8700F 7 100** and **9700X 12 892** — a difference of
+**5 792**. The entire saving is one CPU tier, and it is the tier this build was specified on.
+
+**What the 8700F costs you, specifically:**
+
+- **Half the L3 cache — 16 MB against 32 MB.** On the workload this machine was specified for
+  (heavy repos, language servers, parallel tooling) cache is not a rounding error.
+- **Zen 4 rather than Zen 5**, and a **5.0 GHz** boost against **5.5 GHz**.
+- **PCIe Gen 4 only.** The build sheet's Max tier pairs a Gen 5 SSD (Renegade G5) with this
+  platform; on an 8700F that drops to Gen 4 speeds.
+- It is a **Phoenix mobile die with the iGPU fused off**, not a desktop Raphael/Granite Ridge part.
+
+**And the GPU is the card [gpu.md](pc_build/components/gpu.md) already rejected by name:** the
+RTX 5070's **12 GB** — *"12GB on a card meant to last past 2027"* — against the RX 9070's 16 GB,
+with the 9070 also **9.4 % faster in raster at 1440p**. Two of the three components that decide
+this machine are a tier down.
+
+### What is not stated at all
+
+The listing names **no PSU, no cooler and no case**. Those are the three components this project
+spent the most work on — [psu.md](pc_build/components/psu.md) alone rejects a dozen units by name
+on Cybenetics noise, short-circuit-protection results and 450 W 16-pin cables. A prebuilt at this
+price does not put a be quiet! Pure Power 13 M in the box. This is the same objection item 7
+raised against the Hel's *"650W, brand not stated"*, and it is unanswered here too.
+
+### Verdict
+
+**No change. The build stays a parts build.** The Garm is cheaper because it is a lower-tier
+machine with no OS and no monitor, not because it is better value: **5 280 apart like-for-like**,
+in exchange for half the CPU cache, a generation-older core, PCIe Gen 4, 4 GB less VRAM, and three
+unnamed components.
+
+Where it *is* genuinely attractive: it carries **click.ua's own 36-month warranty on the whole
+machine**, and it is assembled. If Dmytro decides that the assembly and a single warranty claim
+number are worth a CPU tier and 4 GB of VRAM, that is a legitimate trade — but it should be made
+on those terms, not on the 21 078 the sticker appears to show.
+
 **The original entry, kept for the pricing work:**
 
 **Opened 2026-09-13.** You sent both and asked directly — *"what do you think about this pc, price

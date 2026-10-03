@@ -58,6 +58,79 @@ four modules - AM5's daisy-chained slots lose speed when all four are filled.
 Note on sub-timings: Corsair ships several CL36 EXPO SKUs (36-36-36-76 and 36-44-44-96 exist
 under similar names). Any of them is fine here; verify the SKU code at purchase.
 
+
+## REPRICED 2026-09-14: the kit in the build sheet costs 4 296 more, and that changes the pick
+
+Dmytro noticed the RAM had moved. It has. **Every 2×16GB DDR5-6000 kit click.ua stocks was read
+directly today** (not a hotline floor), and the sheet's 25 099 no longer exists at any of them.
+
+| Kit (click.ua SKU) | CL / timings | **Real latency** | Profile | V | Height | **UAH** | Stock |
+|---|---|---:|---|---|---|---:|---|
+| Prologix Black (PRO32GB6000B5K) | **not published** | ? | ? | ? | ? | **28 639** | in stock |
+| **Kingston Fury Beast (KF560C36BBE2K2-32)** — the sheet's kit | 36 | **12.0 ns** | EXPO | 1.35 | ~34.9 mm | **29 395** | in stock |
+| **Patriot Viper Elite 5 Ultra (VEU532G6028K)** | **28-40-40-100** | **9.33 ns** | XMP + EXPO | **1.40** | not verified | **29 734** | in stock |
+| **G.Skill Flare X5 (F5-6000J3036F16GX2-FX5)** | **30-36-36-96** | **10.0 ns** | XMP + **EXPO** | 1.35 | **33 mm** | **30 328** | in stock |
+| Kingston Fury Beast RGB (KF560C36BBE2AK2-32) | 36 | 12.0 ns | EXPO | 1.35 | ~44 mm | 32 312 | in stock |
+| G.Skill Ripjaws S5 (F5-6000J3040F16GX2-RS5K) | 30-40-40 | 10.0 ns | EXPO | 1.35 | ~33 mm | 32 778 | in stock |
+| Kingston Fury Beast (KF560C30BBEK2-32) | 30 | 10.0 ns | EXPO | 1.35 | ~34.9 mm | 32 867 | in stock |
+
+Flare X5 timings, voltage and the 33 mm height are from
+[G.SKILL's own specification page](https://www.gskill.com/product/165/396/1722406261/F5-6000J3036F16GX2-FX5):
+*"32GB (2x16GB) … Up to DDR5-6000\* CL30-36-36-96 1.35V … Intel XMP / AMD EXPO"* and *"a
+low-profile height of just 33mm"*. Patriot's 28-40-40-100 at 1.4 V is from the vendor's own
+Viper Elite 5 Ultra page and its SKU sheet.
+
+### What changed in the reasoning
+
+This file declined CL30 on a specific number: *"That 2 ns is worth 1-4% in games … **Not worth
+1 750**."* **That gap is now 933** — Flare X5 CL30 at 30 328 against the Kingston CL36 at 29 395.
+The argument was never "CL30 is pointless", it was "not at 1 750". At 933, with a **lower profile
+(33 mm vs ~34.9)** and the same 1.35 V, the CL36 kit stops being the better buy.
+
+Note also that the **Kingston CL30 kit is 32 867** — the Flare X5 delivers the identical 10.0 ns
+for **2 539 less**.
+
+### The two that are close, stated honestly
+
+**Patriot (9.33 ns, 29 734) is cheaper than the Flare X5 (10.0 ns, 30 328) and has the lower CL.**
+It is not a clean win:
+
+- CL is the headline number, but **tRCD/tRP matter about as much**, and there the Flare X5's
+  **36-36** beats the Patriot's **40-40**. A 28-40-40 kit and a 30-36-36 kit land close in practice.
+- The Patriot runs **1.4 V** against 1.35 V — more heat, and further from JEDEC.
+- Its **module height was not verified** in this pass, which criterion 7 says to check.
+
+**The Prologix at 28 639 is the cheapest and is not recommended**: no published CL, no published
+profile, no binning information. Saving 1 689 on the one component where a bad bin means an
+unstable machine is the wrong trade. Criterion 4 cannot even be evaluated for it.
+
+### Verdict
+
+**Take the G.Skill Flare X5 F5-6000J3036F16GX2-FX5 at 30 328.** AMD EXPO, 1.35 V, 30-36-36-96 at
+6000 (10.0 ns), 33 mm low profile, and it is the reference kit for AM5 — the one with the most
+compatibility mileage on this platform.
+
+- **Cheaper: Patriot Viper Elite 5 Ultra, 29 734 (−594).** Lower CL, looser tRCD/tRP, 1.4 V,
+  height unverified. A fine kit; the 594 does not buy a better one.
+- **Cheapest that still meets spec: the sheet's own Kingston CL36 at 29 395 (−933).** Nothing wrong
+  with it — it is simply 2 ns slower for 933 less, and that is now a closer call than it was.
+- **Do not buy** the Kingston CL30 at 32 867 (the Flare X5 is the same latency for 2 539 less) or
+  the RGB kit at 32 312 (44 mm, and criterion 7 warns about cooler clearance).
+
+### What this does to the build totals
+
+The sheet carries **25 099**. Nothing on the shelf is near that any more, so Working and Max both
+rise whichever kit is chosen:
+
+| Kit | RAM | **Working** (was 129 581) | **Max** (was 142 245) |
+|---|---:|---:|---:|
+| Kingston CL36 (same kit, new price) | 29 395 | **133 877** | **146 541** |
+| Patriot CL28 | 29 734 | **134 216** | **146 880** |
+| **G.Skill Flare X5 CL30 — the pick** | **30 328** | **134 810** | **147 474** |
+
+[builds.md](../builds.md) has **not** been edited — the kit is Dmytro's choice, and the totals move
+with it. Once he picks, that line and both totals change together.
+
 ## Options
 
 Prices: lowest hotline.ua offer, 2026-09-09, UAH. All 2x16GB unless noted.

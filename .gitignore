@@ -33,3 +33,10 @@ tasks/tcr_tasks/rank_and_vos/Zaiava_zvannia_conf.docx
 tasks/tcr_tasks/rank_and_vos/Zaiava_zvannia.docx
 *_conf.docx
 *_conf.pdf
+
+# Personal machine/home details — kept locally, never pushed (repo is public):
+# game-save inventory (Steam ID, profile names, installed games) and the home
+# network diagnosis (router MAC, ISP, IPv6 prefix, SSIDs, ISP DNS in the scripts).
+tasks/personal/game_saves.md
+tasks/hardware/home_network.md
+tasks/hardware/home_network/

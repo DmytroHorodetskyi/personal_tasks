@@ -20,6 +20,33 @@ This file records only the machine facts that sessions keep rediscovering.
   `--trusted-host pypi.org --trusted-host files.pythonhosted.org`; `git clone` over HTTPS needs
   `-c http.sslBackend=schannel`.
 
+## Moving, renaming or syncing the user's files (F:, C:\Chel, any data drive) — ALWAYS
+
+F: is the backup drive (`F:\Дані\Memory` mirrors `C:\Chel\Dima\Memory`; saves live in
+`…\Memory\Games\Saves`). On 2026-11-23 a script meant to rearrange 637 save files on F: moved them
+all into this repo folder instead, because PowerShell variable names are case-insensitive: the
+loop variable `$f` overwrote the target root `$F`. Nothing was lost, only because moves were
+checked by hash, but the user waited through a broken operation. Never again:
+
+- **PowerShell variables ignore case.** `$f` and `$F`, `$path` and `$Path` are the same variable.
+  Give the root and the loop variable clearly different names (`$destRoot`, `$file`).
+- **Assert every destination before touching anything.** Build the full list of
+  source → destination paths first; abort if any destination is not under the intended root
+  (`$dst.StartsWith($destRoot + '\')`), and print a sample of absolute destinations in a dry run.
+  A dry run that only prints counts proves nothing.
+- **Copy, verify, then remove** — never a bare `Move-Item` across a layout change. Verify with
+  `code`/scratchpad Python (`hashlib`, `os.walk`), which is fast; `Get-FileHash` loops over
+  hundreds of files are slow and have given false mismatches here. Report one summary line.
+- **No Cyrillic literals in `.ps1` files**: PowerShell 5.1 reads them as ANSI and mangles the
+  path. Build such names from char codes or pass them as arguments.
+- **Renames fail with "access denied" when something has the folder open**: an Explorer window
+  inside it (check `(New-Object -ComObject Shell.Application).Windows()`) or the Windows Search /
+  Music-library watcher. Find the holder instead of retrying.
+- `C:\Chel` needs explicit write rights for `Dmitriy` (granted 2026-11-23 with `icacls`); this
+  session is never elevated, so admin-only paths are the user's to change.
+- **Keep the user informed.** Long checks run in the foreground with a time estimate, or say up
+  front how long they take; never leave the user waiting without a status line.
+
 ## Deliverables
 
 - Word is the only target renderer for `.docx`; never install or render with LibreOffice.

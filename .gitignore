@@ -40,3 +40,6 @@ tasks/tcr_tasks/rank_and_vos/Zaiava_zvannia.docx
 tasks/personal/game_saves.md
 tasks/hardware/home_network.md
 tasks/hardware/home_network/
+
+# Medical notes (diagnosis, CT results, clinics) — kept locally, never pushed.
+tasks/personal/septoplasty.md

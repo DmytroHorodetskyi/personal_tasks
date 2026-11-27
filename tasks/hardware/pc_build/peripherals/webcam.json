@@ -1,0 +1,14 @@
+[
+ {"name":"Logitech C270","query":"Logitech C270","match":["C270"],"shop_query":"Logitech C270","shop_match":["C270"]},
+ {"name":"Logitech Brio 100","query":"Logitech Brio 100","match":["Brio 100"],"shop_query":"Brio 100","shop_match":["100"]},
+ {"name":"Logitech Brio 101","query":"Logitech Brio 101","match":["Brio 101"],"shop_query":"Brio 101","shop_match":["101"]},
+ {"name":"Logitech C505","query":"Logitech C505","match":["C505"],"exclude":["C505e"],"shop_query":"Logitech C505","shop_match":["C505"],"shop_exclude":["C505e"]},
+ {"name":"Logitech C920","query":"Logitech C920","match":["C920"],"exclude":["C920e"],"shop_query":"Logitech C920","shop_match":["C920"],"shop_exclude":["C920e"]},
+ {"name":"Logitech C922","query":"Logitech C922","match":["C922"],"shop_query":"Logitech C922","shop_match":["C922"]},
+ {"name":"Logitech Brio 300","query":"Logitech Brio 300","match":["Brio 300"],"shop_query":"Brio 300","shop_match":["300"]},
+ {"name":"Logitech Brio 500","query":"Logitech Brio 500","match":["Brio 500"],"exclude":["505"],"shop_query":"Brio 500","shop_match":["500"],"shop_exclude":["505"]},
+ {"name":"Anker PowerConf C200","query":"Anker PowerConf C200","match":["C200"],"shop_query":"PowerConf C200","shop_match":["C200"]},
+ {"name":"Microsoft Modern Webcam","query":"Microsoft Modern Webcam","match":["Modern Webcam"],"shop_query":"Microsoft Modern Webcam","shop_match":["Modern"]},
+ {"name":"Razer Kiyo X","query":"Razer Kiyo X","match":["Kiyo X"],"shop_query":"Razer Kiyo X","shop_match":["Kiyo X"]},
+ {"name":"Trust Tyon 4K","query":"Trust Tyon","match":["Tyon"],"shop_query":"Trust Tyon","shop_match":["Tyon"]}
+]

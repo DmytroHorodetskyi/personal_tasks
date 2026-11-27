@@ -279,6 +279,53 @@ The exposure, stated plainly: **2 499 UAH and a fortnight's attention**, against
 over the Logitech. If that trade is unappealing, the Logitech is the answer and the reason is
 not the specs — it is that its weak points are the skates and the price, not the wheel.
 
+## Fault report 2026-11-22: the wheel jumps the wrong way
+
+**Symptom (Dmytro):** scroll up and the page first moves down a little, then up. Same the other
+way. This is the **defect** row of the table above, not the design row: it has a remedy.
+
+**What it is.** The Cobra's wheel turns a **mechanical rotary encoder — Kailh (black), 9 mm**
+(TechPowerUp, review page 4: *"The encoder comes from Kailh (black) and has a height of 9 mm."*).
+Inside it, two metal wipers rub on a contact track and the order in which they close tells the
+mouse the direction. When a contact is dirty or worn it chatters ("bounce"), the order is read
+wrongly for a step, and the mouse reports one notch the wrong way before the right ones. It is a
+hardware fault. Synapse, firmware and Windows settings do not cause it and do not fix it: nobody
+in the threads below reports a software fix working, and one owner who logged raw input saw it
+identically wired and wireless.
+
+### Sources, read 2026-11-22
+
+| Source | Chars read / total | Verbatim quote | Bearing |
+|---|---|---|---|
+| TechPowerUp, Razer Cobra review p.4 (browser) | the scroll-wheel and disassembly passages | *"The encoder comes from Kailh (black) and has a height of 9 mm."* | Names the part that fails, and the size to order if it is replaced. |
+| Razer Insider 69357 (3 replies) | ~8.5k / ~8.5k (page incl. nav) | *"the first Razer Cobra's Scroll wheel was like jumping up and down like crayz"* | **The same model, twice:** the owner's replacement Cobra developed it too, about a year in. |
+| same thread, FiszPL | as above | *"I've replaced scroll encoder to TTC Gold dustproof - and work like a charm."* | The permanent fix, if done by hand. |
+| same thread, ktyler | as above | *"cleaned the contacts after blowing air didn't help. That worked for a couple of weeks."* | Cleaning is temporary. |
+| Razer Insider 48681 (31 replies, 2 pages, many Razer models) | ~43k / ~43k | *"If scroll is jumping up/down, then scroll encoder is faulty."* | The consensus diagnosis. Blowing into the wheel worked for several posters, and *"helps for a while but its starting to get less and less effective"* for another. |
+| Razer Insider 92921 (DeathAdder V3 Pro) | ~6.5k / ~6.5k | *"it looks like a failed scroll encoder rather than a driver, Synapse or wireless problem."* | Logged it: 10 of 70 notches reported the wrong way wired, 6 of 37 wireless. Rules out software. |
+| mousetests.com guide | ~8.3k / ~8.3k | *"you are suffering from rotary encoder bounce."* | Same diagnosis; lists the cleaning steps below. Its "fixes ~60% of cases" figure has no source. |
+| iFixit, Cobra Pro wheel wiki | **not read** — HTTP 404 | — | — |
+
+No Razer staff reply appears in any of the threads. Gap: all evidence is forum anecdote plus one
+teardown; there is no failure-rate figure for the Cobra's encoder anywhere.
+
+### What to do, in order
+
+1. **Warranty first — it is the only fix that costs nothing.** 24 months from Razer, so it is
+   covered whenever it was bought in 2026. Claim through the shop it was bought from (the reason
+   the shop with a service department was chosen). If it is still inside 14 days of purchase, it
+   is a straight exchange. **Do not open the shell before claiming:** the screws sit under the
+   sticker, and tearing it is visible.
+2. **Meanwhile, the free temporary fixes** (no opening): spin the wheel fast in the faulty
+   direction for 30–45 s; short bursts of compressed air into the gap on the **left side of the
+   wheel**, where the encoder sits. Expect days to weeks of relief, not a cure.
+3. **Out of warranty only:** open it and drip contact cleaner / 99% isopropyl onto the encoder
+   axle (temporary), or have the encoder replaced with a **9 mm** dust-proof one (TTC Gold) —
+   a soldering job, ~$2 part, any phone/PC repair shop.
+
+**One caution on the replacement:** the owner in thread 69357 got a second Cobra and it failed
+the same way. A warranty swap resets the clock; it does not change the part.
+
 ## The verdict
 
 Revised once, the same day, after the candidate field was widened past Logitech G. The first
